@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="ResAuto">
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_speed_pk_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/white_edeeee"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_speed_pk_group_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/speed_pk_group_status_ready_start"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="14sp" />
+
+            <cn.nokia.speedtest5g.view.MyScrollyGridView
+                android:id="@+id/gv_speed_pk_group_member_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:gravity="center"
+                android:horizontalSpacing="3dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:paddingBottom="10dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.5dp" />
+
+            <cn.nokia.speedtest5g.view.WaveButton
+                android:id="@+id/wb_speed_pk_group_join_start_btn"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                app:fillColor="@color/bg_color"
+                app:textColor="@color/white_edeeee"
+                app:textSize="28sp"
+                app:waveColor="#2adcf6"
+                app:wbStrokeColor="@color/transparent" />
+
+            <TextView
+                android:id="@+id/tv_speed_pk_group_cancel_or_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drawable_textview_blue"
+                android:paddingBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/white_edeeee"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

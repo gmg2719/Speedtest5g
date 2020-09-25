@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bm_bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/module_bg_line_color" />
+
+    <!-- 系统消息 -->
+
+    <LinearLayout
+        android:id="@+id/speed_test_main_ll_notice"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#484458"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.android.volley.util.MarqueesTextView
+            android:id="@+id/speed_test_main_mtv_notice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_notify"
+            android:drawablePadding="5dp"
+            android:textColor="#CFAD99"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/speed_test_main_iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/icon_new_close" />
+    </LinearLayout>
+
+    <!-- 基站 rsrp sinr -->
+
+    <LinearLayout
+        android:id="@+id/speed_test_main_ll_baseinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/icon_speed_test_flag_net_type"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/speed_test_main_tv_net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <!-- LTE或3G 2G -->
+
+                <LinearLayout
+                    android:id="@+id/speed_test_main_ll_view_not_nr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_4g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:background="#2dd373"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="4G"
+                        android:textColor="@color/black_half"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_cellid"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:singleLine="true"
+                        android:textColor="@color/black_half"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_rsrp_or_lac"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:singleLine="true"
+                        android:textColor="@color/black_half"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_sinr_or_rxlev"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:singleLine="true"
+                        android:textColor="@color/black_half"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- NR -->
+
+                <LinearLayout
+                    android:id="@+id/speed_test_main_ll_view_nr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:background="#ad7fce"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="5G"
+                        android:textColor="@color/black_half"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_nr_earfcn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:singleLine="true"
+                        android:textColor="@color/black_half"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_nr_rsrp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:singleLine="true"
+                        android:textColor="@color/black_half"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_nr_sinr"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:singleLine="true"
+                        android:textColor="@color/black_half"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- logo -->
+
+    <LinearLayout
+        android:id="@+id/speed_test_main_ll_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_speed_test_logo_flag" />
+    </LinearLayout>
+
+    <!-- wavebutton 放这里  布局才正常 -->
+
+    <cn.nokia.speedtest5g.view.WaveButton
+        android:id="@+id/speed_test_main_wb_start"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:fillColor="@color/bg_color"
+        app:text="开始"
+        app:textColor="@color/white_edeeee"
+        app:textSize="28sp"
+        app:waveColor="#2adcf6"
+        app:wbStrokeColor="@color/transparent" />
+
+    <!-- 流量预估模块 -->
+
+    <LinearLayout
+        android:id="@+id/speed_test_main_ll_module_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@drawable/drawable_flow_bg_share"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_speed_test_flow_flag_small" />
+
+            <TextView
+                android:id="@+id/speed_test_main_tv_all_flow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="移动网络下测速会消耗相应的流量，流量消耗情况请到测试详情中查询！"
+                android:textColor="#f97b45"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 速率测试中 -->
+
+        <LinearLayout
+            android:id="@+id/speed_test_main_ll_module_testing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <!-- 仪表盘模块 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/speed_test_main_ll_module_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_centerInParent="true"
+                    android:layerType="hardware"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone" >
+
+                    <cn.nokia.speedtest5g.speedtest.util.SpeedTestDialView
+                        android:id="@+id/speed_test_main_dial_view"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/speed_test_main_tv_down_or_up_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_speed_test_download"
+                            android:drawablePadding="3dp"
+                            android:text="(Mbps)"
+                            android:textColor="@color/black_small"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/speed_test_main_tv_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black_small"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 曲线图模块 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/speed_test_main_ll_module_curve"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="@drawable/drawable_module_bg_share" >
+
+                        <LinearLayout
+                            android:id="@+id/speed_test_main_ll_avg_download"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="下载(Mbps)"
+                                android:textColor="@color/black_small"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/speed_test_main_tv_avg_download"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="——"
+                                android:textColor="@color/download_text_color"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/icon_speed_test_tip_flag" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/speed_test_main_fl_download"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="5dp" />
+
+                        <LinearLayout
+                            android:id="@+id/speed_test_main_ll_avg_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="上传(Mbps)"
+                                android:textColor="@color/black_small"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/speed_test_main_tv_avg_upload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="——"
+                                android:textColor="@color/upload_text_color"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/icon_speed_test_tip_flag" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/speed_test_main_fl_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+
+                    <!-- ping  抖动   丢包 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:baselineAligned="false"
+                        android:background="@drawable/drawable_module_bg_share"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/speed_test_main_ll_ping"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PING/ms"
+                                    android:textColor="@color/black_micro"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/speed_test_main_tv_ping"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="—"
+                                    android:textColor="@color/black_half"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#eeeeee" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/speed_test_main_ll_shake"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="抖动/ms"
+                                    android:textColor="@color/black_micro"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/speed_test_main_tv_shake"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="—"
+                                    android:textColor="@color/black_half"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#eeeeee" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/speed_test_main_ll_packetloss"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="丢包/%"
+                                    android:textColor="@color/black_micro"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/speed_test_main_tv_packetloss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="—"
+                                    android:textColor="@color/black_half"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 测试结果详情模块 -->
+
+        <LinearLayout
+            android:id="@+id/speed_test_main_details_ll_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.32"
+                android:background="@drawable/drawable_module_bg_share"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <cn.nokia.speedtest5g.view.WaveButton
+                    android:id="@+id/speed_test_main_details_wb_restart"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:fillColor="@color/bg_color"
+                    app:text="重测"
+                    app:textColor="@color/white_edeeee"
+                    app:textSize="13sp"
+                    app:waveColor="#2adcf6"
+                    app:wbStrokeColor="@color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前网速相当于"
+                        android:textColor="@color/black_half"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_details_tv_value1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/upload_text_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="宽带"
+                        android:textColor="@color/black_half"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已超过全国"
+                        android:textColor="@color/black_small"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_details_tv_value2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50%"
+                        android:textColor="@color/upload_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="的用户"
+                        android:textColor="@color/black_small"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.58"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="@drawable/drawable_module_bg_share" >
+
+                        <LinearLayout
+                            android:id="@+id/speed_test_main_details_ll_avg_download"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="下载(Mbps)"
+                                android:textColor="@color/black_small"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/speed_test_main_details_tv_avg_download"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="——"
+                                android:textColor="@color/download_text_color"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/icon_speed_test_tip_flag" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/speed_test_main_details_fl_download"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="5dp" />
+
+                        <LinearLayout
+                            android:id="@+id/speed_test_main_details_ll_avg_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="上传(Mbps)"
+                                android:textColor="@color/black_small"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/speed_test_main_details_tv_avg_upload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="——"
+                                android:textColor="@color/upload_text_color"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/icon_speed_test_tip_flag" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/speed_test_main_details_fl_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+
+                    <!-- 详情 ping 抖动   丢包 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/drawable_module_bg_share" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/speed_test_main_details_ll_ping"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="PING/ms"
+                                        android:textColor="@color/black_micro"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/speed_test_main_details_tv_ping"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:text="—"
+                                        android:textColor="@color/black_half"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#eeeeee" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/speed_test_main_details_ll_shake"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="抖动/ms"
+                                        android:textColor="@color/black_micro"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/speed_test_main_details_tv_shake"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:text="—"
+                                        android:textColor="@color/black_half"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#eeeeee" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/speed_test_main_details_ll_packetloss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="丢包/%"
+                                        android:textColor="@color/black_micro"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/speed_test_main_details_tv_packetloss"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:text="—"
+                                        android:textColor="@color/black_half"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/speed_test_main_ll_signal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="8dp"
+                        android:background="@drawable/drawable_signal_module_bg_share" >
+
+                        <TextView
+                            android:id="@+id/speed_test_main_details_tv_signal_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_speed_test_wifi_flag"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/black_half"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/speed_test_main_details_tv_goto_signaltest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/bg_blue_speed_details"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp"
+                                android:text="测信号"
+                                android:textColor="#1eedec"
+                                android:textSize="12sp"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 左右箭头模块 -->
+
+        <LinearLayout
+            android:id="@+id/speed_test_main_ll_module_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/speed_test_main_ll_module_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/icon_speed_test_left_module_bg"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/round_in_nettype3"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_left_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#3ab6e2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_left_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#fefefe"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_left_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#f8f8f8"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/speed_test_main_ll_ap_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/speed_test_main_ll_module_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/icon_speed_test_right_module_bg"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal" >
+
+                <ProgressBar
+                    android:id="@+id/speed_test_main_pb_right"
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/speed_test_main_iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_speed_test_right_flag"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_right_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="正在查找"
+                        android:textColor="#fefefe"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/speed_test_main_tv_right_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="测速点"
+                        android:textColor="#f8f8f8"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

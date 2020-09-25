@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/ibtn_apn_setting_close_dialog"
+        style="@style/tv_warp"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:contentDescription="@string/speedTest"
+        android:padding="10dp"
+        android:src="@drawable/icon_close_circular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/wq_dialog_edging_white"
+        android:orientation="vertical" >
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/tv_apn_setting_title_ip_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_edging_title_light_blue"
+            android:drawableLeft="@drawable/icon_speed_test_apn_set"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="5dp"
+            android:text="当前选择APN服务器"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <!-- 内容 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <TextView
+                style="@style/tv_weight"
+                android:drawableLeft="@drawable/round_8dp_bule"
+                android:drawablePadding="5dp"
+                android:paddingRight="5dp"
+                android:text="修改APN设置"
+                android:textColor="@color/black_half"
+                android:textSize="@dimen/tv_half_size" />
+
+            <Button
+                android:id="@+id/btn_apn_setting"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_btn_bg_speed_test_apn_set_blue"
+                android:text="配置APN"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/tv_apn_setting_strat_speed_test_or_goto_pk_hint"
+                style="@style/tv_weight"
+                android:drawableLeft="@drawable/round_8dp_bule"
+                android:drawablePadding="5dp"
+                android:paddingRight="5dp"
+                android:text="直接开始测试"
+                android:textColor="@color/black_half"
+                android:textSize="@dimen/tv_half_size" />
+
+            <Button
+                android:id="@+id/btn_apn_setting_strat_speed_test_or_goto_pk"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_btn_bg_speed_test_apn_set_white"
+                android:text="@string/speedTest"
+                android:textColor="@color/blue_2dabf5"
+                android:textSize="@dimen/tv_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/tv_apn_setting_ping_status"
+                style="@style/tv_weight"
+                android:drawableLeft="@drawable/round_8dp_bule"
+                android:drawablePadding="5dp"
+                android:paddingRight="5dp"
+                android:text="检查网络连通性"
+                android:textColor="@color/black_half"
+                android:textSize="@dimen/tv_half_size" />
+
+            <Button
+                android:id="@+id/btn_apn_setting_ping"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_btn_bg_speed_test_apn_set_white"
+                android:text="PING"
+                android:textColor="@color/blue_2dabf5"
+                android:textSize="@dimen/tv_small_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

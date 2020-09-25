@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_bg_blue"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <ListView
+        android:id="@+id/lv_msg_list"
+        style="@style/style_listview"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@null" />
+
+</LinearLayout>

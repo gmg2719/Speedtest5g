@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <!-- 圆形背景，颜色填充动态配置:调用工具类UtilHandler中的setViewBgColor()方法 -->
+    <solid android:color="@color/blue_2dabf5" />
+
+    <size
+        android:height="5dp"
+        android:width="5dp" />
+
+</shape>

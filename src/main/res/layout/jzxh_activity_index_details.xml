@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:padding="10dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+            android:background="@drawable/icon_xqzb_help_item_bg">
+            <TextView
+		    	android:id="@+id/jzxhIndexDetails_tv_title"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="10dp"
+		        android:textColor="@color/black_half"
+		        android:textSize="@dimen/tv_small_size"
+		        android:textStyle="bold" />
+		
+			<FrameLayout
+		        android:id="@+id/jzxhIndexDetails_layout_char"
+		        android:layout_width="match_parent"
+		        android:layout_height="200dp"/>
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:background="@drawable/bg_border_ememrgent_blue_white"
+		        android:orientation="vertical" >
+			    <LinearLayout
+		        	android:layout_width="match_parent"
+		            android:layout_height="35dp"
+		            android:gravity="center"
+		            android:orientation="horizontal" >
+		            <TextView
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:gravity="center"
+		                android:text="@string/time"
+		                android:textColor="@color/ui_black"
+		                android:textSize="14sp"
+		                android:textStyle="bold" />
+		            <View
+		                android:layout_width="0.5dp"
+		                android:layout_height="35dp"
+		                android:background="@color/emergent_border_blue" />
+		            <TextView
+		                android:id="@+id/jzxhIndexDetails_tv_item_name"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="2"
+		                android:gravity="center"
+		                android:textColor="@color/ui_black"
+		                android:textSize="14sp"
+		                android:textStyle="bold" />
+		        </LinearLayout>
+		        <cn.nokia.speedtest5g.view.MyScrollyListView
+		            android:id="@+id/jzxhIndexDetails_listview"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:divider="@color/transparent"
+		            android:dividerHeight="0dp"
+		            android:listSelector="#00000000"/>
+			</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+    
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:scrollbars="none">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="10dp">
+		        <TextView android:text="当前连接：" style="@style/tv_warp" android:textStyle="bold" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_12"/>
+		     	<TextView android:id="@+id/wifi_tv_name" style="@style/tv_warp" android:textColor="#1ADBDA" android:textSize="@dimen/sp_12"/>
+		    </LinearLayout>
+		    
+            <LinearLayout android:id="@+id/wifi_view_now" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/shape_rectangle_black_bg">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <LinearLayout android:padding="10dp" android:layout_width="0.0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/icon_wifi_now_left">
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                            <TextView android:id="@+id/wifi_tv_phoneName" style="@style/tv_weight" android:textColor="@color/white" android:textStyle="bold" android:textSize="@dimen/sp_12"/>
+                          	<ImageView style="@style/tv_warp" android:src="@drawable/icon_wifi_now_phone"/>
+                        </LinearLayout>
+                        <TextView android:id="@+id/wifi_tv_phoneIp" android:layout_marginBottom="5dp" style="@style/tv_warp" android:textColor="@color/white_edeeee" android:textSize="@dimen/sp_10"/>
+                        <TextView android:id="@+id/wifi_tv_phoneMac" style="@style/tv_warp" android:textColor="@color/white_edeeee" android:textSize="@dimen/sp_10"/>
+                    </LinearLayout>
+                    <LinearLayout android:padding="10dp" android:layout_width="0.0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/icon_wifi_now_right">
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                            <TextView android:text="路由器" style="@style/tv_weight" android:textColor="@color/white" android:textStyle="bold" android:textSize="@dimen/sp_12"/>
+                          	<ImageView style="@style/tv_warp" android:src="@drawable/icon_wifi_now_ly"/>
+                        </LinearLayout>
+                        <TextView android:id="@+id/wifi_tv_wifiIp" android:layout_marginBottom="5dp" style="@style/tv_warp" android:textColor="@color/white_edeeee" android:textSize="@dimen/sp_10"/>
+                        <TextView android:id="@+id/wifi_tv_wifiMac" style="@style/tv_warp" android:textColor="@color/white_edeeee" android:textSize="@dimen/sp_10"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/black_half"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <LinearLayout android:layout_width="0.0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:text="信号强度：" style="@style/tv_warp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                     	<TextView android:id="@+id/wifi_tv_wifiDmb" style="@style/tv_warp" android:textColor="@color/white" android:textStyle="bold" android:textSize="@dimen/sp_10"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:text="连接速度：" style="@style/tv_warp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                     	<TextView android:id="@+id/wifi_tv_wifiSpeed" style="@style/tv_warp" android:textColor="@color/white" android:textStyle="bold" android:textSize="@dimen/sp_10"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:text="频率：" style="@style/tv_warp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                     	<TextView android:id="@+id/wifi_tv_wifiFrequency" style="@style/tv_warp" android:textColor="@color/white" android:textStyle="bold" android:textSize="@dimen/sp_10"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <LinearLayout android:layout_width="0.0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:text="DNS：" style="@style/tv_warp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                     	<TextView android:id="@+id/wifi_tv_wifiDns" style="@style/tv_warp" android:textColor="@color/white" android:textStyle="bold" android:textSize="@dimen/sp_10"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:text="掩码：" style="@style/tv_warp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                     	<TextView android:id="@+id/wifi_tv_wifiCode" style="@style/tv_warp" android:textColor="@color/white" android:textStyle="bold" android:textSize="@dimen/sp_10"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:text="信道：" style="@style/tv_warp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                     	<TextView android:id="@+id/wifi_tv_wifiXd" style="@style/tv_warp" android:textColor="@color/white" android:textStyle="bold" android:textSize="@dimen/sp_10"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 无连接 -->
+            <TextView android:id="@+id/wifi_tv_not" android:visibility="gone" android:text="无网络连接" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:padding="10dp" android:gravity="center"
+                style="@style/tv_match" android:background="@drawable/shape_rectangle_black_bg" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_12" android:textStyle="bold"/>
+            
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="10dp">
+            	<TextView android:text="连接历史：" style="@style/tv_warp" android:textStyle="bold" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_12"/>
+		     	<TextView android:id="@+id/wifi_tv_hisotry" style="@style/tv_warp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_12"/>
+		    </LinearLayout>
+	   		<LinearLayout android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/shape_rectangle_black_bg">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="90dp">
+                    <FrameLayout
+		                android:id="@+id/wifi_layout_chartHistory"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent" />
+                    <TextView android:id="@+id/wifi_tv_historyHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信号\n强度" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_8" android:padding="3dp" android:layout_marginTop="3dp"/>
+                    <View android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:layout_toRightOf="@id/wifi_tv_historyHint" android:layout_width="0.5dp" android:layout_height="match_parent" android:background="@color/gray_c0c0c3"/>
+                  	<View android:layout_marginBottom="10dp" android:layout_marginRight="10dp" android:layout_toRightOf="@id/wifi_tv_historyHint" android:layout_alignParentBottom="true" android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/gray_c0c0c3"/>
+                </RelativeLayout>
+	            <RadioGroup
+	                android:id="@+id/wifi_rg_time"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp" android:layout_marginBottom="5dp"
+	                android:orientation="horizontal"
+	                android:paddingRight="5dp" >
+	
+	                <RadioButton
+	                    android:id="@+id/wifi_rb_time1"
+	                    style="@style/tv_weight"
+	                    android:background="@drawable/ck_not_to_black"
+	                    android:button="@null"
+	                    android:checked="true"
+	                    android:gravity="center"
+	                    android:paddingBottom="5dp"
+	                    android:paddingTop="5dp"
+	                    android:text="@string/chart_period_1"
+	                    android:textColor="@color/color_rb_black_while"
+	                    android:textSize="@dimen/tv_micro_size" />
+	
+	                <RadioButton
+	                    android:id="@+id/wifi_rb_time3"
+	                    style="@style/tv_weight"
+	                    android:background="@drawable/ck_not_to_black"
+	                    android:button="@null"
+	                    android:gravity="center"
+	                    android:paddingBottom="5dp"
+	                    android:paddingTop="5dp"
+	                    android:text="@string/chart_period_3"
+	                    android:textColor="@color/color_rb_black_while"
+	                    android:textSize="@dimen/tv_micro_size" />
+	
+	                <RadioButton
+	                    android:id="@+id/wifi_rb_time5"
+	                    style="@style/tv_weight"
+	                    android:background="@drawable/ck_not_to_black"
+	                    android:button="@null"
+	                    android:gravity="center"
+	                    android:paddingBottom="5dp"
+	                    android:paddingTop="5dp"
+	                    android:text="@string/chart_period_5"
+	                    android:textColor="@color/color_rb_black_while"
+	                    android:textSize="@dimen/tv_micro_size" />
+	
+	                <RadioButton
+	                    android:id="@+id/wifi_rb_time10"
+	                    style="@style/tv_weight"
+	                    android:background="@drawable/ck_not_to_black"
+	                    android:button="@null"
+	                    android:gravity="center"
+	                    android:paddingBottom="5dp"
+	                    android:paddingTop="5dp"
+	                    android:text="@string/chart_period_10"
+	                    android:textColor="@color/color_rb_black_while"
+	                    android:textSize="@dimen/tv_micro_size" />
+	
+	                <RadioButton
+	                    android:id="@+id/wifi_rb_time20"
+	                    style="@style/tv_weight"
+	                    android:background="@drawable/ck_not_to_black"
+	                    android:button="@null"
+	                    android:gravity="center"
+	                    android:paddingBottom="5dp"
+	                    android:paddingTop="5dp"
+	                    android:text="@string/chart_period_20"
+	                    android:textColor="@color/color_rb_black_while"
+	                    android:textSize="@dimen/tv_micro_size" />
+	
+	                <RadioButton
+	                    android:id="@+id/wifi_rb_time30"
+	                    style="@style/tv_weight"
+	                    android:background="@drawable/ck_not_to_black"
+	                    android:button="@null"
+	                    android:gravity="center"
+	                    android:paddingBottom="5dp"
+	                    android:paddingTop="5dp"
+	                    android:text="@string/chart_period_30"
+	                    android:textColor="@color/color_rb_black_while"
+	                    android:textSize="@dimen/tv_micro_size" />
+	            </RadioGroup>
+            </LinearLayout>
+            
+	   		<TextView android:text="信道分析：" android:padding="10dp" style="@style/tv_warp" android:textStyle="bold" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_12"/>
+            <FrameLayout
+            	android:id="@+id/wifi_layout_chartXd" android:background="@drawable/shape_rectangle_black_bg"
+          		android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp"
+             	android:layout_width="match_parent"
+             	android:layout_height="235dp" />
+            
+	       	<TextView android:text="信号列表：" android:padding="10dp" style="@style/tv_warp" android:textStyle="bold" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_12"/>
+	   		<LinearLayout android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/shape_rectangle_black_bg">
+	   		    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView android:text="名称" android:layout_width="0.0dp" android:layout_weight="1.8" android:layout_height="wrap_content" android:gravity="center_horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                    <TextView android:text="MAC" android:layout_width="0.0dp" android:layout_weight="2.2" android:layout_height="wrap_content" android:gravity="center_horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                    <TextView android:text="强度" style="@style/tv_weight" android:gravity="center_horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                    <TextView android:text="频率" style="@style/tv_weight" android:gravity="center_horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                    <TextView android:text="信道" style="@style/tv_weight" android:gravity="center_horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+                </LinearLayout>
+            	<cn.nokia.speedtest5g.view.MyScrollyListView android:id="@+id/wifi_listview" android:listSelector="@android:color/transparent"
+            	    android:dividerHeight="0dp" android:divider="@android:color/transparent"
+            	    android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none"/>
+	   		</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

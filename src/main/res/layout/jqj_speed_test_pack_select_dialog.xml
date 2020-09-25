@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/aw_white_panel_2"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/speed_test_pack_select_rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/drawable_flow_bg_share" >
+
+        <ImageView
+            android:id="@+id/speed_test_pack_select_iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_speed_test_flow_flag_no" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/speed_test_pack_select_iv_1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/speed_test_pack_select_tv_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/speed_test_pack_select_tv_content_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="适合语音通话测试"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/speed_test_pack_select_rl_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drawable_flow_bg_share" >
+
+        <ImageView
+            android:id="@+id/speed_test_pack_select_iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_speed_test_flow_flag_no" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/speed_test_pack_select_iv_2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/speed_test_pack_select_tv_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/speed_test_pack_select_tv_content_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="适合语音、流量测试"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/speed_test_pack_select_rl_3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drawable_flow_bg_share" >
+
+        <ImageView
+            android:id="@+id/speed_test_pack_select_iv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_speed_test_flow_flag_yes" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/speed_test_pack_select_iv_3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/speed_test_pack_select_tv_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/speed_test_pack_select_tv_content_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="适合急速体验、视频、直播等测试"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_speed_test_tuijian_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="推荐"
+            android:textColor="@color/black_half"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+*{margin: 0;font-size: 15px;text-decoration: none;}
+
+body{ background-color: #fafafa;
+      color: #0b1018;
+}
+.logo-wrap{
+	text-align: center;
+	background:url("../img/logo-bg.png")no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+	height: 6.5rem;
+}
+.logo-wrap img{
+	width:4rem;
+	height: 4rem;
+	margin-top: 30px;
+	
+}
+
+h1{
+      text-align: center;
+      margin: 15px 0px;
+      color: #0b1018;
+      font-size: 1.75rem;
+}
+
+p{
+      font-size: 15px;
+      text-indent: 2em;
+}
+
+b{
+      color: #0b1018;;
+}
+.all_box{background-color:#fafafa;}
+
+.lnd{padding: 65px 10px 20px 10px;
+	z-index: 1;
+}
+.box-wrap{
+	margin-bottom: 80px;
+	
+}
+.box{background-color: #FAFAFA;
+	left: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 99;
+	}
+.dis{padding: 10px 10px 0 10px;
+	
+}
+
+.space{margin-bottom: 10px;}
+
+.title{width: 5px;
+       height: 16px;
+       background-color: #2597D9;
+       border-radius: 30%;
+       float:left;
+       margin-right: 10px;
+       margin-top: 3px;
+       }
+
+.title_tex{font-weight: bold;
+           color:#0b1018;;
+           }
+
+
+.line{
+      border-bottom: solid 1px #161525;
+}
+
+.xiayi{
+      color:#0b1018;
+      margin-bottom: 15px;
+      font-weight: bold;
+}
+.link{
+	color:#1bb0ee;
+}
+.form-group {
+	margin-bottom: 15px;}
+.from-group-aleft {
+    float: left;
+	color:#0b1018;
+    font-size: 16px;
+	line-height: 36px;
+    text-align: center;
+   height: 36px;
+    width: 48%;
+    font-family: "Roboto", sans-serif;
+   border: solid 1px #999;
+    transition: all 0.3s ease 0s;
+}
+.from-group-aright {
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    height: 36px;
+    width: 48%;
+    font-family: "Roboto", sans-serif;
+    background: #1bb0ee;
+    border: none;
+    transition: all 0.3s ease 0s;}

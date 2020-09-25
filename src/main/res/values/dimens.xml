@@ -1,0 +1,96 @@
+<resources>
+
+    <dimen name="photo_small_size">40dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="super_title_height">25dp</dimen>
+    
+    <!--  awing --> 
+    <dimen name="activity_title_txt_size">20sp</dimen> 
+    <dimen name="checkbox_padingleft">20dp</dimen> 
+    <dimen name="cell_detail_simple_txtsize">16sp</dimen>
+    
+    <dimen name="cell_detail_simple_titlesize">18sp</dimen>
+    
+    <dimen name="gis_search_txtsize">12sp</dimen>
+    <dimen name="gis_search_btnsize">13sp</dimen>
+    <dimen name="gis_legend_layer_name_text_size">14sp</dimen>
+    <dimen name="gis_legend_name_text_size">12sp</dimen>
+    <dimen name="gis_legend_iv_width_height">23dp</dimen>
+    <dimen name="camear_tv_size">13sp</dimen>
+    
+    <dimen name="rw_edit_detail_indicator">20sp</dimen>
+    <dimen name="rw_edit_detail_title_small">17sp</dimen>
+    <dimen name="rw_edit_detail_title_small1">15sp</dimen>
+    <dimen name="rw_edit_detail_prompt">12sp</dimen>
+    <dimen name="rw_edit_detail_zanwu">16sp</dimen>
+    
+    <dimen name="rw_detail_item_one">12sp</dimen>
+    <dimen name="rw_detail_item_two_title">16sp</dimen>
+    <dimen name="rw_detail_item_two_content">14sp</dimen>
+    
+    <dimen name="wq_main_iv_size">45dp</dimen>
+    <dimen name="wq_main_top_iv_size">40dp</dimen>
+    <dimen name="wq_main_menu_left_size">70dp</dimen>
+    <dimen name="wq_main_bottom_iv_size">35dp</dimen>
+    
+    <dimen name="wq_main_size_small">10sp</dimen>
+    <dimen name="wq_main_size_micro">12sp</dimen>
+    <dimen name="wq_main_size_big">16sp</dimen>
+    <!-- 取色 -->
+    <!-- Standart dimens for the color wheel -->
+    <dimen name="color_wheel_radius">124dp</dimen>
+    <dimen name="color_wheel_thickness">8dp</dimen>
+    <dimen name="color_center_halo_radius">60dp</dimen>
+    <dimen name="color_center_radius">54dp</dimen>
+    <dimen name="color_pointer_halo_radius">18dp</dimen>
+    <dimen name="color_pointer_radius">14dp</dimen>
+    
+    <!-- Standart dimens for the bars -->
+    <dimen name="bar_thickness">4dp</dimen>
+    <dimen name="bar_length">240dp</dimen>
+    <dimen name="bar_pointer_radius">6dp</dimen>
+    <dimen name="bar_pointer_halo_radius">14dp</dimen>
+    
+    <dimen name="tab_main_top">10dp</dimen>
+    
+    <dimen name="colorSetHeight">22dp</dimen>
+     <dimen name="marginleftorright">10dp</dimen>
+     
+     <dimen name="xncs_et_height">35dp</dimen>
+     <dimen name="xncs_tv_size">12sp</dimen>
+     
+	<dimen name="tv_half_size">14sp</dimen>
+	<dimen name="tv_13_size">13sp</dimen>
+    <dimen name="tv_small_size">12sp</dimen>
+    <dimen name="tv_11_size">11sp</dimen>
+    <dimen name="tv_micro_size">10sp</dimen>
+    <dimen name="tv_size_8sp">8sp</dimen>
+	<dimen name="tv_size_9sp">9sp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+       
+    <dimen name="sp_8">8sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="rippleBottom">30dp</dimen>
+    <dimen name="gzlcj_photo_height">35dp</dimen>
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">30dp</dimen>
+    <dimen name="tvSp">30sp</dimen>
+    
+    <dimen name="zdkz_btn_pleft">3dp</dimen>
+</resources>

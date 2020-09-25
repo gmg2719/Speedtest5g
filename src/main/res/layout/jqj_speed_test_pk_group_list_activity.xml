@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <TextView
+        android:id="@+id/tv_speed_pk_group_null"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="目前暂无测试组，请新建测试组"
+        android:textColor="@color/gray_c0c0c3"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_speed_pk_group_list_view"
+        style="@style/style_listview"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_speed_pk_create_group"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/drawable_login_btn_bg"
+            android:text="@string/speed_pk_create_group"
+            android:textColor="@color/white_edeeee"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_speed_pk_update_group"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_login_btn_bg"
+            android:text="@string/speed_pk_refresh_group"
+            android:textColor="@color/white_edeeee"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

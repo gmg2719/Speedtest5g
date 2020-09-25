@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*最多可输入15字"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/speed_test_remark_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_shape"
+            android:hint="请输入备注"
+            android:maxLength="15"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/speed_test_remark_tv_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp" >
+
+        <Button
+            android:id="@+id/speed_test_remark_btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/drawable_login_btn_bg2"
+            android:text="完成"
+            android:textColor="@color/white_edeeee"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/downtiltTest_view_layout" android:onClick="onClickListener"
+    android:orientation="vertical" android:background="@drawable/drawable_supter_title_bg">
+    
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+	       android:id="@+id/actionbar"
+	       style="@style/ActionBar"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.2">
+        <View android:id="@+id/downtiltTest_view_center" android:layout_centerInParent="true" android:layout_width="1dp" android:layout_height="1dp"/>
+        <ImageView android:id="@+id/downtiltTest_iv_arrow_up" android:layout_marginTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_downtilt_arrow_up" android:contentDescription="@string/abandon"
+	       android:layout_centerHorizontal="true" android:layout_marginBottom="6dp"/>
+	   <ImageView android:id="@+id/downtiltTest_iv_arrow_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_downtilt_arrow_left" android:contentDescription="@string/app_name"
+	       android:layout_toLeftOf="@+id/downtiltTest_view_center" android:layout_centerVertical="true" android:layout_marginLeft="55dp"/>
+	   <cn.nokia.speedtest5g.view.MyArcView android:id="@+id/downtiltTest_view_arc" android:layout_marginLeft="80dp" android:layout_marginRight="80dp"
+	       android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+	   <!-- 下倾角 -->
+	   <TextView android:id="@+id/downtiltTest_tv_downtilt_hint" style="@style/tv_warp" android:text="@string/downangel" android:layout_toRightOf="@+id/downtiltTest_iv_arrow_up"
+	       android:textColor="@color/white" android:textSize="@dimen/tv_half_size" android:layout_marginTop="50dp" android:layout_marginLeft="15dp"/>
+	   <TextView android:id="@+id/downtiltTest_tv_downtilt" style="@style/tv_warp" android:layout_centerVertical="true" android:layout_toRightOf="@+id/downtiltTest_iv_arrow_up"
+	       android:textSize="36sp" android:textColor="@color/white" android:layout_marginLeft="15dp"/>
+	   <TextView android:id="@+id/downtiltTest_tv_downtilt_test" style="@style/tv_warp" android:layout_alignBottom="@+id/downtiltTest_tv_downtilt" android:layout_toRightOf="@+id/downtiltTest_tv_downtilt"
+	     android:textColor="@color/white" android:textSize="@dimen/tv_half_size" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+	    
+    <RelativeLayout android:layout_width="match_parent" android:layout_weight="1" android:layout_height="0.0dp" android:padding="10dp">
+        <ImageView android:id="@+id/downtiltTest_iv_progress" android:layout_marginTop="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/icon_downtilt_progress" android:contentDescription="@string/useIv"/>
+        <ImageView android:id="@+id/downtiltTest_iv_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_downtilt_round" android:layout_alignTop="@+id/downtiltTest_iv_progress" android:layout_marginTop="11dp" android:layout_centerHorizontal="true" android:contentDescription="@string/testLocking"/>
+      	<TextView android:id="@+id/downtiltTest_tv_error" android:visibility="gone" android:text="@string/pleaseKeep" style="@style/tv_warp" android:layout_marginTop="10dp" android:layout_centerHorizontal="true" android:layout_below="@+id/downtiltTest_iv_progress" android:textColor="@color/red" android:textSize="@dimen/tv_small_size"/>
+        <TextView android:id="@+id/downtiltTest_tv_toast" android:text="@string/testLocking" style="@style/tv_warp" android:layout_marginTop="35dp" android:layout_centerHorizontal="true" android:layout_below="@+id/downtiltTest_iv_progress" android:textColor="@color/white" android:textSize="@dimen/tv_half_size"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <cn.nokia.speedtest5g.view.viewpager.ScrollIndicatorView
+        android:id="@+id/speed_ranking_main_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/module_bg_color" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/speed_ranking_main_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

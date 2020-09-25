@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/jzxhIndex_view_group"
+                layout="@layout/jzxh_view_index_group"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <cn.nokia.speedtest5g.view.CellSwitchView
+        android:id="@+id/jzxhIndex_view_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/jzxhIndex_view_nodata"
+        style="@style/tv_warp"
+        android:layout_centerInParent="true"
+        android:text="@string/noData"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="@dimen/tv_small_size"
+        android:visibility="gone" />
+
+</RelativeLayout>

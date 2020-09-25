@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/jzxh_nsa_list_tv_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="5dp"
+            android:text="@string/jzxh_nsa_zjxhjl"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/jzxh_nsa_list_ibtn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon_sdwq"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_black_bg"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/jzxh_nsa_list_layout_lq_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_time"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/jzxh_nsa_time"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size" />
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_ci"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/ci"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size" />
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_pci"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/signal_pci"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size" />
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_rsrp"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/signal_rsrp"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size" />
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_sinr"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/signal_sinr"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size" />
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_band"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/band"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size" />
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_pci_nr"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/jzxh_nsa_pci_nr"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_rsrp_nr"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/jzxh_nsa_rsrp_nr"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_sinr_nr"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/jzxh_nsa_sinr_nr"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/jzxh_nsa_list_tv_lq_band_nr"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/jzxh_nsa_band_nr"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/jzxh_nsa_list_btn_lq_tagAdd"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/icon_jzxh_lq_tag" />
+            </LinearLayout>
+
+            <View
+                style="@style/style_sp_x"
+                android:background="@color/line_color" />
+
+            <ListView
+                android:id="@+id/jzxh_nsa_list_listview"
+                style="@style/style_listview_wrap"
+                android:divider="@color/line_color"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/jzxh_nsa_list_tv_lq_nodata"
+                style="@style/tv_warp"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/noData"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="@dimen/tv_micro_size" />
+        </LinearLayout>
+        <!-- 可选择标签 -->
+
+        <LinearLayout
+            android:id="@+id/jzxh_nsa_list_layout_lq_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shape_rectangle_black_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_time"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="@string/jzxh_nsa_time"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_ci"
+                    style="@style/tv_weight"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/ci"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_pci"
+                    style="@style/tv_weight"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/signal_pci"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_rsrp"
+                    style="@style/tv_weight"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/signal_rsrp"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_sinr"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="@string/signal_sinr"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_band"
+                    style="@style/tv_weight"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/band"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_pci_nr"
+                    style="@style/tv_weight"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/jzxh_nsa_pci_nr"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_rsrp_nr"
+                    style="@style/tv_weight"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/jzxh_nsa_rsrp_nr"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_sinr_nr"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="@string/jzxh_nsa_sinr_nr"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/jzxh_nsa_list_ck_lq_band_nr"
+                    style="@style/tv_weight"
+                    android:button="@drawable/jj_check_box_blue_gray_circle"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/jzxh_nsa_band_nr"
+                    android:textColor="@color/color_blacksmall_black"
+                    android:textSize="@dimen/tv_micro_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/tv_weight"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp" />
+
+                <TextView
+                    style="@style/tv_weight"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp" >
+
+                <Button
+                    android:id="@+id/jzxh_nsa_list_btn_lq_tagOk"
+                    style="@style/tv_warp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/drawable_login_btn_bg"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/ok"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="@dimen/tv_micro_size" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

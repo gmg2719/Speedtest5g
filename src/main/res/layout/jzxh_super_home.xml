@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+                android:id="@+id/actionbar"
+                style="@style/ActionBar" />
+
+            <RadioGroup
+                android:id="@+id/jzxhSuperHome_tab_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/jzxhSuperHome_rb_sim1"
+                    style="@style/tv_weight"
+                    android:background="@drawable/drawable_ftp_switch_model_btn_left_select"
+                    android:button="@null"
+                    android:drawableRight="@drawable/icon_jzxh_other"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="55dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/sim1"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="@dimen/tv_small_size" />
+
+                <RadioButton
+                    android:id="@+id/jzxhSuperHome_rb_sim2"
+                    style="@style/tv_weight"
+                    android:background="@drawable/drawable_ftp_switch_model_btn_right"
+                    android:button="@null"
+                    android:drawableRight="@drawable/icon_jzxh_other"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="55dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/sim2"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/tv_small_size" />
+            </RadioGroup>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0.0dp"
+                android:layout_weight="1.0" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:weightSum="0.0" />
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

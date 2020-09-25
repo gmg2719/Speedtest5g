@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_bg_blue"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black_micro"
+        android:text="@string/msg_unsubscribed"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/lv_msg_type_unsubscribed_list"
+        style="@style/style_listview"
+        android:divider="@drawable/split_x_half"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="false"
+        android:listSelector="@null"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+</LinearLayout>

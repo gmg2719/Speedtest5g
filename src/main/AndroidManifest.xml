@@ -1,0 +1,364 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.nokia.speedtest5g">
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <!-- 防锁屏权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 相机、闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <!-- 基站权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- SD卡判断及读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- awing <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" /> -->
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <!-- begin: baidu speech sdk  权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- apk安装权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:usesCleartextTraffic="true" >
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <!-- qzyd.speed.nethelper.fileProvider 八闽 -->
+        <!-- cn.fjcmcc.fjpolice.speedtest5g.fileProvider 强警提速 -->
+        <!-- cn.nokia.speedtest5g.fileProvider    大众版 -->
+        <provider
+            android:name="cn.nokia.speedtest5g.app.uitl.ImagePickerProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 百度key-->
+        <!-- a1cr0FLBFGGVOGoAmpnPPPONBqBHXkDc 八闽 -->
+        <!-- jSjrVmY7mWCzjWn2tgkTMCkocZMlS9yN 强警提速 -->
+        <!-- dB1O33RzPourrcDrx9TDcQ4SGi7BZsKj    大众版 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="jSjrVmY7mWCzjWn2tgkTMCkocZMlS9yN" />
+        <!-- 启动页 加载页面 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity.LoadingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LoadingTheme" >
+        </activity>
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity.LoginActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity.BookWebActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 主页框架 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity.MainHomeSuperActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 主页-作业流程 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity.MainHomeWorkflowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 主页-个人中心 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity.MainHomePersonalActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 速率测试 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedTestMainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 速率测试设置页面 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedTestSetActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 速率测试设置个性化 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedTestCustomSetActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 速率测试结果详情页面 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedTestDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 速率PK组列表页面 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.pk.SpeedPkGroupListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 速率PK组页面 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.pk.SpeedPkGroupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 速率PK页面 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.pk.SpeedPkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 速率PK历史页面 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.pk.SpeedPkHistoryListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 速率PK结果页面 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.pk.SpeedPkResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 速测地图 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedTestMapActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- ip查询 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedTestIpSearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 修改备注 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedTestRemarkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- FTP测试历史列表 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedTestHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- ping测试 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.pingtest.PingTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- ping测试主页 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.pingtest.PingTestMainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- ping测试结果 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.pingtest.PingTestResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 网页 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.FeedBackActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.PhotoAlbumActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 设备信息页 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.SystemDeviceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 位置信息页 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.SystemGpsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 下倾角测试 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.DowntiltTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 方位角测试 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.AzimuthTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.HeightMeasureActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 频点转换 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.BandConversionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 经纬度转换 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.LatLngConversionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.PropagationModelActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.nokia.speedtest5g.app.activity2.ParamEstimateAcitivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 基站信号Tab页 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.jzxh.ui.JzxhTabActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 基站信号卡1 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.jzxh.ui.JzxhSim1Activity"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 基站信号卡2 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.jzxh.ui.JzxhSim2Activity"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 基站信号-分时指标 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.jzxh.ui.JzxhIndexDetailsActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- 基站信号-nsa -->
+        <activity
+            android:name="cn.nokia.speedtest5g.jzxh.ui.nsa.JzxhNsaActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!-- wifi信号检测 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.wifi.ui.WifiSdMainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- wifi详情展示 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.wifi.ui.WifiSdDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- wifi蹭网检测 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.wifi.ui.WifiSnMainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- wifi蹭网详情 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.wifi.ui.WifiSnDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- wifi信道分析 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.wifi.ui.WifiActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- wifi干扰分析 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.wifi.ui.WifiGlActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- wifi干扰分析结果 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.wifi.ui.WifiGlResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- wifi干扰分析详情 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.wifi.ui.WifiGlDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 测速排行 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedRankingMainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 周边网速 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.speedtest.SpeedWideMainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <!-- 网络诊断 -->
+        <activity
+            android:name="cn.nokia.speedtest5g.wifi.ui.NetworkDiagnoseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~服务~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- 百度定位服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <!-- 信号模块服务 -->
+        <service
+            android:name="com.fjmcc.wangyoubao.app.signal.ServiceSignalSim1"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.fjmcc.signal.ServiceSim1" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.fjmcc.wangyoubao.app.signal.ServiceSignalSim2"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.fjmcc.signal.ServiceSim2" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

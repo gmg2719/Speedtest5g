@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/icon_speed_wide_bg_flag"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/speed_wide_layer_iv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_speed_wide_wifi_flag"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textSize="15sp"
+        android:textColor="@color/gray_c0c0c3"/>
+
+    <TextView
+        android:id="@+id/speed_wide_layer_tv_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="150Mbps"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="15sp" />
+
+</LinearLayout>

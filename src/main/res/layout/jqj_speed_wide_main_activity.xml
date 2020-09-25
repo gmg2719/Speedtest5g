@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/speed_wide_main_map_mapview"
+        android:layout_below="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/actionbar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/speed_wide_main_btn_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WiFi"
+            android:background="@drawable/drawable_speed_wide_btn_left_select"
+            android:textSize="14sp"
+            android:textColor="@color/white_edeeee"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
+
+        <Button
+            android:id="@+id/speed_wide_main_btn_4g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4G"
+            android:background="@drawable/drawable_speed_wide_btn_middle_unselect"
+            android:textSize="14sp"
+            android:textColor="@color/black_micro"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
+
+        <Button
+            android:id="@+id/speed_wide_main_btn_5g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5G"
+            android:background="@drawable/drawable_speed_wide_btn_right_unselect"
+            android:textSize="14sp"
+            android:textColor="@color/black_micro"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/speed_wide_main_pb_processBar"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/speed_wide_main_btn_gps"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/speed_wide_main_pb_processBar"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:alpha="0.8"
+        android:background="@drawable/state_check_pci_location"
+        android:onClick="onClickListenerSignal"
+        android:textColor="@color/black_half"
+        android:textSize="@dimen/tv_size_8sp" />
+
+</RelativeLayout>

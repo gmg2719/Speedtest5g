@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+   <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+       <TextView android:text="@string/cellSwitch" style="@style/tv_weight" android:textSize="@dimen/tv_half_size" android:textColor="@color/black_half"/>
+   		<TextView android:id="@+id/jzxhSwitch_tv_timeNew" style="@style/tv_warp" android:textSize="@dimen/tv_11_size" android:textColor="@color/black_micro"/>
+   </LinearLayout>
+   
+   <View style="@style/style_sp_x"/>
+   <RelativeLayout android:id="@+id/jzxhSwitch_btn_detailsOld" android:padding="10dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1">
+       <TextView android:id="@+id/jzxhSwitch_tv_detailsOld" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+           android:text="@string/yjzd_item_param" style="@style/tv_warp" android:paddingTop="5dp" android:paddingBottom="5dp" android:paddingLeft="15dp" android:paddingRight="15dp"
+	        android:background="@drawable/icon_btn_background_blue" android:textColor="#2697D9" android:textSize="@dimen/tv_small_size"/>
+		<LinearLayout android:gravity="center_vertical" android:layout_toLeftOf="@id/jzxhSwitch_tv_detailsOld" android:layout_marginRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+	        <TextView android:id="@+id/jzxhSwitch_tv_ciOld" style="@style/tv_match" android:textSize="@dimen/tv_half_size" android:textColor="@color/black_half"/>
+	        <com.android.volley.util.MarqueesTextView android:id="@+id/jzxhSwitch_tv_cellOld" android:lineSpacingExtra="1dp" android:layout_marginTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/tv_11_size" android:textColor="@color/black_half"/>
+	   </LinearLayout>
+	</RelativeLayout>
+	
+	<View style="@style/style_sp_x"/>
+	
+	<RelativeLayout android:id="@+id/jzxhSwitch_btn_detailsNew" android:padding="10dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1">
+	    <TextView android:id="@+id/jzxhSwitch_tv_detailsNew" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+	        android:text="@string/yjzd_item_param" style="@style/tv_warp" android:paddingTop="5dp" android:paddingBottom="5dp" android:paddingLeft="15dp" android:paddingRight="15dp"
+	        android:background="@drawable/icon_btn_background_blue" android:textColor="#2697D9" android:textSize="@dimen/tv_small_size"/>
+	    <LinearLayout android:gravity="center_vertical" android:layout_toLeftOf="@id/jzxhSwitch_tv_detailsNew" android:layout_marginRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+	        <TextView android:id="@+id/jzxhSwitch_tv_ciNew" style="@style/tv_match" android:textSize="@dimen/tv_half_size" android:textColor="@color/black_half"/>
+	        <com.android.volley.util.MarqueesTextView android:id="@+id/jzxhSwitch_tv_cellNew" android:lineSpacingExtra="1dp" android:layout_marginTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="@dimen/tv_11_size" android:textColor="@color/black_half"/>
+	    </LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

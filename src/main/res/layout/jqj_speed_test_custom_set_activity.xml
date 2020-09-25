@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:paddingBottom="20dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/speed_test_custom_set_ck_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:button="@drawable/drawable_ping_test_radio"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/downTest"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="14sp" />
+
+                <!-- 下载属性 -->
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/ftp_ip"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <cn.nokia.speedtest5g.view.MyAutoCompleteTextView
+                            android:id="@+id/speed_test_custom_set_et_down_ip"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:digits="1234567890."
+                            android:gravity="center_vertical"
+                            android:hint="如：192.168.2.122"
+                            android:maxLength="15"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/ftp_path"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_down_path"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="如：/500M.rar"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/ftp_thread"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_down_thread"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="默认：3个"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:text="@string/ftp_port"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_down_port"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="默认：21"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/ftp_user"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_down_user"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_qsr"
+                            android:maxLength="25"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:text="@string/ftp_passwd"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_down_passwd"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_qsr"
+                            android:inputType="textPassword"
+                            android:maxLength="25"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/speed_test_custom_set_ck_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:button="@drawable/drawable_ping_test_radio"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/uploadTest"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="14sp" />
+
+                <!-- 上传属性 -->
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/ftp_ip"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <cn.nokia.speedtest5g.view.MyAutoCompleteTextView
+                            android:id="@+id/speed_test_custom_set_et_up_ip"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:digits="1234567890."
+                            android:gravity="center_vertical"
+                            android:hint="如：192.168.2.122"
+                            android:maxLength="15"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/ftp_size"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_up_size"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="上传测试大小，单位M，默认100M"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/ftp_thread"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_up_thread"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="默认：1个"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:text="@string/ftp_port"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_up_port"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="默认：21"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/ftp_user"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_up_user"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_qsr"
+                            android:maxLength="25"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:text="@string/ftp_passwd"
+                            android:textColor="@color/white_edeeee"
+                            android:textSize="@dimen/rw_detail_item_two_content" />
+
+                        <EditText
+                            android:id="@+id/speed_test_custom_set_et_up_passwd"
+                            android:layout_width="0.0dp"
+                            android:layout_height="@dimen/xncs_et_height"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edit_text"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_qsr"
+                            android:inputType="textPassword"
+                            android:maxLength="25"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

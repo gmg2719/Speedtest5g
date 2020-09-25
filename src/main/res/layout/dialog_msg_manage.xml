@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:divider="@drawable/split_x_half"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <TextView
+        android:id="@+id/tv_msg_manage_unsubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/msg_manage_unsubscribe"
+        android:textColor="@color/black_half"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_msg_manage_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="@string/msg_manage_delete"
+        android:textColor="@color/black_half"
+        android:textSize="13sp" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="5dp" 
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:id="@+id/tv_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/list_selector_background"
+            android:drawableLeft="@drawable/icon_guide"
+            android:drawablePadding="20dip"
+            android:padding="10dip"
+            android:text="指南"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@color/gray_background" />
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/list_selector_background"
+            android:drawableLeft="@drawable/icon_about"
+            android:drawablePadding="20dip"
+            android:padding="10dip"
+            android:text="关于"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:visibility="gone"
+            android:background="@color/gray_background" />
+
+        <TextView
+            android:id="@+id/site_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/list_selector_background"
+            android:drawableLeft="@drawable/aw_jzdw"
+            android:drawablePadding="10dip"
+            android:padding="10dip"
+            android:visibility="gone"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</FrameLayout>

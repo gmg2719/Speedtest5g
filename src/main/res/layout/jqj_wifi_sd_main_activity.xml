@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="center_horizontal" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <!-- 扫描模块 -->
+
+    <LinearLayout
+        android:id="@+id/wifi_sd_main_ll_scan_module"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <cn.nokia.speedtest5g.view.RadarView
+            android:id="@+id/wifi_sd_main_radar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            app:circleColor="#101B2D"
+            app:circleNum="3"
+            app:flicker="3"
+            app:speed="2"
+            app:sweepColor="#2893B3"
+            app:showCross="false"
+            app:raindropNum="5"
+            app:raindropColor="#2893B3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="正在检测周围Wi-Fi信息"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 结果模块 -->
+
+    <LinearLayout
+        android:id="@+id/wifi_sd_main_ll_result_module"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/wifi_sd_main_tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="周围Wi-Fi数量"
+                android:textColor="@color/gray_929aac"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/wifi_sd_main_btn_retry"
+                style="@style/tv_warp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/drawable_login_btn_bg"
+                android:paddingBottom="8dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingTop="8dp"
+                android:text="重新检测"
+                android:textColor="@color/white_edeeee"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wifi_sd_main_ll_my_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_rectangle_black_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_wifi_sd_connect_flag"
+                    android:text="已连接"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wifi_sd_main_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="CMCC-Hi"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/wifi_sd_main_tv_dbm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/arrow_small_right" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/wifi_sd_main_pb_value"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="13dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/speed_test_rssi_progressbar_one" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/wifi_sd_main_lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_rectangle_black_bg"
+            android:divider="@color/line_color"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollAlwaysVisible="false"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:padding="5dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/wifi_sd_main_tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="周围无更多Wi-Fi"
+            android:textColor="@color/gray_929aac"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 无wifi模块 -->
+
+    <LinearLayout
+        android:id="@+id/wifi_sd_main_ll_no_wifi_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请先打开您的Wi-Fi"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/wifi_sd_main_btn_openwifi"
+            style="@style/tv_warp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/drawable_login_btn_bg"
+            android:paddingBottom="8dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="8dp"
+            android:text="打开Wi-Fi"
+            android:textColor="@color/white_edeeee"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

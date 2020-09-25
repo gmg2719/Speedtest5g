@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wheel_layout_times"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#178DD1">
+        <TextView android:id="@+id/wheel_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:padding="10dp"/>
+        <ImageButton android:id="@+id/wheel_title_clean" android:visibility="visible" android:background="@null" android:contentDescription="@string/ok" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:src="@drawable/icon_tv_clear"/>
+        <Button android:id="@+id/wheel_title_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:text="@string/ok" android:padding="10dp" android:textColor="@color/white" android:background="@color/transparent"/>
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/white"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E3E3E3"
+        android:orientation="horizontal">
+        <cn.nokia.speedtest5g.view.time.WheelView
+	        android:id="@+id/wheel_other"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

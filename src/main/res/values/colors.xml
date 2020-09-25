@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 部分字体颜色 -->
+    <color name="white_edeeee">#edeeee</color>
+    <!-- 部分字体颜色 -->
+    <color name="gray_c0c0c3">#c0c0c3</color>
+    <!-- 部分字体颜色   比gray_c0c0c3还要淡-->
+    <color name="gray_929aac">#929aac</color>
+    <!-- 底色 -->
+    <color name="bg_color">#0b1018</color>
+    <!-- 模块底色 -->
+    <color name="module_bg_color">#171c24</color>
+    <!-- 分割线 -->
+    <color name="line_color">#20252d</color>
+    <!-- 仪表盘 底色 -->
+    <color name="dashboard_bg_color">#1a1e26</color>
+    <!-- 文本选中字体颜色 浅蓝 -->
+    <color name="text_blue_color">#22cff4</color>
+
+    <!-- 八闽色值 -->
+    <!-- 底色 -->
+    <color name="bm_bg_color">#f8f9f8</color>
+    <!--模块底色颜色 -->
+    <color name="bm_module_bg_color">#ffffff</color>
+    <!--模块背景外围线条颜色 -->
+    <color name="module_bg_line_color">#e3e4e3</color>
+    <!-- 下载文案色值 -->
+    <color name="download_text_color">#ffb720</color>
+    <!-- 上传文案色值 -->
+    <color name="upload_text_color">#44c2a9</color>
+    <!-- 速测曲线网格线 -->
+    <color name="gridview_line_color">#eeeeee</color>
+
+    
+    <color name="title_bg">#178DD1</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="orange">#FFFF9900</color>
+    <color name="xncs_btn">#73A154</color>
+    <color name="snsl_sp">#30000000</color>
+    <color name="et_hint">#C0C0C0</color>
+    <color name="green_dark">#FF0ECD42</color>
+    <color name="green">#FF00FF00</color>
+    <color name="green_light">#FF00F767</color>
+    <color name="blue_dark">#FF5AC9DF</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="blue_light">#FF00FFFF</color>
+    <color name="blue_edit">#FF049BCD</color>
+    <color name="blue_line">#FFB1E2FF</color>
+    <color name="blue_178ed2">#FF178ed2</color>
+    <color name="blue_gzdw">#4074E1</color>
+    <color name="blue_tc">#f1f6fe</color>
+    <color name="blue_layer">#1791D2</color>
+    <color name="blue_4A7CE3">#4A7CE3</color>
+    <color name="blue_B2D1EE">#B2D1EE</color>
+    <color name="blue_5899F0">#5899F0</color>
+    <color name="blue_azure">#FFF0F8FC</color>
+    <color name="blue_2dabf5">#2dabf5</color>
+    <color name="blue_hzdy">#FF8394E8</color>
+    <color name="child">#F5F5DC</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="yellow_dark">#FFF2EF04</color>
+    <color name="yellow_text">#FCFF01</color>
+    <color name="yellow_fefee6">#FEFEE6</color>
+    <color name="yellow_background">#fdffe0</color>
+    <color name="gray_dark">#FF4F6370</color>
+    <color name="gray">#FF8CA0B7</color>
+    <color name="gray_2">#FF807E7E</color>
+    <color name="gray_light">#FFA1A1A1</color>
+    <color name="gray_background">#FFE5E5E5</color>
+    <color name="gray_bg_signal">#35455A</color>
+    <color name="gray_voice">#DADEE9</color>
+    <color name="gray_line">#FFB0B0B0</color>
+    <color name="gray_eb">#FFEBEBEB</color>
+    <color name="gray_ebf5fd">#ebf5fd</color>
+    <color name="signature">#F4F5F6</color>
+    <color name="rb_sfgc">#33B5E6</color>
+    <color name="progress_darkgray">#FF747674</color>
+    <color name="progress_lightblue">#FF85B0E9</color>
+    <color name="progress_lightgray">#FFBEBEBE</color>
+    <color name="no_hint_color">#98A8D2</color>
+    <color name="title_lightgray">#A2B7EE</color>
+    <color name="title_green">#45c01a</color>
+    <color name="title_blue">#178ed2</color>
+    <color name="tablayout_rg">#F8F8F8</color>
+    <color name="tab_tv_down">#FFFFFF</color>
+    <color name="tab_tv_up">#3789ED</color>
+    <!-- awing -->
+    <color name="activity_background">#e5e5e5</color>
+    <color name="cell_detail_simple_txtcolor">#7f7f7f</color>
+    <color name="cell_detail_title_backcolor">#46abe7</color>
+    <color name="cell_detail_content_backcolor">#e6f6ff</color>
+    <color name="cell_detail_content_txtcolor">#3e3e3e</color>
+    <color name="cell_detail_line_color">#d4d4d4</color>
+    <color name="cell_search_color">#3d6dcc</color>
+    <color name="rw_edit_detai_prompt">#9a9a9a</color>
+    <color name="white_btn_down">#C4C4C4</color>
+    <!-- 深黑 -->
+    <color name="black_half">#333333</color>
+    <!-- 微黑 -->
+    <color name="black_small">#666666</color>
+    <!-- 浅黑 -->
+    <color name="black_micro">#999999</color>
+    <!-- 滑动菜单颜色 -->
+    <color name="md_defaultBackground">#FF555555</color>
+    <color name="menu_bg">#0471B4</color>
+    <color name="menu_bg_left">#0360A6</color>
+    <color name="menu_tv_english">#92C9F0</color>
+
+    <drawable name="menu_bg_left">#0360A6</drawable>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="radio_btn_dom">#178ed2</drawable>
+    <drawable name="drawable_gis_layer">#35465A</drawable>
+
+    <!-- 半透明 -->
+    <drawable name="translucent">#50000000</drawable>
+    <drawable name="translucents">#20000000</drawable>
+
+    <color name="translucent">#e0000000</color>
+    <color name="tt">#50000000</color>
+    <color name="tc_pink">#fff9e8</color>
+    <color name="tc_line">#f1f4f8</color>
+    <color name="dialog_title_bg_gray">#EBEBEB</color>
+    <color name="diagonse_error">#FFC6B3</color>
+    <color name="circle_progress_start">#FA7246</color>
+    <color name="holo_purple">#ffaa66cc</color>
+    <color name="holo_darker_gray">#ffaaaaaa</color>
+    <color name="sp_color">#E9E9E9</color>
+
+    <!-- 首页 -->
+    <color name="gray_e2f2fe">#e2f2fe</color>
+    <color name="bg_gray_f9f9f9">#f9f9f9</color>
+    <color name="gray_6cb7f0">#6cb7f0</color>
+    <color name="gray_4a98d2">#4a98d2</color>
+    <color name="blue_2286cd">#2286cd</color>
+
+    <!-- 基站信号 -->
+    <color name="gray_ebebeb">#EBEBEB</color>
+    <color name="gray_d9230f">#FF422D</color>
+    <color name="gray_d9831f">#006400</color>
+    <color name="gray_d7e6f9">#D7E6F9</color>
+    <color name="gray_f2edbf">#F2EDBF</color>
+    <color name="blue_96b4c5">#96B4C5</color>
+    <color name="red_fa67a5">#FA67A5</color>
+    <color name="gray_d7d7d7">#D7D7D7</color>
+    <!-- gis 详细信息 -->
+    <color name="blue_f2f6ff">#F2F6FF</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="gis_log_time_bg_color">#FFFAE7</color>
+
+    <!-- 基站信号 -->
+    <color name="green_006400">#006400</color>
+    <color name="blue_0097e9">#0097e9</color>
+    <color name="red_ff0505"> #ff0505</color>
+    <color name="red_ff422d">#ff422d</color>
+    <color name="blue_74b9e2">#74b9e2</color>
+    <!-- 自定义图层 -->
+    <color name="green_custom">#DEEED3</color>
+
+    <!-- 天线巡警 -->
+    <color name="ap_red_FF0000">#FF0000</color>
+    <color name="ap_green_006400">#008000</color>
+    <color name="ap_gray_E8E7E7">#E8E7E7</color>
+    <color name="ap_gray_666666">#666666</color>
+    <color name="ap_gray_999999">#999999</color>
+    <color name="ap_gray_C7C7C7">#C7C7C7</color>
+    <color name="ap_gray_D7D7D7">#D7D7D7</color>
+    <color name="ap_gray_F2F2F2">#F2F2F2</color>
+    <color name="ap_blue_169BD5">#169BD5</color>
+
+    <!-- 一键诊断 -->
+    <color name="yjzd_tab_selected_color_f1f8fe">#f1f8fe</color>
+    <color name="yjzd_tab_selected_sing_bg_color_75ca1f">#75ca1f</color>
+    <color name="yjzd_selected_ci_list_bg_color_fdffde">#fdffde</color>
+
+    <!-- 末梢标准化 -->
+    <color name="pci_message_red">#FE9B00</color>
+    <color name="pci_message_gray">#CCCCCC</color>
+    <color name="pci_tv_gray">#797979</color>
+    <color name="pci_tv_gray_content">#C8CBCC</color>
+    <color name="pci_tv_blue">#4778E3</color>
+    <color name="pci_tv_blue_choose">#4778E3</color>
+    <color name="pci_tv_blue_order">#858FB3</color>
+    <color name="pci_tv_green">#327F7C</color>
+    <color name="pci_tv_green_test">#9ED886</color>
+    <color name="wyzdh_background">#F1F6FE</color>
+    <color name="pci_red">#DB1414</color>
+    <color name="pci_yellow">#E6F318</color>
+    <color name="pci_pink">#FF8B52</color>
+    <color name="pci_skyblue">#72A6EF</color>
+    <color name="pci_blue">#134BAB</color>
+    <color name="pci_green">#0F9F67</color>
+    <color name="pci_hint_gray">#676863</color>
+    <!-- 改版 -->
+    <color name="mainhome_bg">#F1F5FE</color>
+    <color name="mainhome_top_bg">#3DB2F5</color>
+    <color name="gcxj_0DD101">#0DD101</color>
+    <!-- UI改版 -->
+    <color name="ui_green">#0FD007</color>
+    <color name="ui_red">#E86262</color>
+    <color name="ui_gray">#9B9B9B</color>
+    <color name="ui_gray_line">#DCE4EA</color>
+    <color name="ui_bg_body">#F6F6F6</color>
+    <color name="ui_black">#0A0A0A</color>
+    <color name="ui_blue">#329DDB</color>
+    <color name="ui_blue_1">#91D7FF</color>
+    <color name="ui_bg_blue">#F1F6FE</color>
+    <color name="ui_pink">#FF8F8E</color>
+    <color name="blue_1792d3">#1792d3</color>
+    <color name="blue_2597d9">#2597D9</color>
+    <color name="blue_54678b">#54678b</color>
+    <color name="login_gray">#CCCCCC</color>
+    <color name="blue_2264EC">#2264EC</color>
+    <!-- 参数 -->
+    <color name="pa_blue">#46ABE7</color>
+    <color name="pa_purple">#899FE2</color>
+    <!-- MRO指纹图层颜色 -->
+    <color name="mro_80">#8C1875CD</color>
+    <color name="mro_80_90">#8C8371FE</color>
+    <color name="mro_90_100">#8CEFCB00</color>
+    <color name="mro_100_105">#8CFB6D00</color>
+    <color name="mro_105_110">#8CED7BE8</color>
+    <color name="mro_110">#8CEA2B2D</color>
+    <color name="mro_chart_rsrp">#BBCBFC</color>
+    <!-- 现场拍照 -->
+    <color name="picture_blue">#5C99EF</color>
+    <color name="picture_bg_black">#585858</color>
+
+    <!-- 速率测试 -->
+    <color name="ftp_blue">#106ECE</color>
+    <color name="ftp_button_blue">#568cff</color>
+    <color name="ftp_bg_blue">#3c96e8</color>
+    <color name="ftp_gray_new">#e4e4e4</color>
+    <color name="ftp_green">#66c20d</color>
+    <color name="ftp_purple">#D274D4</color>
+    <color name="ftp_gray">#576783</color>
+    <color name="ftp_bg_white">#32FFFFFF</color>
+    <color name="ftp_download_fea916">#fea916</color>
+    <color name="ftp_upload_65c40b">#65c40b</color>
+    <color name="ftp_sinr">#ff0605</color>
+    <color name="ftp_rsrp">#0097e9</color>
+    <color name="ftp_rxlev">#66c20d</color>
+    <color name="ftp_btn_bg_color">#dff1fa</color>
+    <!-- 告警统计 -->
+    <color name="alarm_bg_blue">#EFF6FE</color>
+    <color name="alarm_statistics_white">#c2e9ff</color>
+    <color name="alarm_tv_blue">#74a5bf</color>
+    <color name="alarm_lszd">#ECA52F</color>
+    <color name="alarm_gzzd">#EA5F66</color>
+    <color name="alarm_gzxwz">#1C8DC9</color>
+
+    <!-- 应急站背景灰色 -->
+    <color name="emergent_bg_gray">#e8eef8</color>
+    <color name="emegrent_bg_gray_eff6fc">#EFF6FC</color>
+    <color name="emergent_blue">#2dabf4</color>
+    <color name="emergent_bg_blue">#ecf4fe</color>
+    <color name="emergent_border_blue">#c8e0ff</color>
+    <color name="emergent_time_bg_blue">#8bb2f0</color>
+    <color name="emergent_bg_yellow">#fdffe1</color>
+    <color name="emergent_green">#61ED05</color>
+    <color name="emergent_log_tv_gray">#606060</color>
+    <color name="emergent_log_tv_black">#313131</color>
+    <color name="emergent_bg_tag">#CDFFF1</color>
+    <color name="emergent_filter_blue">#2264eb</color>
+    <color name="emergent_filter_bg_blue">#e4edff</color>
+    <color name="emergent_filter_cancel_blue">#1792d3</color>
+
+    <!-- 考勤系统 -无权限时提示文本颜色 -->
+    <color name="attendance_no_permissions_text_color">#ff6700</color>
+    <!-- 系统信息 -->
+    <color name="system_blue">#2CAAF4</color>
+    <!-- 图层选择标题背景颜色 -->
+    <color name="layer_titl_bg">#F2F2F2</color>
+
+    <!-- 扫码 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- QR_Code -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_points">#c000ff00</color>
+
+    <!-- 传输盒子 -->
+    <color name="blue_4bbcff">#4bbcff</color>
+
+    <!-- 投诉测试 -->
+    <color name="blue_4485fb">#4485fb</color>
+    <color name="red_fb72a1">#fb72a1</color>
+
+</resources>

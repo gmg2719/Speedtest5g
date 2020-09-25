@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:id="@+id/jzxhLqAdapter_tv_lqView_cellname"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:orientation="horizontal" >
+
+        <com.android.volley.util.MarqueesTextView
+            android:id="@+id/jzxhLqAdapter_tv_lq_cellname"
+            style="@style/tv_warp"
+            android:padding="2dp"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="@dimen/tv_micro_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/jzxhLqAdapter_tv_lq_ci"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxhLqAdapter_tv_lq_earfcn"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <LinearLayout
+        android:id="@+id/jzxhLqAdapter_view_lq_pci"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/jzxhLqAdapter_tv_lq_pci"
+            style="@style/tv_warp"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="@dimen/tv_micro_size" />
+
+        <TextView
+            android:id="@+id/jzxhLqAdapter_tv_lq_pci_mo3"
+            style="@style/tv_warp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:textColor="#3C97E8"
+            android:textSize="@dimen/tv_micro_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/jzxhLqAdapter_tv_lq_rsrp"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxhLqAdapter_tv_lq_rxlev"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="@dimen/tv_micro_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/jzxhLqAdapter_tv_lq_lac"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="@dimen/tv_micro_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/jzxhLqAdapter_tv_lq_band"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="@dimen/tv_micro_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="@string/hint_no"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="@dimen/tv_micro_size" />
+
+</LinearLayout>

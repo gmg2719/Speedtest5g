@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <!-- 系统消息 -->
+
+    <com.android.volley.util.MarqueesTextView
+        android:id="@+id/mainhome_workflow_unread_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow_background"
+        android:drawableLeft="@drawable/icon_notify_unread_msg"
+        android:drawablePadding="8dp"
+        android:drawableRight="@drawable/arrow_small_right"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#fda169"
+        android:textSize="@dimen/tv_small_size"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/mainhome_workflow_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <!-- 基础服务 -->
+
+            <LinearLayout
+                android:id="@+id/mainhome_workflow_ll_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxHeight="27dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    style="@style/tv_warp"
+                    android:text="便民工具"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/tv_warp"
+                    android:layout_marginLeft="3dp"
+                    android:text="(试用期免费)"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainhome_workflow_ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <cn.nokia.speedtest5g.view.MyScrollyGridView
+                    android:id="@+id/mainhome_workflow_gridview_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/module_bg_color"
+                    android:cacheColorHint="@color/transparent"
+                    android:gravity="center"
+                    android:horizontalSpacing="0.5dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0.5dp"
+                    app:dividerColor="@color/line_color" />
+            </LinearLayout>
+
+            <!-- 业务测试 -->
+
+            <LinearLayout
+                android:id="@+id/mainhome_workflow_ll_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxHeight="27dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    style="@style/tv_warp"
+                    android:text="业务测试"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/tv_warp"
+                    android:layout_marginLeft="3dp"
+                    android:text="(试用期免费)"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainhome_workflow_ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <cn.nokia.speedtest5g.view.MyScrollyGridView
+                    android:id="@+id/mainhome_workflow_gridview_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/module_bg_color"
+                    android:cacheColorHint="@color/transparent"
+                    android:gravity="center"
+                    android:horizontalSpacing="0.5dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0.5dp"
+                    app:dividerColor="@color/line_color" />
+            </LinearLayout>
+
+            <!-- WIFI工具 -->
+
+            <LinearLayout
+                android:id="@+id/mainhome_workflow_ll_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxHeight="27dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    style="@style/tv_warp"
+                    android:text="WIFI工具"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/tv_warp"
+                    android:layout_marginLeft="3dp"
+                    android:text="(试用期免费)"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainhome_workflow_ll_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <cn.nokia.speedtest5g.view.MyScrollyGridView
+                    android:id="@+id/mainhome_workflow_gridview_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/module_bg_color"
+                    android:cacheColorHint="@color/transparent"
+                    android:gravity="center"
+                    android:horizontalSpacing="0.5dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0.5dp"
+                    app:dividerColor="@color/line_color" />
+            </LinearLayout>
+
+            <!-- 专业工具 -->
+
+            <LinearLayout
+                android:id="@+id/mainhome_workflow_ll_title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxHeight="27dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    style="@style/tv_warp"
+                    android:text="专业工具"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/tv_warp"
+                    android:layout_marginLeft="3dp"
+                    android:text="(注册后使用)"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainhome_workflow_ll_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <cn.nokia.speedtest5g.view.MyScrollyGridView
+                    android:id="@+id/mainhome_workflow_gridview_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/module_bg_color"
+                    android:cacheColorHint="@color/transparent"
+                    android:gravity="center"
+                    android:horizontalSpacing="0.5dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0.5dp"
+                    app:dividerColor="@color/line_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/mainhome_workflow_tv_notModeData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/hintNotModeData"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="@dimen/tv_small_size"
+        android:visibility="gone" />
+
+</LinearLayout>

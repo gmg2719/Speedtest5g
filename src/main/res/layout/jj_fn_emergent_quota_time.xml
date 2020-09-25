@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_fn_emergent_quota_time"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:baselineAligned="true" >
+
+        <TextView
+            android:id="@+id/tv_fn_emergent_quota_time_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_fn_emergent_quota_time_day_unit"
+            android:layout_width="wrap_content" android:textStyle="bold"
+            android:layout_height="wrap_content" android:textColor="@color/black"
+            android:textSize="@dimen/tv_size_8sp" android:layout_marginTop="3dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_fn_emergent_quota_time_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 塔下高度测量进度条使用 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="30dip" />
+
+            <solid android:color="@color/gray_bg_signal" />
+        </shape>
+    </item>
+    <!-- 进度背景 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="10dip" />
+
+                <solid android:color="@color/white" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

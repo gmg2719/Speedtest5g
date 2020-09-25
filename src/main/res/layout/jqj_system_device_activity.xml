@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <!-- 模块1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_system_device_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_system_device"
+                        android:gravity="center"
+                        android:text="系统"
+                        android:textColor="@color/white_edeeee"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="手机型号："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="Android版本号："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="Root状态："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_system_device_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_system_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_system_root"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 模块2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_system_device_cam"
+                        android:gravity="center"
+                        android:text="默认卡槽"
+                        android:textColor="@color/white_edeeee"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="本机号码："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="IMEI:"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="运营商："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="IMSI："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="ICCID："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_system_device_cam_phone_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_cam_imei1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_cam_carrier1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_cam_imsi1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_cam_iccid1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 模块3 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_system_device_hardware"
+                        android:gravity="center"
+                        android:text="硬件"
+                        android:textColor="@color/white_edeeee"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="运行内存："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="手机存储："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="屏幕："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_system_device_system_ram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_system_storage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_system_dpi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 模块4 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_system_device_battery"
+                        android:gravity="center"
+                        android:text="电池"
+                        android:textColor="@color/white_edeeee"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="类型:"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="电池容量："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="电压："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="温度："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="状态："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="电源："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="百分比："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:text="健康："
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_system_device_battery_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_battery_capacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_battery_vk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_battery_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_battery_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_battery_battery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_battery_percent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_system_device_battery_health"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#23292e"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="13dp"
+                        android:textColor="@color/gray_c0c0c3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:id="@+id/ping_test_ll_module_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ping_test_btn_web"
+                style="@style/tv_weight"
+                android:background="@drawable/drawable_switch_model_btn_left_select"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="网址"
+                android:textColor="@color/white_edeeee"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/ping_test_btn_ip"
+                style="@style/tv_weight"
+                android:background="@drawable/drawable_switch_model_btn_right"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="IP"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ping_test_ll_module_1"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ping_test_iv_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_ping_test_web_flag" />
+
+            <LinearLayout
+                android:id="@+id/ping_test_ll_module_web"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ping_test_iv_web_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="例:www.speedtest5G.com"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ping_test_iv_web_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="请输入您想测试的网址"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ping_test_iv_web_title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试中..."
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ping_test_iv_web_ll_titie_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/ping_test_iv_web_title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_edeeee"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ms"
+                        android:textColor="@color/white_edeeee"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ping_test_iv_web_title_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ping_test_iv_web_title_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网络不通，请检查网址是否正确和网络是否正常"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ping_test_ll_module_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/ping_test_iv_ip_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="例:119.63.197.139"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ping_test_iv_ip_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="请输入您想测试的IP"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ping_test_iv_ip_title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试中..."
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ping_test_iv_ip_ll_titie_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/ping_test_iv_ip_title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_edeeee"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ms"
+                        android:textColor="@color/white_edeeee"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ping_test_iv_ip_title_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ping_test_iv_ip_title_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网络不通，请检查IP是否正确和网络是否正常"
+                    android:textColor="@color/white_edeeee"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/ping_test_edit_web"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/module_bg_color"
+                android:hint="请输入网址"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="www.baidu.com"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="20sp" />
+
+            <cn.nokia.speedtest5g.view.SpeedTestIpEditText
+                android:id="@+id/ping_test_edit_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/ping_test_btn_web_ping"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/drawable_login_btn_bg2"
+                android:text="PING"
+                android:textColor="@color/white_edeeee"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/ping_test_btn_ip_ping"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/drawable_login_btn_bg2"
+                android:text="PING"
+                android:textColor="@color/white_edeeee"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

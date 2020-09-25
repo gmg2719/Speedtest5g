@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/speed_test_popup_btn_pz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7E7E7"
+        android:padding="10dp"
+        android:text="拍照"
+        android:textColor="@color/color_xncs_btn" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/snsl_sp" />
+
+    <Button
+        android:id="@+id/speed_test_popup_btn_xc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7E7E7"
+        android:padding="10dp"
+        android:text="相册"
+        android:textColor="@color/color_xncs_btn" />
+
+    <Button
+        android:id="@+id/popup_camear_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#E7E7E7"
+        android:padding="10dp"
+        android:text="@string/cancel"
+        android:textColor="@color/red" />
+
+</LinearLayout>

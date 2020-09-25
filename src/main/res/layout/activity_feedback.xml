@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <EditText
+        android:id="@+id/feedback_et"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rectangle_black_bg"
+        android:gravity="top"
+        android:hint="@string/hint_qsr"
+        android:maxLength="200"
+        android:maxLines="7"
+        android:padding="5dp"
+        android:textColor="@color/gray_c0c0c3"
+        android:textColorHint="@color/gray_929aac"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_feedback_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/drawable_login_btn_bg2"
+        android:onClick="onBtnListener"
+        android:padding="10dp"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

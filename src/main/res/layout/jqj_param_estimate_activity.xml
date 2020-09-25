@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_op" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="下倾角计算"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="20sp" />
+
+                <View
+                    style="@style/style_sp_x"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="楼宽W"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/build_width"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="米"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.35"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="下倾角a"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/downangle_alpha"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/orange"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.15"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="度"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="楼高H"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/build_height"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="米"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.35"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="水平波瓣b"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/horizont_lobe"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/orange"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.15"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="度"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="间距L"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/build_dis"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="米"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.35"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="垂直波瓣y"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/vertic_lobe"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/orange"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.15"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="度"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="计算天线口功率前需填写楼高H和间距L"
+                android:textColor="@color/gray_c0c0c3"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_rectangle_black_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="天线口功率计算"
+                    android:textColor="@color/gray_c0c0c3"
+                    android:textSize="20sp" />
+
+                <View
+                    style="@style/style_sp_x"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.35"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="天线增益"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_txzy"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:inputType="numberSigned"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.45"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="dBi"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.35"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="墙体损耗"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_qtsh"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:inputType="numberSigned"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.45"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="dB"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.35"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="中心点覆盖强度"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_zxdfgqd"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:inputType="numberSigned"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.45"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="dBm"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.35"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="频率"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/et_pl"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.45"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="MHz"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.35"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="天线口功率"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_txkgl"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/aw_white_panel_2"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:textColor="@color/orange"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.45"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true"
+                            android:text="dBm"
+                            android:textColor="@color/gray_c0c0c3"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

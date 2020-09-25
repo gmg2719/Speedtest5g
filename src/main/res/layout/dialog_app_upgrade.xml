@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:background="@color/transparent"
+    android:paddingBottom="60dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_dialog_app_upgrade" />
+
+    <!-- 内容 -->
+
+    <ScrollView
+        android:id="@+id/viewscroll_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/tv_dialog_toast_content_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/black_half"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_dialog_toast_content_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/black_half"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_dialog_toast_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/black_half"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#E9E9E9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_dialog_toast_no"
+            style="@style/tv_weight"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_common_bottom_left_btn"
+            android:text="@string/cancel"
+            android:textColor="@color/black_half"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btn_dialog_toast_sp"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#E9E9E9" />
+
+        <Button
+            android:id="@+id/btn_dialog_toast_ok"
+            style="@style/tv_weight"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_common_bottom_right_btn"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

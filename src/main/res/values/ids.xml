@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="textName" type="id"/>
+    <item name="textId" type="id"/>
+    <item name="textType" type="id"/>
+    <item name="textMap" type="id"/>
+    <item name="textUrl" type="id"/>
+    <item name="textPathName" type="id"/>
+    <item name="idName" type="id"/>
+    <item name="IDgroup" type="id"/>
+    <item name="IDchild" type="id"/>
+    <item name="idState" type="id"/>
+    <item name="idType" type="id"/>
+    <item name="idViews" type="id"/>
+    <item name="idPosition" type="id"/>
+    <item name="idCursor" type="id"/>
+    <item name="idObj" type="id"/>
+    <item name="idIds" type="id"/>
+    <item name="textCheckItem" type="id"/>
+    <item name="topgridview" type="id"/>
+
+    <!-- ID used when defining the content layout in XML. -->
+    <item name="mdContent" type="id"/>
+
+    <!-- ID used when defining the menu layout in XML. -->
+    <item name="mdMenu" type="id"/>
+
+    <!-- The ID of the content container. -->
+    <item name="md__content" type="id"/>
+
+    <!-- The ID of the menu container. -->
+    <item name="md__menu" type="id"/>
+
+    <!-- The ID of the drawer. -->
+    <item name="md__drawer" type="id"/>
+
+    <!-- Used with View#setTag(int) to specify a position for the active view. -->
+    <item name="mdActiveViewPosition" type="id"/>
+    <item name="md__translationX" type="id"/>
+    <item name="md__translationY" type="id"/>
+
+    <!-- 网络请求回调类型码（开始）^ -->
+    <!-- 人员考勤初始化 -->
+    <item name="net_person_attendance_init_data" type="id"/>
+    <!-- 人员考勤申请初始化 -->
+    <item name="net_person_attendance_apply_init" type="id"/>
+    <!-- 人员考勤申请 -->
+    <item name="net_person_attendance_apply" type="id"/>
+    <!-- 人员考勤签退 -->
+    <item name="net_person_attendance_sign_back" type="id"/>
+    <!-- 人员考勤审批列表 -->
+    <item name="net_person_attendance_approve_list" type="id"/>
+    <!-- 人员考勤申请审批详情 -->
+    <item name="net_person_attendance_approve_detail" type="id"/>
+    <!-- 人员考勤审提交 -->
+    <item name="net_person_attendance_approve_submit" type="id"/>
+    <!-- 人员考勤获取考勤记录 -->
+    <item name="net_person_attendance_record" type="id"/>
+    <!-- 人员考勤撤回申请 -->
+    <item name="net_attendance_withdraw_apply" type="id"/>
+    <!-- 人员考勤打卡基站搜索 -->
+    <item name="net_attendance_person_search_punch_site" type="id"/>
+
+    <!-- 车辆定位初始化 -->
+    <item name="net_car_locate_init_data" type="id"/>
+    <!-- 车辆定位获取车牌号 -->
+    <item name="net_car_locate_get_num" type="id"/>
+    <!-- 车辆定位搜索车牌号 -->
+    <item name="net_attendance_search_car_num" type="id"/>
+    <!-- 车辆定位数据上传 -->
+    <item name="net_car_locate_data_upload" type="id"/>
+    <!-- 车辆定位记录 -->
+    <item name="net_car_locate_record" type="id"/>
+    <!-- 车辆定位异常数据提交 -->
+    <item name="net_car_locate_abnormal_data_upload" type="id"/>
+
+    <!-- gis呈现-共站息息-初始化 -->
+    <item name="net_gis_total_station_init" type="id"/>
+    <!-- gis呈现-共站息息-区域数量统计 -->
+    <item name="net_gis_total_station_count" type="id"/>
+    <!-- gis呈现-共站息息-详情 -->
+    <item name="net_gis_total_station_detail" type="id"/>
+    <!-- gis呈现-共站息息-小区信息 -->
+    <item name="net_gis_total_station_cell" type="id"/>
+    <!-- gis呈现-共站息息-产权单位信息 -->
+    <item name="net_gis_total_station_property" type="id"/>
+    <!-- gis呈现-共站息息-退服站点统计 -->
+    <item name="net_gis_total_station_retired_statistic" type="id"/>
+    <!-- gis呈现-共站息息-退服站点覆盖类型数据统计 -->
+    <item name="net_gis_total_station_retired_cover_type_statistic" type="id"/>
+    <!-- gis呈现-共站息息-退服站点列表 -->
+    <item name="net_gis_total_station_retired_list" type="id"/>
+
+    <!-- 速率PK-获取PK组列表 -->
+    <item name="net_speed_pk_group_list" type="id"/>
+    <!-- 速率PK-创建PK组 -->
+    <item name="net_speed_pk_create_group" type="id"/>
+    <!-- 速率PK-PK历史 -->
+    <item name="net_speed_pk_history" type="id"/>
+    <!-- 速率PK-小组PK结果 -->
+    <item name="net_speed_pk_result" type="id"/>
+    <!-- 速率PK-更新PK组信息 -->
+    <item name="net_speed_pk_group_update_info" type="id"/>
+    <!-- 速率PK-修改PK组状态 -->
+    <item name="net_speed_pk_group_modify_status" type="id"/>
+    <!-- 速率测试-获取其它模来源测试历史 -->
+    <item name="net_get_speed_test_model_source_log" type="id"/>
+    <!-- 速率测试-测试获取详情 -->
+    <item name="net_get_speed_test_log_detail" type="id"/>
+    <!-- 速率测试-获取FTP地址配置 -->
+    <item name="net_get_ftp_address" type="id"/>
+
+    <!-- 首页数据初始化 -->
+    <item name="net_home_data_init" type="id"/>
+    <!-- 首页数据保存 -->
+    <item name="net_home_data_save" type="id"/>
+    <!-- 首页引导结束 -->
+    <item name="net_home_guide_end" type="id"/>
+    <!-- 消息列表 -->
+    <item name="net_msg_list" type="id"/>
+    <!-- 消息-已退订类型列表 -->
+    <item name="net_msg_unsubscribed_type_list" type="id"/>
+    <!-- 消息-信息订阅管理接口（删除、退订、订阅） -->
+    <item name="net_msg_manage" type="id"/>
+
+    <!-- 信号竞对测试-获取测试组列表 -->
+    <item name="net_signal_pk_group_list" type="id"/>
+    <!-- 信号竞对测试-创建测试组 -->
+    <item name="net_signal_pk_create_group" type="id"/>
+    <!-- 信号竞对测试-更新测试组信息 -->
+    <item name="net_signal_pk_group_info_update" type="id"/>
+    <!-- 信号竞对测试-修改测试组状态 -->
+    <item name="net_signal_pk_group_status_modify" type="id"/>
+    <!-- 信号竞对测试-测试结果上传 -->
+    <item name="net_signal_pk_test_result_upload" type="id"/>
+    <!-- 信号竞对测试-测试组结果详情 -->
+    <item name="net_signal_pk_result" type="id"/>
+    <!-- 信号竞对测试-测试组每个成员详情 -->
+    <item name="net_signal_pk_group_member_detail" type="id"/>
+    <!-- 信号竞对测试-pk历史 -->
+    <item name="net_signal_pk_history" type="id"/>
+
+    <!-- 手机性能参数上传 -->
+    <item name="net_phone_performance_save" type="id"/>
+
+    <!-- 网络请求回调类型码（结束） -->
+
+</resources>

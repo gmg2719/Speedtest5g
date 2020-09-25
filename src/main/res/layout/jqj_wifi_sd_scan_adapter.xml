@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rectangle_black_bg"
+    android:baselineAligned="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="15dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/icon_wifi_sd_no_connect_flag"
+            android:text="未连接"
+            android:textColor="@color/gray_929aac"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/wifi_sd_scan_adapter_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="CMCC-Hi"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/wifi_sd_scan_adapter_tv_dbm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/arrow_small_right" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/wifi_sd_scan_adapter_pb_value"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="13dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/speed_test_rssi_progressbar_two" />
+
+</LinearLayout>

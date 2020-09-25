@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 112.5.193.126:8018(马尾) http://183.252.192.83/NetworkPoCNApi/(双机-正式) 183.252.192.83/wyb/(测试) http://183.252.192.83/NetworkPoTest/(预发布) -->
+    <!-- 开发时要切换到测试库，直接把正式地址写成测试地址即可 -->
+    <!-- 正式 -->
+    <string name="URL1">http://183.252.192.83/NetworkPoCNApi/</string>
+    <!-- 预发布 -->
+    <string name="URL2">http://183.252.192.83/NetworkPoTest/</string>
+    <!-- 测试 -->
+    <string name="URL3">http://183.252.192.83/NetworkPoCNApitest/</string>
+    <!-- 登陆全国版.. -->
+    <string name="URL_APP_LOGIN_QG">admin/appLoginQgEn</string>
+    <!-- 八闽登陆.. -->
+    <string name="URL_AAR_LOGIN_CHECK">admin/aarLoginCheck</string>
+    <!-- 登陆.. -->
+    <string name="URL_LOGIN_NEW">admin/appLoginEn</string>
+    <!-- 根据登陆用户查询权限 -->
+    <string name="URL_LOGIN_BIND">admin/userBindEn</string>
+    <!-- 登陆易运维.. -->
+    <string name="URL_LOGIN_YYW_NEW">admin/appLoginYWEn</string>
+    <!-- 短信验证码 -->
+    <string name="URL_LOGIN_CODE">admin/getSmsCode</string>
+    <!-- 头像上传 -->
+    <string name="URL_APP_UPLOAD_HEAD">app/services/appUploadHeadEn</string>
+    <!-- 获取头像地址 -->
+    <string name="URL_APP_PERSONAL_CENTER_USER">app/interface/appPersonalCenterUserEn</string>
+    <!-- 速率测试流量预估接口 -->
+    <string name="URL_APP_GET_SPEED_TEST_FLOW_CONFIG">app/services/appGetSpeedTestFlowConfig</string>
+    <!-- 查询速率测试匹配百分比配置数据 -->
+    <string name="URL_APP_GET_SPEED_TEST_RANK_CONFIG">app/services/appGetSpeedTestRankConfig</string>
+    <!-- 获取短信验证码(接口响应账号绑定的手机号) -->
+    <string name="URL_GET_SMS_CODE">admin/sendMsgEn</string>
+    <!-- 获取短信验证码(全国版) -->
+    <string name="URL_GET_SMS_CODE_QG">admin/getSmsCodeQgEn</string>
+    <!-- 获取ping地址配置(全国版) -->
+    <string name="URL_GET_CONVENIENT_TOOLS">app/convenient/getConvenientToolsEn</string>
+    <!-- 短信验证登入 -->
+    <string name="URL_LOGIN_BY_SMS_CODE">admin/msgLoginEn</string>
+    <!-- 入网查询 -->
+    <string name="URL_RW">app/services/appRwDataQuery?depart_codes=</string>
+    <!-- 工参巡检、调整查询 -->
+    <string name="URL_GC_QUERY">app/services/appGcDataQuery?depart_codes=</string>
+    <!-- 定点测试查询 -->
+    <string name="URL_DDCS_QUERY">app/services/appDdDataQuery?depart_codes=</string>
+    <!-- 图片附件信息 -->
+    <string name="RUL_RWFJ">app/services/appUpLoadFile?user_id=</string>
+    <!-- 图片附件信息-室内扫楼 -->
+    <string name="RUL_SNSL">app/services/appScanBuildingFile</string>
+    <!-- 图片附件信息-截图 -->
+    <string name="RUL_SCREENSHOT">app/services/appUpLoadDTphoto</string>
+    <!-- 入网验收基础信息 -->
+    <string name="URL_UPLOAD_INFOS">app/services/appUpLoadData</string>
+    <!-- 错误信息 -->
+    <string name="URL_ERROR">app/services/appErrorInfo?</string>
+    <!-- 被动信号测试 -->
+    <string name="URL_SIGNA">app/services/appPassiveCollectDatas</string>
+    <!-- 短信登录验证 -->
+    <string name="URL_LOGIN_CODE_CONFIRMATION">admin/smsCheck</string>
+    <!-- 子票据验证 -->
+    <string name="URL_TOKEN">admin/checkToken</string>
+    <!-- 主动数据采集上传 -->
+    <string name="URL_GISSIGNAL">app/services/appInitiativeCollectData</string>
+    <!-- 主动基站信号上传 -->
+    <string name="URL_Station_GISSIGNAL">app/services/appBaseStationSignal</string>
+    <!-- 工参巡检础信息上传 -->
+    <string name="URL_GCXJ_INFO">app/services/appParamCruis</string>
+    <!-- 性能测试基础信息上传 -->
+    <string name="URL_XNCS_INFO">app/services/appFunctionTest</string>
+    <!-- 工参调整础信息上传 -->
+    <string name="URL_GCTZ_INFO">app/services/appParamCruisTrim</string>
+    <!-- 模块统计信息 上传 -->
+    <string name="URL_STATISTICE">app/services/appOptionsUpload</string>
+    <!-- 室内扫楼信息 上传 -->
+    <string name="URL_SNSL_DATA">app/services/appScanBuildingData</string>
+    <!-- 集中入网验证表数据 上传 -->
+    <string name="URL_RW_PROVING">app/services/appSiteLocalCheck</string>
+    <!-- 意见反馈 -->
+    <string name="URL_FEEDBACK">app/services/appOpinionTick?userID=</string>
+    <!-- 版本升级接口 -->
+    <string name="URL_VERSION">app/services/appUpgrade</string>
+    <!-- 集中入网自预审 -->
+    <string name="URL_RW_PLAN">app/services/silePlanMsg?e_nodeb_id=</string>
+    <!-- 集中入网 消息提醒接口? -->
+    <string name="URL_RW_TOAST">app/services/appErrorMsg?user_id=</string>
+    <!-- 一键诊断查询 -->
+    <string name="URL_DIAGNOSE">/app/diagnose/getSearchList</string>
+    <!-- 工参巡检统计数据查询 -->
+    <string name="URL_GCXJ_COUNT">app/services/getstac4allparams</string>
+    <!-- 工单派发基站查询 -->
+    <string name="URL_WOOUT_QUERY">app/services/getlist4params</string>
+    <!-- 工单派发小区查询 -->
+    <string name="URL_WOOUT_CI_QUERY">app/services/getsite4param</string>
+    <!-- 工单派发上传 -->
+    <string name="URL_WOOUT_UPLOAD">app/services/neworder4detect</string>
+    <!-- 工参巡检数据上传 -->
+    <string name="URL_GCXJ_UPLOAD">app/services/savesite4detect</string>
+    <!-- 工参调整数据上传 -->
+    <string name="URL_GCTZ_UPLOAD">app/services/savesite4tuning</string>
+    <!-- 工参巡检文件上传 -->
+    <string name="URL_GCXJ_FILE">app/services/uploadAttachment</string>
+    <!-- 室内扫楼文件上传 -->
+    <string name="URL_SNSL_FILE">app/services/uploadScanBuildingFile</string>
+    <!-- 道路测试截图 -->
+    <string name="URL_DT_FILE">app/services/uploadDTphoto</string>
+    <!-- 属地化巡检资源列表-外部进入查询 -->
+    <string name="URL_SDHXJ_RESOURCE_W">app/services/appTerritorInit</string>
+    <!-- 属地化巡检资源列表 -->
+    <string name="URL_SDHXJ_RESOURCE">app/services/appTerritorSearch</string>
+    <!-- 属地化巡检小区列表 -->
+    <string name="URL_SDHXJ_CELL">app/services/appTerritorCell</string>
+    <!-- 属地化巡检测试回传 -->
+    <string name="URL_SDHXJ_SEND_TEST">app/services/appTerritorTestSave</string>
+    <!-- 属地化巡检采集回传 -->
+    <string name="URL_SDHXJ_SEND_COLLECT">app/services/appTerritorCollectSave</string>
+    <!-- 一键诊断:CI地址模糊搜索 -->
+    <string name="URL_YJZD_CI_ADDRESS_FUZZY_SEARCH">app/diagnoseNew/getCIOrAddressFuzzily</string>
+    <!-- 一键诊断:按工单号查询 -->
+    <string name="URL_YIZD_DIAGNOSIS_BY_CRM">app/diagnoseNew/searchByCrm</string>
+    <!-- 一键诊断:按地市+地址查询 -->
+    <string name="URL_YIZD_DIAGNOSIS_BY_ADDR">app/diagnoseNew/searchByAddress</string>
+    <!-- 一键诊断:按经纬度查询 -->
+    <string name="URL_YIZD_DIAGNOSIS_BY_LON_LAT">app/diagnoseNew/searchByLonLat</string>
+    <!-- 一键诊断:按工单号查询 -->
+    <string name="URL_YIZD_DIAGNOSIS_BY_CI">app/diagnoseNew/searchBySpecificCI</string>
+    <!-- 一键诊断:诊断报告详情 -->
+    <string name="URL_YIZD_DIAGNOSIS_REPORT_DETAIL">app/diagnoseNew/fetchCacheData</string>
+    <!-- 室分电子化列表 -->
+    <string name="URL_FAULT">app/stationfault/getSitefaultlist</string>
+    <!-- 室分电子化详情信息 -->
+    <string name="URL_FAULT_DETAIL">app/stationfault/getMatchinedetailinfo</string>
+    <!-- 室分电子化-天线编号 -->
+    <string name="URL_FAULT_TXBH">app/stationfault/getAntennanolist</string>
+    <!-- 室分电子化-仿真信息 -->
+    <string name="URL_FAULT_FZXX">app/stationfault/getEmulateinfo</string>
+    <!-- 室分电子化-故障定位图 -->
+    <string name="URL_FAULT_GZDWT">app/stationfault/getEmulatepicinfo</string>
+    <!-- 室分电子化-平面图 -->
+    <string name="URL_FAULT_PMT">app/stationfault/getPlanepicinfo</string>
+    <!-- 室分电子化-站点图片 -->
+    <string name="URL_FAULT_PHOTO">app/stationfault/getSitepicinfo</string>
+    <!-- 室分电子化基础数据上传 -->
+    <string name="URL_FAULT_UPLOADINFO">app/stationfault/setDeviceinfo</string>
+
+    <!-- 室内扫楼 小区查询 -->
+    <string name="URL_SNSL_NAME">app/services/searchNearByBuilding?depart_codes=</string>
+    <!-- 室内扫楼 需求单查询 -->
+    <string name="URL_SNSL_WORKNO">app/services/searchOrderNo?depart_codes=</string>
+    <!-- 室内扫楼 需求单复测上传 -->
+    <string name="URL_SNSL_WORKNO_UPLOAD">app/services/appUploadRepeatCqtData</string>
+
+    <!-- 室分单验列表搜索 -->
+    <string name="URL_SFDY_LISTSEARCH">app/services/appRoomSiteSeach</string>
+    <!-- 室分单验异常原因搜索 -->
+    <string name="URL_SFDY_ABNORMAL">app/services/appQuestionSync?user_id=</string>
+    <!-- 室分单验列表状态搜索 -->
+    <string name="URL_SFDY_STATES">app/services/appAcceptanceStatusQuery?user_id=</string>
+    <!-- 室分单验基础数据上传 -->
+    <string name="URL_SFDY_UPLOADINFO">app/services/appRoomSiteAcceptanceDataUpload</string>
+    <!-- 室分单验消息通知 -->
+    <string name="URL_TOAST">app/services/appMsg?user_id=</string>
+    <!-- 室分单验基础数据同步查询 -->
+    <string name="URL_SFDY_SYNCHRONIZATION">app/services/appRoomSiteAcceptanceDataSync?user_id=</string>
+    <!-- 宏站搜索 -->
+    <string name="URL_HZ_SEARCH">app/services/appMarcoSiteSearch</string>
+    <!-- 宏站单验异常原因搜索 -->
+    <string name="URL_HZDY_ABNORMAL">app/services/appQuestionSync?user_id=</string>
+    <!-- 宏站单验列表状态 -->
+    <string name="URL_HZDY_STATES">app/services/appMarcoStatusQuery?user_id=</string>
+    <!-- 图片附件信息 -->
+    <string name="URL_HZDY_ATTACH_SINGLE">app/services/appUpLoadMarcoFile</string>
+    <!-- 宏站单验基础数据上传 -->
+    <string name="URL_HZDY_UPLOADINFO">app/services/appUploadMarcoDetail</string>
+    <!-- 宏站单验基础数据同步查询 -->
+    <string name="URL_HZDY_SYNCHRONIZATION">app/services/appDownDetail?user_id=</string>
+    <!-- 网络挑刺上传 -->
+    <string name="URL_WLTC_UPLOAD">app/services/alarmInfoUpload</string>
+    <!-- 获取天线巡警等高图信息 -->
+    <string name="URL_TXXJDGT_UPLOAD">app/services/querySiteMap</string>
+    <!-- 自动偏置图片上传 -->
+    <string name="URL_ZDPZ_BIT">wybzdjp/upPic</string>
+    <!-- 自动偏置列表数据 -->
+    <string name="URL_ZDPZ_LIST">wybzdjp/getRecordList?user_id=</string>
+    <!-- 自动偏置数据上传 -->
+    <string name="URL_ZDPZ_UPLOAD">wybzdjp/uploadRecord</string>
+    <!-- 自动偏置数据本机数据查询 -->
+    <string name="URL_ZDPZ_QUERY">wybzdjp/isExist?user_id=</string>
+    <!-- GIS图层LTE重要参数数据查询 -->
+    <string name="URL_GIS_LTE_PARAM">app/auto/getCellParam</string>
+    <!-- 室分电子化http下载 -->
+    <string name="URL_HTTP_DOWN">uploadRoot/ftp_upload</string>
+    <!-- FTP改HTTP下载目录 -->
+    <string name="FTP_TO_HTTP_PATH">uploadRoot/ftp_upload/</string>
+    <!-- 查询小区列表 -->
+    <string name="URL_AP_SEARCH_CELL">app/services/querySiteInfo</string>
+    <!-- 查询基站小区列表 -->
+    <string name="URL_AP_SEARCH_PATROL_CELL">app/services/getPatrolSites</string>
+    <!-- 工单派单 上传 -->
+    <string name="URL_PAI_DATA">app/services/neworder4ciant</string>
+    <!-- 工单查询 -->
+    <string name="URL_PAI_SEARCH">app/services/queryCiOrder</string>
+    <!-- 用户登录情况（心跳） -->
+    <string name="URL_USER_CHECK">admin/userCheck</string>
+    <!-- 用户点击退出登录 -->
+    <string name="URL_USER_EXIT_LOGIN">admin/appLogout</string>
+    <!-- 集团PCI修改(工参修改)提交接口 -->
+    <string name="URL_WYZDH_PCI_SUBMIT_UPDATE">app/auto/setPciModify</string>
+    <!-- 查询PCI修改历史 -->
+    <string name="URL_WYZDH_PCI_QUERY_HISTORY_UPDATE">app/auto/getPciModifyList</string>
+    <!-- 查询PCI修改结果(单条数据详情) -->
+    <string name="URL_WYZDH_PCI_DETAILS_UPDATE">app/auto/getPciModifyResult</string>
+    <!-- 集团PCI运算提交接口 -->
+    <string name="URL_WYZDH_PCI_SUBMIT_ARITHMETIC">app/auto/setPciCalc</string>
+    <!-- 查询PCI运算历史 -->
+    <string name="URL_WYZDH_PCI_QUERY_HISTORY_ARITHMETIC">app/auto/getPciCalcList</string>
+    <!-- 查询PCI运算结果(单条数据详情) -->
+    <string name="URL_WYZDH_PCI_DETAILS_ARITHMETIC">app/auto/getPciCalcResult</string>
+    <!-- 网优自动化频点 -->
+    <string name="URL_WYZDH_QUERY_PINDIAN">app/auto/getDictList</string>
+    <!-- 网优自动化根据用户查询地市、区县 -->
+    <string name="URL_WYZDH_QUERY_CITY">app/auto/getDepartInfo</string>
+    <!-- 网优自动化附件上传地址 -->
+    <string name="URL_WYZDH_FILE_UPLOAD">app/auto/setTestData</string>
+    <!-- APN地址获取 -->
+    <string name="URL_APN">app/services/appFtpSearch?user_id=</string>
+    <!-- RRU 列表获取 -->
+    <string name="URL_RRU_LIST">app/services/getSiteRruList</string>
+    <!-- RRU 详情获取 -->
+    <string name="URL_RRU_DETAIL">app/services/getSiteRruInfo</string>
+    <!-- 参数修改 获取参数配置 -->
+    <string name="URL_PARAMETER_CONF">app/auto/getParamConf</string>
+    <!-- 参数修改 获取小区参数值 -->
+    <string name="URL_PARAMETER_VALUE_BY_CI">app/auto/getParamValueByCi</string>
+    <!-- 参数修改 参数提交修改 -->
+    <string name="URL_PARAMETER_MODIFY">app/auto/setParaModify</string>
+    <!-- 参数修改 查询参数修改历史 -->
+    <string name="URL_PARAMETER_MODIFY_HISTORY">app/auto/getParaModifyList</string>
+    <!-- 参数修改 查询参数修改结果 -->
+    <string name="URL_PARAMETER_MODIFY_RESULT">app/auto/getParaModifyResult</string>
+    <!-- 网优计费系统工单数据上传 -->
+    <string name="URL_WYJFXT_UPLOAD_DATA">app/charging/uploadData</string>
+    <!-- 网优计费系统基站数查询 -->
+    <string name="URL_WYJFXT_SITETOTAL_QUERY">app/charging/queryBaseStationCount</string>
+    <!-- 网优计费系统附件上传(附件上传专属) -->
+    <string name="URL_WYBBITMAP_UPLOAD">app/attachment/upLoad</string>
+    <!-- 网优计费系统工单状态查询 -->
+    <string name="URL_WYJFXT_STATUS">app/charging/queryChargingStatus</string>
+    <!-- 网优计费系统地铁地市查询 -->
+    <string name="URL_WYJFXT_DT_CITY">app/charging/subway/getAvailableCity</string>
+    <!-- 网优计费系统地铁线路查询 -->
+    <string name="URL_WYJFXT_DT_LINE">app/charging/subway/getLineInfoByCity</string>
+    <!-- 网优计费系统地铁小区查询 -->
+    <string name="URL_WYJFXT_DT_CELL">app/charging/subway/getSubwayCells</string>
+    <!-- 指纹库OTT栅格查询 -->
+    <string name="URL_MRO_ZW">app/services/getGridList</string>
+    <!-- 指纹库OTT栅格图层详情 -->
+    <string name="URL_MRO_ZW_DETAIL">app/services/getGridCiInfo</string>
+    <!-- 退服告警数据查询 -->
+    <string name="URL_STATION_ALARM37">app/services/getOfflineNote37</string>
+    <!-- 退服告警地市区县数据（统计分析）统计查询 -->
+    <string name="URL_STATION_ALARM_CITY37">app/services/getOfflineStacByCity37</string>
+    <!-- 退服告警统计当日数据查询 -->
+    <string name="URL_STATION_ALARM_STATISTICS_TIME37">app/services/getOfflineStacByTime37</string>
+    <!-- 退服告警点击地市或区县显示基站列表 -->
+    <string name="URL_STATION_ALARM_SITELIST37">app/services/getOfflineNoteByArea37</string>
+    <!-- 指纹库OTT 栅格日期查询 -->
+    <string name="URL_OTT_GRID_DATE">app/services/getGridLastTime</string>
+    <!-- 指纹库OTT 小区日期查询 -->
+    <string name="URL_OTT_CELL_DATE">app/services/getCellLastTime</string>
+    <!-- 指纹库OTT 小区采样点分析查询 -->
+    <string name="URL_OTT_CELL_DATA_LIST">app/services/getZwkCellList</string>
+    <!-- 指纹库OTT 小区详情(关联采样点) -->
+    <string name="URL_OTT_CELL_DETAIL">app/services/getZwkCydByCi</string>
+    <!-- 速率测试上传接口 -->
+    <string name="URL_SAVE_SPEED_TEST_LOG">app/services/saveSpeedTestLog</string>
+    <!-- App告警信息上传接口 -->
+    <string name="URL_SAVE_APP_WARNING_LOG">app/services/saveAppWarningLog</string>
+    <!-- App配置信息 -->
+    <string name="URL_GET_APP_CONFIG">app/services/getAppConf</string>
+    <!-- App配置信息 新 -->
+    <string name="URL_GET_APP_FTP_CONFIG">app/services/getAppFtpConfig</string>
+    <!-- App发起速率测试 -->
+    <string name="URL_INITIATE_SPEED_TEST">app/services/initiateSpeedTest</string>
+    <!-- 历史详情备注提交 -->
+    <string name="URL_SAVE_SPEED_TEST_REMARKS">app/services/saveSpeedTestRemarks</string>
+    <!-- 速率测试历史列表 -->
+    <string name="URL_GET_SPEED_TEST_LOG">app/services/getSpeedTestLog</string>
+    <!-- 速率测试历史删除 -->
+    <string name="URL_REMOVE_SPEED_TEST_LOG">app/services/removeSpeedTestLog</string>
+    <!-- 速率测试历史详情 -->
+    <string name="URL_GET_SPEED_TEST_LOG_DETAIL">app/services/getSpeedTestLogDetail</string>
+    <!-- 速率测试获取FTP地址配置  全国版无用 -->
+    <string name="URL_GET_FTP_ADDRESS">app/services/getAppFtp</string>
+    <!-- 速率PK-获取PK组列表 -->
+    <string name="URL_SPEED_PK_GROUP_LIST">app/interface/appSearchRateGroup</string>
+    <!-- 速率PK-创建PK组 -->
+    <string name="URL_SPEED_PK_CREATE_GROUP">app/interface/appCreateRateGroup</string>
+    <!-- 速率PK-PK历史 -->
+    <string name="URL_SPEED_PK_HISTORY">app/interface/appRateGroupHistory</string>
+    <!-- 速率PK-小组PK结果 -->
+    <string name="URL_SPEED_PK_RESULT">app/interface/appRateGroupHistoryDetail</string>
+    <!-- 速率PK-更新PK组状态 -->
+    <string name="URL_SPEED_PK_GROUP_UPDATE_STATUS">app/interface/appRateGroupStatus</string>
+    <!-- 速率PK-修改PK组状态 -->
+    <string name="URL_SPEED_PK_GROUP_MODIFY_STATUS">app/interface/appRateGroupRevoke</string>
+    <!-- 测速排行 -->
+    <string name="URL_GET_SPEED_TOP_VERSION">app/services/getSpeedTopVersion</string>
+    <!-- 周边网速 -->
+    <string name="URL_GET_PERIPHERY_SPEED_TEST">app/services/getPeripherySpeedTest</string>
+    <!-- 获取应急站列表 -->
+    <string name="URL_GET_EMERGENTCY_SITE_LIST">app/services/getEmergencySiteList</string>
+    <!-- 激活或去激活应急站 -->
+    <string name="URL_SET_EMERGENCY_SITE">app/services/setEmergencySite</string>
+    <!-- 查询各地市应急车辆数 -->
+    <string name="URL_GET_EMERGENCY_SITE_COUNT">app/services/getEmergencySiteCount</string>
+    <!-- 获取应急站邻区列表 -->
+    <string name="URL_GET_EMERGENCY_SITE_AD_LIST">app/services/getEmergencySiteAdjList</string>
+    <!-- 获取应急站指标列表 -->
+    <string name="URL_GET_EMERGENCY_SITE_QUOTA_LIST">app/services/getEmergencySiteParam</string>
+    <!-- 获取应急站告警列表 -->
+    <string name="URL_GET_EMERGENCY_SITE_ALARM">app/services/getEmergencySiteAlarm</string>
+    <!-- 获取应急站照片列表 -->
+    <string name="URL_GET_EMERGENCY_SITE_PICTURE">app/services/getEmergencySitePic</string>
+    <!-- 获取应急站单小区小时指标 -->
+    <string name="URL_GET_EMERGENCY_CI_PARAM">app/services/getEmergencyCiParam</string>
+    <!-- 获取应急站操作审核人员列表 -->
+    <string name="URL_GET_EMERGENCY_AUDIT_USERS">app/services/getEmergencyAuditUsers</string>
+    <!-- 获取应急站操作审核短信 -->
+    <string name="URL_GET_EMERGENCY_AUDIT_SMS">app/services/getEmergencyAuditSms</string>
+    <!-- 应急宝-检查用户授权状态接口 -->
+    <string name="URL_YJB_GET_EMERGENCY_AUTH_STATE">app/services/getEmergencyAuthState</string>
+    <!-- 应急宝-验证码检查接口 -->
+    <string name="URL_YJB_CHECK_EMERGENCY_AUDIT_SMS">app/services/checkEmergencyAuditSms</string>
+    <!-- 应急宝-远程开锁操作 -->
+    <string name="URL_YJB_OPEN_EMERGENCY_LOCK">app/services/openEmergencyLock</string>
+    <!-- 应急宝-查询开锁日志 -->
+    <string name="URL_YJB_GET_EMERGENCY_LOCK_LOG">app/services/getEmergencyLockLog</string>
+    <!-- 应急宝-查询锁信息 -->
+    <string name="URL_YJB_GET_EMERGENCY_LOCK_INFO">app/services/getEmergencyLockInfo</string>
+    <!-- 应急宝-修改站别名、小区别名 -->
+    <string name="URL_YJB_SET_EMERGENCY_PROP">app/services/setEmergencyProp</string>
+    <!-- 应急宝-修改应急站锁ID -->
+    <string name="URL_YJB_SET_EMERGENCY_PROP_LOCK">app/services/setEmergencyPropLock</string>
+    <!-- 应急宝-库存增加删除操作 -->
+    <string name="URL_YJB_SET_EMERGENCY_STOCK">app/services/setEmergencyStock</string>
+    <!-- 应急宝-库存统计信息 -->
+    <string name="URL_YJB_GET_EMERGENCY_STOCK_STAC">app/services/getEmergencyStockStac</string>
+    <!-- 应急宝-获取库存列表 -->
+    <string name="URL_YJB_GET_EMERGENCY_STOCK_LIST">app/services/getEmergencyStockList</string>
+    <!-- 应急宝-判断应急站操作权限 -->
+    <string name="URL_YJB_HAS_EMERGENCY_OPER_AUTH">app/services/hasEmergencyOperAuth</string>
+    <!-- 应急宝-判断应急站操作权限 -->
+    <string name="URL_YJB_SAVE_EMERGENCY_LOCK_LOG">app/services/saveEmergencyLockLog</string>
+    <!-- 传输盒子 统计 -->
+    <string name="URL_GET_TRANSMIT_BOX_STAC">app/services/getTransmitBoxStac</string>
+    <!-- 应急宝-获取应急车操作日志列表 -->
+    <string name="URL_YJB_GET_EMERGENCY_SITE_OPER_LIST">app/services/getEmergencySiteOperList</string>
+    <!-- 应急宝-获取应急车操作失败详情 -->
+    <string name="URL_YJB_GET_EMERGENCY_SITE_OPER_LOG">app/services/getEmergencySiteOperLog</string>
+    <!-- 应急宝-获取巡检设备列表 -->
+    <string name="URL_YJB_GET_TRANSMIT_BOX_LIST_NEW">app/services/getTransmitBoxListNew</string>
+    <!-- 应急宝-盒子属性修改 -->
+    <string name="URL_YJB_GET_TRANSMIT_BOX_INFO_MODIFY">app/services/postUpdateYjBox</string>
+    <!-- 应急盒子 上传传输盒子巡检记录 -->
+    <string name="URL_YJB_SAVE_TRANSMITBOX_LOG">app/services/saveTransmitBoxLog</string>
+    <!-- 应急盒子 传输盒子巡检历史记录 -->
+    <string name="URL_YJB_GET_TRANSMIT_BOX_LOG_LIST">app/services/getTransmitBoxLogList</string>
+    <!-- 应急宝-调度次数分地市统计 -->
+    <string name="URL_YJB_GET_YJ_TRACK_STAC">app/services/getYjTrackStac</string>
+    <!-- 应急宝-调度次数指定地市分应急设备统计 -->
+    <string name="URL_YJB_GET_YJ_TRACK_LIST">app/services/getYjTrackList</string>
+    <!-- 应急宝-指定应急设备的调度历史记录 -->
+    <string name="URL_YJB_GET_YJ_TRACK_DETAIL">app/services/getYjTrackDetail</string>
+    <!-- 应急宝-指定应急设备的最新调度记录 -->
+    <string name="URL_YJB_GET_YJ_LAST_TRACK_DETAIL">app/services/getYjLastTrackDetail</string>
+
+    <!-- 投诉测试枚举值 -->
+    <string name="URL_GET_TSCS_ENU">app/charging/getComplainParamInfo</string>
+    <!-- 投诉测试工单查询接口 -->
+    <string name="URL_GET_TSCS_LIST">app/charging/queryChargingComplain</string>
+    <!-- 投诉测试工单查询详情接口 -->
+    <string name="URL_GET_TSCS_DATA">app/charging/queryComplainDetail</string>
+    <!-- 投诉测试工单下载接口 -->
+    <string name="URL_DOWNLOAD_TSCS_DATA">wybAttachment/charging/</string>
+    <!-- 人员考勤初始化 -->
+    <string name="URL_PERSON_ATTENDANCE_INIT_DATA">app/interface/appPunchInit</string>
+    <!-- 人员考勤申请 -->
+    <string name="URL_PERSON_ATTENDANCE_APPLY">app/interface/appPunchAbnormal</string>
+    <!-- 人员考勤申请初始化 -->
+    <string name="URL_PERSON_ATTENDANCE_APPLY_INIT">app/interface/appAttendApplyInit</string>
+    <!-- 人员考勤审批列表 -->
+    <string name="URL_PERSON_ATTENDANCE_APPROVE_LIST">app/interface/appSearchApproval</string>
+    <!-- 人员考勤申请审批详情 -->
+    <string name="URL_PERSON_ATTENDANCE_APPROVE_DETAIL">app/interface/appSearchApprovalDetail</string>
+    <!-- 人员考勤审批提交 -->
+    <string name="URL_PERSON_ATTENDANCE_APPROVE_SUBMIT">app/interface/appApprovalSubmit</string>
+    <!-- 人员考勤记录 -->
+    <string name="URL_PERSON_ATTENDANCE_RECORD">app/interface/appRecordData</string>
+    <!-- 人员考勤签退 -->
+    <string name="URL_ATTENDANCE_PERSON_SIGN_BACK">app/interface/personSignBack</string>
+    <!-- 人员考勤打卡基站搜索 -->
+    <string name="URL_ATTENDANCE_PERSON_SEARCH_PUNCH_SITE">app/interface/appSearchPunchSite</string>
+    <!-- 考勤系统-撤回申请 -->
+    <string name="URL_ATTENDANCE_WITHDRAW_APPLY">app/interface/revokeAdvance</string>
+
+    <!-- 车辆定位-获取初始数据 -->
+    <string name="URL_CAR_LOCATE_INIT_DATA">app/interface/appPunchData</string>
+    <!-- 车辆定位数据保存 -->
+    <string name="URL_CAR_LOCATE_DATA_UPLOAD">app/interface/appPunchSave</string>
+    <!-- 车辆定位异常数据提交 -->
+    <string name="URL_CAR_LOCATE_ABNORMAL_DATA_UPLOAD">app/interface/appPunchAbnormalData</string>
+    <!-- 车辆定位记录 -->
+    <string name="URL_CAR_LOCATE_RECORD">app/interface/appRecordData</string>
+    <!-- 车辆定位获取车牌号 -->
+    <string name="URL_CAR_LOCATE_GET_NUM">app/interface/appGetVehicleNumber</string>
+    <!-- 车辆定位搜索车牌号 -->
+    <string name="URL_ATTENDANCE_SEARCH_CAR_NUM">app/interface/appGetVehicle</string>
+
+    <!-- 仪表管理-仪表种类等相关查询 -->
+    <string name="URL_YBGL_TYPE">api/instrument/searchInstrumentConfig</string>
+    <!-- 仪表管理-仪表历史记录 -->
+    <string name="URL_YBGL_HISTORY">api/instrument/searchInstrumentCollectionData</string>
+    <!-- 仪表管理-数据上传 -->
+    <string name="URL_YBGL_UPLOAD">api/instrument/uploadInstrument</string>
+    <!-- 仪表管理-用户数据查询 -->
+    <string name="URL_YBGL_USER">api/instrument/getUserInfo</string>
+    <!-- 小区指标帮助信息 -->
+    <string name="URL_XQZB_HELP">api/voiceAwaken/getQueryTimeRange</string>
+    <!-- 小区指标查询 -->
+    <string name="URL_XQZB_QUERY">api/voiceAwaken/getResultByVoice</string>
+    <!-- nb测试记录基础数据上传 -->
+    <string name="URL_NBTEST_UPLOAD_DATA">app/testnb/uploadData</string>
+    <!-- nb测试记录基站名获取 -->
+    <string name="URL_NBTEST_GET_NBCELL">app/services/getListFromTdlNbCmCell</string>
+    <!-- nb测试邻区信息获取 -->
+    <string name="URL_NBTEST_GET_AREA_INFO">app/services/getNBAdjacentCell</string>
+    <!-- 基站导航-查询 -->
+    <string name="URL_JZDH_SEARCH">api/siteNavigation/searchRoute</string>
+    <!-- 基站导航-基础数据上传 -->
+    <string name="URL_JZDH_UPLOAD_DATA">api/siteNavigation/uploadRoute</string>
+    <!-- 基站导航-线路查询 -->
+    <string name="URL_JZDH_LINE_QUERY">api/siteNavigation/getRouteDetail</string>
+    <!-- 基站导航-脚印数据查询 -->
+    <string name="URL_JZDH_JY_QUERY">api/siteNavigation/getFootprints</string>
+    <!-- 天馈自优化-上传工单 -->
+    <string name="URL_TKZYH_UPLOAD_DATA">app/skyfeed/uploadData</string>
+    <!-- 天馈自优化-历史计算列表 -->
+    <string name="URL_TKZYH_HISTORY_DATA">app/skyfeed/getWorkOrderList</string>
+    <!-- 天馈自优化-请求工单详情 -->
+    <string name="URL_TKZYH_WORK_DATAILS">app/skyfeed/getWorkOrderData</string>
+    <!-- 远程电调-初始化小区数据 -->
+    <string name="URL_YCDT_APP_ELECTRIC_5G_INIT">app/electric/appElectric5GInit</string>
+    <!-- 远程电调-获取小区详情数据 -->
+    <string name="URL_YCDT_APP_ELECTRIC_DETAIL">app/electric/appElectricDetail</string>
+    <!-- 远程电调-获取AAU型号对应场景号 -->
+    <string name="URL_YCDT_GET_AAU_SEC">app/electric/getAauSec</string>
+    <!-- 远程电调-获取授权人 -->
+    <string name="URL_YCDT_APP_ELECTRIC_GET_AUTHORI">app/electric/appElectricGetAuthori</string>
+    <!-- 远程电调-历史调整记录 -->
+    <string name="URL_YCDT_APP_ELECTRIC_HISTORY">app/electric/appElectricHistory</string>
+    <!-- 远程电调-获取验证码 -->
+    <string name="URL_YCDT_APP_ELECTRIC_GET_CODE">app/electric/appElectricGetCode</string>
+    <!-- 远程电调-发送验证码 -->
+    <string name="URL_YCDT_APP_ELECTRIC_MSG">app/electric/appElectricMsg</string>
+    <!-- 远程电调-执行状态查询 -->
+    <string name="URL_YCDT_GET_ELECTRIC_STATUS">app/electric/getElectricStatus</string>
+    <!-- 远程电调-我的电调 -->
+    <string name="URL_YCDT_APP_ELECTRIC_ORDER_MODULE">app/electric/appElectricOrderModule</string>
+    <!-- 远程电调-电调详情查询 -->
+    <string name="URL_YCDT_APP_ELECTRIC_ORDER_DETAIL">app/electric/appElectricOrderDetail</string>
+    <!-- 远程电调-电调查询 -->
+    <string name="URL_YCDT_APP_ELECTRIC_SEARCH">app/electric/appElectricSearch</string>
+    <!-- 远程电调-小区聚合查询 -->
+    <string name="URL_YCDT_APP_ELECTRIC_COUNT">app/electric/appElectricCount</string>
+    <!-- 远程电调-统计 -->
+    <string name="URL_YCDT_GET_APPELECTRIC_STATISTICS">app/electric/getAppElectricStatistics</string>
+    <!-- 公告-获取未读消息 -->
+    <string name="URL_NOTIFY_GET_UNREAD_MSG">app/interface/appSystemNotice</string>
+    <!-- 公告-获取公告列表 -->
+    <string name="URL_NOTIFY_GET_LIST">app/interface/appNoticeList</string>
+    <!-- 公告-获取公告设置 -->
+    <string name="URL_NOTIFY_GET_SETTINGS">app/interface/appGetNoticeSetting</string>
+    <!-- 公告-修改公告设置 -->
+    <string name="URL_NOTIFY_MODIFY_SETTINGS">app/interface/appNoticeSetting</string>
+    <!-- 公告-标记为已读 -->
+    <string name="URL_NOTIFY_SET_READ">app/interface/appSetRead</string>
+    <!-- 公告-删除公告 -->
+    <string name="URL_NOTIFY_DELETE">app/interface/appNoticeDelete</string>
+    <!-- 公告-搜索 -->
+    <string name="URL_NOTIFY_SEARCH">app/interface/appNoticeSearch</string>
+    <!-- 满格宝-初始化小区数据 -->
+    <string name="URL_MGB_GET_MANGEBAO_GIS_INFO">app/mangebao/getMangebaoGisInfo</string>
+    <!-- 满格宝-请求站点详情数据 -->
+    <string name="URL_MGB_GET_MANGEBAO_INFO">app/mangebao/getMangebaoInfo</string>
+    <!-- 满格宝-新建入网 -->
+    <string name="URL_MGB_CREATE_MANGEBAO">app/mangebao/createMangebao</string>
+    <!-- 满格宝-设备增补 -->
+    <string name="URL_MGB_ADD_MANGEBAO">app/mangebao/addMangebao</string>
+    <!-- 满格宝-回收入库 -->
+    <string name="URL_MGB_RETRIEVE_MANGEBAO">app/mangebao/retrieveMangebao</string>
+    <!-- 满格宝-图片接口 -->
+    <string name="URL_DOWNLOAD_MGB_DATA">wybAttachment/mangebao/</string>
+    <!-- 简单硬扩-图表查询 -->
+    <string name="URL_JDYK_CHART">carrier/hardwareDilatation/simpleHardOrderPresent</string>
+    <!-- 简单硬扩-工单查询 -->
+    <string name="URL_JDYK_WORK">carrier/hardwareDilatation/querySimpleHardOrder</string>
+    <!-- 简单硬扩-工单查询(带排序) -->
+    <string name="URL_JDYK_WORK_SORT">carrier/hardwareDilatation/selectSimpleHardOrder</string>
+    <!-- 简单硬扩-接单与撤单 -->
+    <string name="URL_JDYK_TO_STATUS">carrier/hardwareDilatation/updateSimpleHardOrder</string>
+    <!-- 简单硬扩-扩展版型号 -->
+    <string name="URL_JDYK_KZBXH">carrier/hardwareDilatation/querySysDict</string>
+    <!-- 简单硬扩-添加硬件 -->
+    <string name="URL_JDYK_UPLOAD_ADD">carrier/hardwareDilatation/saveSimpleHardOrder</string>
+    <!-- 简单硬扩-详情 -->
+    <string name="URL_JDYK_DETAILS">carrier/hardwareDilatation/querySimpleHardOrderBySn</string>
+    <!-- 简单硬扩-参数修改 -->
+    <string name="URL_JDYK_UPDATE">carrier/hardwareDilatation/handleSimpleHardOrder</string>
+    <!-- 简单硬扩-自动扩容 -->
+    <string name="URL_JDYK_ZDKR">carrier/hardwareDilatation/krSimpleHardOrder</string>
+    <!-- 简单硬扩-重试接口 -->
+    <string name="URL_JDYK_RETRY">carrier/hardwareDilatation/stepRemake</string>
+    <!-- 简单硬扩-总览 -->
+    <string name="URL_JDYK_OVERVIEW">carrier/hardwareDilatation/overallConsult</string>
+    <!-- 简单硬扩-IR提交 -->
+    <string name="URL_JDYK_IR">carrier/hardwareDilatation/ifOpenIRCompress</string>
+    <!-- 基站信号-小区指标 -->
+    <string name="URL_JZXH_XQZB">app/services/getCellDayParam</string>
+    <!-- 基站信号-小区指标详情（分时指标） -->
+    <string name="URL_JZXH_FSZB">app/services/getCellHourParam</string>
+    <!-- gis呈现-共站息息-初始化 -->
+    <string name="URL_GIS_TOTAL_STATION_INIT">app/interface/appTotalStationInit</string>
+    <!-- gis呈现-共站息息-区域数量统计 -->
+    <string name="URL_GIS_TOTAL_STATION_COUNT">app/interface/appTotalGroup</string>
+    <!-- gis呈现-共站息息-详情 -->
+    <string name="URL_GIS_TOTAL_STATION_DETAIL">app/interface/appTotalStationDetai</string>
+    <!-- gis呈现-共站息息-小区信息 -->
+    <string name="URL_GIS_TOTAL_STATION_CELL">app/interface/appGetStationCell</string>
+    <!-- gis呈现-共站息息-产权单位信息 -->
+    <string name="URL_GIS_TOTAL_STATION_PROPERTY">app/interface/appGetStationProperty</string>
+    <!-- gis呈现-共站息息-退服站点统计 -->
+    <string name="URL_GIS_TOTAL_STATION_RETIRED_STATISTIC">app/interface/appTfStationStatistic</string>
+    <!-- gis呈现-共站息息-退服站点覆盖类型数据统计 -->
+    <string name="URL_GIS_TOTAL_STATION_RETIRED_COVER_TYPE_STATISTIC">app/interface/appTfStationCoverTypeStatistic</string>
+    <!-- gis呈现-共站息息-退服站点列表 -->
+    <string name="URL_GIS_TOTAL_STATION_RETIRED_LIST">app/interface/appSearchTfStation</string>
+
+    <!-- 价值小区 -->
+    <string name="URL_JZXQ_GIS">app/auto/getSceneList</string>
+    <!-- 天面整合-匹配方案返回数据 -->
+    <string name="URL_TMZH_APP_CELESTIALSURFACE_MATCHSCHEME">app/celestialsurface/matchScheme</string>
+    <!-- 天面整合-上传天面整合方案数据 -->
+    <string name="URL_TMZH_APP_CELESTIALSURFACE_CREATECUSTOMPLAN">app/celestialsurface/createCustomPlan</string>
+    <!-- 天面整合-获取天线合并计算列表接口 -->
+    <string name="URL_TMZH_APP_GET_WYB_MERGE_LIST">app/celestialsurface/getWybMergeList</string>
+    <!-- 天面整合-获取天线合并计算详情接口 -->
+    <string name="URL_TMZH_APP_GET_WYB_MERGE_DETAIL">app/celestialsurface/getWybMergeDetail</string>
+    <!-- 天面整合-计算接口 -->
+    <string name="URL_TMZH_APP_GET_WYB_MERGE_COUNT">app/celestialsurface/getWybMergeCount</string>
+    <!-- 天面整合-重新计算接口 -->
+    <string name="URL_TMZH_APP_GET_WYB_MERGE_COUNT_RETRY">app/celestialsurface/getWybMergeCountRetry</string>
+    <!-- 天面整合-获取天面整合参数数据接口 -->
+    <string name="URL_TMZH_APP_GET_PARAM_DATA">app/celestialsurface/getParamData</string>
+    <!-- 天面整合-获取天面整合参数图片数据接口 -->
+    <string name="URL_TMZH_APP_GET_PARAM_IMAGE_DATA">app/celestialsurface/getParamImageData</string>
+    <!-- 天面整合-删除小区数据接口 -->
+    <string name="URL_TMZH_APP_REMOVE_PARAM_DATA">app/celestialsurface/removeParamData</string>
+    <!-- 天面整合-获取gis核查图片接口 -->
+    <string name="URL_TMZH_APP_GIS_BITMAP">wybAttachment</string>
+    <!-- 遍历测试-上传 -->
+    <string name="URL_ERGODIC_APP_AUTO_SAVETRAVELTESTLOG">app/auto/saveTravelTestLog</string>
+    <!-- 遍历测试-下载日志 -->
+    <string name="URL_ERGODIC_APP_AUTO_GETTRAVELTESTLOG">app/auto/getTravelTestLog</string>
+    <!-- 自动开站-图表 -->
+    <string name="URL_ZDKZ_CHART"></string>
+    <!-- 自动开站-工单查询（带排序） -->
+    <string name="URL_ZDKZ_WORK_SORT">carrier/openStationOrder/getOpenStationOrder</string>
+    <!-- 自动开站-接单撤单 -->
+    <string name="URL_ZDKZ_TO_STATUS">carrier/openStationOrder/updateOpenStationOrder</string>
+    <!-- 自动开站-详情 -->
+    <string name="URL_ZDKZ_DETAILS">carrier/openStationOrder/queryOpenStationOrder</string>
+    <!-- 自动开站-下拉框数据（目前与简单硬扩同个接口） -->
+    <string name="URL_ZDKZ_SELECT">carrier/hardwareDilatation/querySysDict</string>
+    <!-- 自动开站-提交人工处理数据 -->
+    <string name="URL_ZDKZ_TO_RGCL">carrier/openStationOrder/handleOpenStationOrder</string>
+    <!-- 自动开站-硬件信息采集上传 -->
+    <string name="URL_ZDKZ_UPLOAD_YJXXCJ">carrier/openStationOrder/saveOpenStationOrder</string>
+    <!-- 自动开站-开站人员信息保存 -->
+    <string name="URL_ZDKZ_SAVE_KZUSER">carrier/openStationOrder/saveOpenStationData</string>
+    <!-- 自动开站-邻区添加明细 -->
+    <string name="URL_ZDKZ_LQTJ_LIST">carrier/openStationOrder/queryAdjData</string>
+    <!-- 自动开站-开站数据查询 -->
+    <string name="URL_ZDKZ_KZSJ_QUERY">carrier/openStationOrder/queryOpenStationData</string>
+    <!-- 自动开站-开站数据提交 -->
+    <string name="URL_ZDKZ_KZSJ_UPLOAD">carrier/openStationOrder/keepOpenStationData</string>
+    <!-- NB图层详情 -->
+    <string name="URL_NBTC_DETAILS">app/interface/appNBDetail</string>
+    <!-- 道路测试-上传 -->
+    <string name="URL_ROAD_APP_AUTO_SAVELOADTESTLOG">app/auto/saveLoadTestLog</string>
+    <!-- 道路测试-下载日志 -->
+    <string name="URL_ROAD_APP_AUTO_GETROADTESTLOG">app/auto/getRoadTestLog</string>
+    <!-- 自动开站5G-工单查询（带排序） -->
+    <string name="URL_ZDKZ_NR_WORK_SORT">openStationOrder5G/getOpenStationOrder</string>
+    <!-- 自动开站5G-接单撤单 -->
+    <string name="URL_ZDKZ_NR_TO_STATUS">openStationOrder5G/updateOpenStationOrder</string>
+    <!-- 自动开站5G-详情 -->
+    <string name="URL_ZDKZ_NR_DETAILS">openStationOrder5G/queryOpenStationOrder</string>
+    <!-- 自动开站5G-下拉框数据（目前与简单硬扩同个接口） -->
+    <string name="URL_ZDKZ_NR_SELECT">hardwareDilatation/querySysDict</string>
+    <!-- 自动开站5G-硬件信息采集上传 -->
+    <string name="URL_ZDKZ_NR_UPLOAD_YJXXCJ">openStationOrder5G/saveOpenStationOrder</string>
+    <!-- 自动开站5G-开站人员信息保存 -->
+    <string name="URL_ZDKZ_NR_SAVE_KZUSER">openStationOrder5G/saveOpenStationData</string>
+    <!-- 自动开站5G-提交人工处理数据 -->
+    <string name="URL_ZDKZ_NR_TO_RGCL">openStationOrder5G/handleOpenStationOrder</string>
+    <!-- 自动开站5G-邻区添加明细 -->
+    <string name="URL_ZDKZ_NR_LQTJ_LIST">openStationOrder5G/queryAdjData</string>
+    <!-- 自动开站5G-BBU池 -->
+    <string name="URL_ZDKZ_NR_BBUC">openStationOrder5G/getBbuPool</string>
+    <!-- 自动开站5G-修改传输 -->
+    <string name="URL_ZDKZ_NR_XGCS">openStationTransmit5G/sendTransmit</string>
+    <!-- 自动开站5G-修改传输详情 -->
+    <string name="URL_ZDKZ_NR_XGCS_DETAILS">openStationTransmit5G/selectTransmit</string>
+    <!-- GIS-LTE和GSM邻区关系获取 -->
+    <string name="URL_GIS_LQGX">app/services/appGisNeighborQuery</string>
+    <!-- 首页数据初始化 -->
+    <string name="URL_HOME_DATA_INIT">app/interface/appCircularInit</string>
+    <!-- 首页数据初始化 全国版 -->
+    <string name="URL_HOME_DATA_INIT_QG">app/interface/appCircularInitQg</string>
+    <!-- 个人中心 各个地址配置请求 -->
+    <string name="URL_APP_PERSONAL_CENTER">app/interface/appPersonalCenter</string>
+    <!-- 首页数据保存 -->
+    <string name="URL_HOME_DATA_SAVE">app/interface/appSaveCustomize</string>
+    <!-- 首页引导结束 -->
+    <string name="URL_HOME_GUIDE_END">app/interface/appCustomizeChangeTip</string>
+    <!-- 消息-列表 -->
+    <string name="URL_MSG_LIST">app/interface/appSearchCircular</string>
+    <!-- 消息-已退订类型列表 -->
+    <string name="URL_MSG_UNSUBSCRIBED_TYPE_LIST">app/interface/appSubscribeMenu</string>
+    <!-- 消息-信息订阅管理接口（删除、退订、订阅） -->
+    <string name="URL_MSG_MANAGE">app/interface/appUnsubscribeCircular</string>
+
+    <!-- 信号竞对测试-获取测试组列表 -->
+    <string name="URL_SIGNAL_PK_GROUP_LIST">app/interface/appSearchSignalGroup</string>
+    <!-- 信号竞对测试-创建测试组 -->
+    <string name="URL_SIGNAL_PK_CREATE_GROUP">app/interface/appCreateSignalGroup</string>
+    <!-- 信号竞对测试-更新测试组状态 -->
+    <string name="URL_SIGNAL_PK_GROUP_INFO_UPDATE">app/interface/appSignalGroupStatus</string>
+    <!-- 信号竞对测试-修改测试组状态 -->
+    <string name="URL_SIGNAL_PK_GROUP_MODIFY_STATUS">app/interface/appSignalGroupRevoke</string>
+    <!-- 信号竞对测试-测试结果上传 -->
+    <string name="URL_SIGNAL_PK_TEST_RESULT_UPLOAD">app/interface/appSaveSignalTestLog</string>
+    <!-- 信号竞对测试-测试组结果详情 -->
+    <string name="URL_SIGNAL_PK_RESULT">app/interface/appSignalHistoryDetail</string>
+    <!-- 信号竞对测试-测试组每个成员详情 -->
+    <string name="URL_SIGNAL_PK_GROUP_MEMBER_DETAIL">app/interface/appSignalPeopleDetail</string>
+    <!-- 信号竞对测试-PK历史 -->
+    <string name="URL_SIGNAL_PK_HISTORY">app/interface/appSignalGroupHistory</string>
+    <!-- 获取模块数据 -->
+    <string name="URL_APP_MODULAR">app/version/getAppVersionList</string>
+    <!-- 工参自优化基站获取 -->
+    <string name="URL_GCZYH_QUERY">app/services/getsite4param</string>
+    <!-- 工参自优化数据上传 -->
+    <string name="URL_GCZYH_UPLOAD">app/services/savesite4tuning</string>
+    <!-- GIS-高铁图层 -->
+    <string name="URL_GIS_GAO_TIE">app/interface/appHighSpeedRailInit</string>
+    <!-- 5G小区激活列表 -->
+    <string name="URL_NR_ACTIVATION_LIST">zteActiveStation/station/select</string>
+    <!-- 5G小区状态查询 -->
+    <string name="URL_NR_CELL_STATUS">zteActiveStation/activation/getActivationStatus</string>
+    <!-- 5G小区中兴去激活 -->
+    <string name="URL_NR_GO_ACTIVATION_ZTE">zteActiveStation/activation/toActivate</string>
+    <!-- 5G小区中兴激活 -->
+    <string name="URL_NR_ACTIVATION_ZTE">zteActiveStation/activation/activate</string>
+    <!-- 5G小区中兴激活状态查询 -->
+    <string name="URL_NR_ACTIVATION_STATUS_ZTE">zteActiveStation/activation/getTaskStatus</string>
+    <!-- 集中入网	4G-5G列表 -->
+    <string name="URL_JZRW_NR_LIST">app/auto/getSiteList</string>
+    <!-- 集中入网4G-5G详情 -->
+    <string name="URL_JZRW_NR_DETAILS">app/auto/getSiteParam</string>
+    <!-- 集中入网4G-5G数据上传 -->
+    <string name="URL_JZRW_NR_UPLOAD">app/auto/saveSiteParam</string>
+    <!-- 手机性能参数上传 -->
+    <string name="URL_PHONE_PERFORMANCE_SAVE">app/interface/appSavePhonePerformance</string>
+
+    <!-- FTP地址 -->
+    <string name="FTP_IP">183.252.192.67</string>
+    <string name="FTP_PORT">8089</string>
+    <string name="FTP_USER">wy</string>
+    <string name="FTP_PASS">wyb@123</string>
+    <string name="PATH_RWYS_SF">/rootinfo/</string>
+    <string name="PATH_RWYS_HZ">/siteinfo/</string>
+    <string name="PATH_GCXJ">/gcxjinfo/</string>
+    <string name="PATH_GCTZ">/gctzinfo/</string>
+    <string name="PATH_XNCS">/xncsinfo/</string>
+    <string name="PATH_SNSL">/scaninfo/</string>
+    <string name="PATH_SFDY">/sfdyinfo/</string>
+    <string name="PATH_HZDY_TEST">/marco/</string>
+    <string name="PATH_HZDY">/marco/</string>
+    <string name="PATH_SFDZH">/buildnet/</string>
+
+    <!-- 全国版下载地址 -->
+    <string name="URL_QG_DOWN">http://183.252.192.83/NetworkPoChinaApi/appResource/wyb.apk</string>
+    <!-- 福建版本下载地址 -->
+    <string name="URL_FJ_DOWN">http://183.252.192.83/NetworkPo/resource/wyb.apk</string>
+    <!-- 塔下高度测量 指南 -->
+    <string name="HEIGHT_MEASURE_GUIDE">uploadRoot/ftp_upload/help/wyb/cg_guide.html</string>
+    <!-- 塔下高度测量 关于 -->
+    <string name="HEIGHT_MEASURE_ABOUT">uploadRoot/ftp_upload/help/wyb/cg_about.html</string>
+    <string name="pci_db_path">/downDb/lteCellPci.cif</string>
+
+    <!-- 简单硬扩-华为硬扩图像识别说明 -->
+    <string name="URL_JDYK_BIT_CWH">uploadRoot/ftp_upload/help/carrier/hw_hardext01.html</string>
+    <!-- 简单硬扩-诺西硬扩图像识别说明 -->
+    <string name="URL_JDYK_BIT_CPM">uploadRoot/ftp_upload/help/carrier/nsn_hardext01.html</string>
+    <!-- 自动开站-华为BBU识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_BBU_HW">uploadRoot/ftp_upload/help/carrier/hw_bbu01.html</string>
+    <!-- 自动开站-中兴BBU识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_BBU_ZX"></string>
+    <!-- 自动开站-诺西BBU识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_BBU_NX"></string>
+    <!-- 自动开站-华为RRU识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_RRU_HW">uploadRoot/ftp_upload/help/carrier/hw_rru01.html</string>
+    <!-- 自动开站-中兴RRU识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_RRU_ZX"></string>
+    <!-- 自动开站-诺西RRU识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_RRU_NX"></string>
+    <!-- 自动开站-华为主控板识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_ZKB_HW"></string>
+    <!-- 自动开站-中兴主控板识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_ZKB_ZX"></string>
+    <!-- 自动开站-诺西主控板识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_ZKB_NX"></string>
+    <!-- 自动开站-华为基带板识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_JDB_HW"></string>
+    <!-- 自动开站-中兴基带板识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_JDB_ZX"></string>
+    <!-- 自动开站-诺西基带板识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_JDB_NX"></string>
+    <!-- 自动开站-中兴FS板型号识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_FSBXH_ZX"></string>
+    <!-- 自动开站-华为槽位号识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_CWH_HW">uploadRoot/ftp_upload/help/carrier/hw_slot01.html</string>
+    <!-- 自动开站-中兴槽位号识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_CWH_ZX">uploadRoot/ftp_upload/help/carrier/zte_slot01.html</string>
+    <!-- 自动开站-诺西槽位号识别图像识别说明 -->
+    <string name="URL_ZDKZ_BIT_CWH_NX">uploadRoot/ftp_upload/help/carrier/nsn_slot01.html</string>
+
+</resources>

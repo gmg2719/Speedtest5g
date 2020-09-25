@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <RelativeLayout
+        android:id="@+id/pingtest_main_rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/pingtest_main_fl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ProgressBar
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:indeterminateDrawable="@drawable/progress_large_shape" />
+
+            <ImageView
+                android:id="@+id/pingtest_main_iv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:scaleType="center" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pingtest_main_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pingtest_main_fl_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pingtest_main_tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pingtest_main_tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="0%"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pingtest_main_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="请确保网络畅通"
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

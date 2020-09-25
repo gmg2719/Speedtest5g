@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_speed_test_ip_search_flag" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="183.267.21.11"
+            android:textColor="#F0F0F0"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="中国   福建   福州   移动"
+            android:textColor="#F0F0F0"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="."
+            android:textColor="#F0F0F0"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="."
+            android:textColor="#F0F0F0"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="."
+            android:textColor="#F0F0F0"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:text="查询"
+            android:textColor="#BCBBBD"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

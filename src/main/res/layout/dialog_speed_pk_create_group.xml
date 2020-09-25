@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/module_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/speed_pk_is_create_group"
+        android:textColor="@color/white_edeeee"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp" >
+
+        <EditText
+            android:id="@+id/et_speed_pk_group_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="@string/speed_pk_edit_group_name_hint"
+            android:singleLine="true"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_speed_pk_clear_group_name"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/icon_clear" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/privacy_main_wv_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:background="@color/bg_color"
+        android:layout_weight="1">
+    </WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/privacy_main_btn_cancel"
+            style="@style/tv_weight"
+            android:background="@drawable/dialog_bottom_left_btn"
+            android:padding="15dp"
+            android:text="不同意"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/privacy_main_btn_ok"
+            style="@style/tv_weight"
+            android:background="@drawable/dialog_bottom_right_btn"
+            android:padding="15dp"
+            android:text="同意"
+            android:textColor="@color/white_edeeee"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

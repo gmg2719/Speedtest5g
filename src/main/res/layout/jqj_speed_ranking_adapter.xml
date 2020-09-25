@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/speed_test_set_adapter_ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="12dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/speed_ranking_adapter_tv_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_929aac"
+            android:textSize="@dimen/sp_13"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/speed_ranking_adapter_iv_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_speed_ranking_one_flag"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <cn.nokia.speedtest5g.view.MyCornerImageView
+            android:id="@+id/speed_ranking_adapter_iv_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/speed_ranking_adapter_tv_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray_929aac"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/speed_ranking_adapter_tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/speed_ranking_adapter_tv_phoneModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray_929aac"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载(Mbps)"
+            android:textColor="@color/gray_929aac"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/speed_ranking_adapter_tv_downSpeedAvg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#E5B338"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

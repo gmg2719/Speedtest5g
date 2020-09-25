@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/speed_test_et_First_Text"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/module_bg_color"
+        android:inputType="numberDecimal"
+        android:paddingLeft="7dp"
+        android:textColor="@color/white_edeeee"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:text="."
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/speed_test_et_Second_Text"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/module_bg_color"
+        android:inputType="numberDecimal"
+        android:paddingLeft="7dp"
+        android:textColor="@color/white_edeeee"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:text="."
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/speed_test_et_Third_Text"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/module_bg_color"
+        android:inputType="numberDecimal"
+        android:paddingLeft="7dp"
+        android:textColor="@color/white_edeeee"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:text="."
+        android:textColor="@color/gray_c0c0c3"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/speed_test_et_Four_Text"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/module_bg_color"
+        android:inputType="numberDecimal"
+        android:paddingLeft="7dp"
+        android:textColor="@color/white_edeeee"
+        android:textSize="20sp" />
+
+</LinearLayout>

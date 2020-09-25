@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/codeDialog_tv_title"
+        style="@style/tv_warp"
+        android:layout_margin="5dp"
+        android:textColor="@color/black_half"
+        android:textSize="@dimen/tv_small_size" />
+
+    <ImageView
+        android:id="@+id/codeDialog_iv_code"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/add"
+        android:padding="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/codeDialog_tv_url"
+            style="@style/tv_warp"
+            android:autoLink="web"
+            android:background="@null"
+            android:maxWidth="150dp"
+            android:text="@string/URL_QG_DOWN"
+            android:textColor="@color/black_half"
+            android:textSize="@dimen/tv_small_size" />
+
+        <Button
+            android:id="@+id/codeDialog_copy"
+            style="@style/tv_warp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/copy"
+            android:textColor="@color/color_blue_blacksmall"
+            android:textSize="@dimen/tv_small_size" />
+    </LinearLayout>
+
+</LinearLayout>

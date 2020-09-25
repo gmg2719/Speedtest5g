@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义网格视图属性 -->
+    <declare-styleable name="MyScrollyGridView">
+        <attr name="dividerColor" format="color" />
+    </declare-styleable>
+
+    <!-- 水波扩散按钮属性 -->
+    <declare-styleable name="WaveButton">
+        <attr name="textSize" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="fillColor" format="color" />
+        <attr name="waveColor" format="color" />
+        <attr name="wbStrokeColor" format="color" />
+    </declare-styleable>
+
+    <!-- 进度条 -->
+    <declare-styleable name="HorizontalProgressBarWithNumber">
+        <attr name="progress_horizontal_unreached_color" format="color" />
+        <attr name="progress_horizontal_reached_color" format="color" />
+        <attr name="progress_horizontal_reached_bar_height" format="dimension" />
+        <attr name="progress_horizontal_unreached_bar_height" format="dimension" />
+        <attr name="progress_horizontal_text_size" format="dimension" />
+        <attr name="progress_horizontal_text_color" format="color" />
+        <attr name="progress_horizontal_text_offset" format="dimension" />
+        <attr name="progress_horizontal_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="roundTextColor" format="color" />
+        <attr name="roundTextSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RadarView">
+        <!--圆圈和交叉线的颜色-->
+        <attr format="color" name="circleColor"/>
+        <!--圆圈的数量-->
+        <attr format="integer" name="circleNum"/>
+        <!--扫描的颜色 RadarView会对这个颜色做渐变透明处理-->
+        <attr format="color" name="sweepColor"/>
+        <!--水滴的颜色-->
+        <attr format="color" name="raindropColor"/>
+        <!--水滴的数量 这里表示的是水滴最多能同时出现的数量。因为水滴是随机产生的，数量是不确定的-->
+        <attr format="integer" name="raindropNum"/>
+        <!--是否显示交叉线-->
+        <attr format="boolean" name="showCross"/>
+        <!--是否显示水滴-->
+        <attr format="boolean" name="showRaindrop"/>
+        <!--扫描的转速，表示几秒转一圈-->
+        <attr format="float" name="speed"/>
+        <!--水滴显示和消失的速度-->
+        <attr format="float" name="flicker"/>
+    </declare-styleable>
+</resources>

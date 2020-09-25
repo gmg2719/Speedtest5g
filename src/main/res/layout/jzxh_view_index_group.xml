@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+	    	style="@style/tv_warp"
+	      	android:text="@string/gxqjqtzb"
+	      	android:layout_marginBottom="10dp"
+	      	android:textSize="@dimen/tv_micro_size"/>
+	<!-- 日期 -->
+	<LinearLayout
+    	android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:gravity="center_vertical" android:paddingLeft="10dp" android:paddingRight="10dp"
+      	android:orientation="horizontal" >
+		<cn.nokia.speedtest5g.view.JJ_EmergentQuotaTimeView
+       		android:id="@+id/jzxhIndex_timev_day1"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_weight="1"
+           	android:orientation="vertical"/>
+		<cn.nokia.speedtest5g.view.JJ_EmergentQuotaTimeView
+           	android:id="@+id/jzxhIndex_timev_day2"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_weight="1"
+           	android:orientation="vertical" />
+		<cn.nokia.speedtest5g.view.JJ_EmergentQuotaTimeView
+           	android:id="@+id/jzxhIndex_timev_day3"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_weight="1"
+           	android:orientation="vertical" />
+       	<cn.nokia.speedtest5g.view.JJ_EmergentQuotaTimeView
+           	android:id="@+id/jzxhIndex_timev_day4"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_weight="1"
+           	android:orientation="vertical" />
+       	<cn.nokia.speedtest5g.view.JJ_EmergentQuotaTimeView
+          	android:id="@+id/jzxhIndex_timev_day5"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_weight="1"
+           	android:orientation="vertical" />
+       	<cn.nokia.speedtest5g.view.JJ_EmergentQuotaTimeView
+           	android:id="@+id/jzxhIndex_timev_day6"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_weight="1"
+           	android:orientation="vertical" />
+		<cn.nokia.speedtest5g.view.JJ_EmergentQuotaTimeView
+       		android:id="@+id/jzxhIndex_timev_day7"
+           	android:layout_width="0dp"
+           	android:layout_height="wrap_content"
+           	android:layout_weight="1"
+           	android:orientation="vertical" />
+	</LinearLayout>
+
+	<View style="@style/style_sp_x" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginTop="5dp"/>
+      
+	<!-- 接入类 -->
+	<LinearLayout
+    	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_marginTop="10dp"
+       	android:background="@drawable/icon_xqzb_help_item_bg"
+       	android:gravity="center"
+       	android:orientation="horizontal" >
+       	<TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawablePadding="5dp"
+           android:paddingLeft="18dp" android:paddingRight="18dp"
+           android:drawableTop="@drawable/icon_emergent_quota_access"
+           android:gravity="center"
+           android:text="@string/index_jrl"
+           android:textColor="@color/ui_black"
+           android:textSize="@dimen/tv_small_size"
+           android:textStyle="bold" />
+       <View android:layout_width="0.5dp" android:layout_height="match_parent" android:background="@color/emergent_border_blue" />
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+           <TableRow android:id="@+id/jzxhIndex_view_jrl_rrcjlcgs" android:gravity="center">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_jrl_1"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_jrl_rrcjlcgs"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+
+           <TableRow android:id="@+id/jzxhIndex_view_jrl_rrcljjlcgl" android:gravity="center"  android:background="@color/emergent_bg_blue">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_jrl_2"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_jrl_rrcljjlcgl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+           
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+
+            <TableRow android:id="@+id/jzxhIndex_view_jrl_erabjlcgl" android:gravity="center">
+                <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_jrl_3"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_jrl_erabjlcgl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+            </TableRow>
+           
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+
+           <TableRow android:id="@+id/jzxhIndex_view_jrl_erabjlqqs" android:gravity="center"  android:background="@color/emergent_bg_blue">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_jrl_4"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_jrl_erabjlqqs"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+       </TableLayout>
+   </LinearLayout>
+<!-- 保持类 -->
+<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="2dp"
+       android:background="@drawable/icon_xqzb_help_item_bg"
+       android:gravity="center"
+       android:orientation="horizontal" >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawablePadding="5dp"
+           android:paddingLeft="18dp" android:paddingRight="18dp"
+           android:drawableTop="@drawable/icon_emergent_quota_keep"
+           android:gravity="center"
+           android:text="@string/index_bcl"
+           android:textColor="@color/ui_black"
+           android:textSize="@dimen/tv_small_size"
+           android:textStyle="bold" />
+       <View android:layout_width="0.5dp" android:layout_height="match_parent" android:background="@color/emergent_border_blue" />
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+           <TableRow android:id="@+id/jzxhIndex_view_bcl_qhcgl" android:gravity="center">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_bcl_1"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_bcl_qhcgl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+           
+           <TableRow android:id="@+id/jzxhIndex_view_bcl_wxdxl" android:gravity="center"  android:background="@color/emergent_bg_blue">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_bcl_2"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_bcl_wxdxl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+           
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+
+            <TableRow android:id="@+id/jzxhIndex_view_bcl_erabdxl" android:gravity="center">
+                <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_bcl_3"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_bcl_erabdxl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+            </TableRow>
+   	</TableLayout>   
+   </LinearLayout>
+<!-- 质量类 -->
+<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="2dp"
+       android:background="@drawable/icon_xqzb_help_item_bg"
+       android:gravity="center"
+       android:orientation="horizontal" >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawablePadding="5dp"
+           android:paddingLeft="18dp" android:paddingRight="18dp"
+           android:drawableTop="@drawable/icon_emergent_quota_quality"
+           android:gravity="center"
+           android:text="@string/index_zll"
+           android:textColor="@color/ui_black"
+           android:textSize="@dimen/tv_small_size"
+           android:textStyle="bold" />
+       <View android:layout_width="0.5dp" android:layout_height="match_parent" android:background="@color/emergent_border_blue" />
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+           <TableRow android:id="@+id/jzxhIndex_view_zll_xqyhmsxzjs" android:gravity="center">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_zll_1gb"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_zll_xqyhmsxzjs"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+           
+           <TableRow android:id="@+id/jzxhIndex_view_zll_sxyhpjsl" android:gravity="center"  android:background="@color/emergent_bg_blue">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_zll_2"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_zll_sxyhpjsl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+           
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+           
+           <TableRow android:id="@+id/jzxhIndex_view_zll_xqyhmxxzjs" android:gravity="center">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_zll_3gb"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_zll_xqyhmxxzjs"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+           
+           <TableRow android:id="@+id/jzxhIndex_view_zll_xxyhpjsl" android:gravity="center"  android:background="@color/emergent_bg_blue">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_zll_4"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_zll_xxyhpjsl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+           
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+           
+           <TableRow android:id="@+id/jzxhIndex_view_zll_voltesxdbl" android:gravity="center">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_zll_5"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_zll_voltesxdbl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+           
+           <TableRow android:id="@+id/jzxhIndex_view_zll_sxrtpdbs" android:gravity="center"  android:background="@color/emergent_bg_blue">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_zll_6"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_zll_sxrtpdbs"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+   	</TableLayout>   
+   </LinearLayout>
+<!-- 容量类 -->
+<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="2dp"
+       android:background="@drawable/icon_xqzb_help_item_bg"
+       android:gravity="center"
+       android:orientation="horizontal" >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawablePadding="5dp"
+           android:paddingLeft="18dp" android:paddingRight="18dp"
+           android:drawableTop="@drawable/icon_emergent_quota_capacity"
+           android:gravity="center"
+           android:text="@string/index_rll"
+           android:textColor="@color/ui_black"
+           android:textSize="@dimen/tv_small_size"
+           android:textStyle="bold" />
+       <View android:layout_width="0.5dp" android:layout_height="match_parent" android:background="@color/emergent_border_blue" />
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+           <TableRow android:id="@+id/jzxhIndex_view_rll_zdrrcljs" android:gravity="center">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_rll_1"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_rll_zdrrcljs"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+           
+           <TableRow android:id="@+id/jzxhIndex_view_rll_sxprblyl" android:gravity="center"  android:background="@color/emergent_bg_blue">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_rll_2"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_rll_sxprblyl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+           
+           <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/emergent_border_blue" />
+           
+           <TableRow android:id="@+id/jzxhIndex_view_rll_xxprblyl" android:gravity="center">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="3"
+                   android:gravity="center"
+                   android:text="@string/index_rll_3"
+                   android:textColor="@color/black_small"
+                   android:textSize="@dimen/tv_micro_size" />
+               <View android:layout_width="0.5dp" android:layout_height="30dp" android:background="@color/emergent_border_blue" />
+               <TextView
+                   android:id="@+id/jzxhIndex_tv_rll_xxprblyl"
+                   style="@style/tv_weight"
+                   android:gravity="center"
+                   android:textColor="@color/black_small"
+                   android:drawableRight="@drawable/arrow_small_right"
+                   android:textSize="@dimen/tv_micro_size" />
+           </TableRow>
+   	</TableLayout>   
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_tt_type">
+        <item>全部</item>
+        <item>移动</item>
+        <item>联通</item>
+        <item>电信</item>
+        <item>全量</item>
+        <item>移动联通</item>
+        <item>移动电信</item>
+        <item>联通电信</item>
+        <item>移动联通电信</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="arr_tt_state">
+        <item>全部</item>
+        <item>设计</item>
+        <item>在建</item>
+        <item>在网</item>
+    </string-array>
+    <string-array name="flash_icons">
+        <item>drawable/flash_off</item>
+        <item>drawable/flash_auto</item>
+        <item>drawable/flash_on</item>
+        <item>drawable/flash_torch</item>
+        <item>drawable/flash_red_eye</item>
+    </string-array>
+    <string-array name="flash_entries">
+        <item>关闭闪光</item>
+        <item>自动闪光</item>
+        <item>开启闪光</item>
+        <item>开启照明</item>
+        <item>红眼模式</item>
+    </string-array>
+    <string-array name="flash_values">
+        <item>flash_off</item>
+        <item>flash_auto</item>
+        <item>flash_on</item>
+        <item>flash_torch</item>
+        <item>flash_red_eye</item>
+    </string-array>
+
+    <string-array name="citynames">
+        <item>福州</item>
+        <item>厦门</item>
+        <item>宁德</item>
+        <item>莆田</item>
+        <item>泉州</item>
+        <item>漳州</item>
+        <item>龙岩</item>
+        <item>三明</item>
+        <item>南平</item>
+    </string-array>
+    <string-array name="citynos">
+        <item>0591</item>
+        <item>0592</item>
+        <item>0593</item>
+        <item>0594</item>
+        <item>0595</item>
+        <item>0596</item>
+        <item>0597</item>
+        <item>0598</item>
+        <item>0599</item>
+    </string-array>
+    <!-- 规划 室分数据采集  室分建设方案  室分类型（单路，多路） -->
+    <string-array name="getrooominfo_plan_type">
+        <item>单路</item>
+        <item>双路</item>
+    </string-array>
+    
+    <string-array name="arrIs">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+    <string-array name="arr_purpose">
+        <item>居民小区</item>
+        <item>写字楼</item>
+        <item>商业场所</item>
+        <item>企事业单位</item>
+        <item>交通场所</item>
+        <item>医院</item>
+        <item>宾馆酒店</item>
+        <item>学校</item>
+        <item>党政军机关</item>
+        <item>大型场馆</item>
+        <item>工业区</item>
+        <item>景区</item>
+    </string-array>
+    <string-array name="arr_purpose_hint">
+        <item>如：住宅楼、会所、活动中心、物业处、幼儿园</item>
+        <item>请输入</item>
+        <item>请输入</item>
+        <item>请输入</item>
+        <item>请输入</item>
+        <item>如：办公楼（行政楼）、门诊楼、住院部、检查楼、宿舍、食堂</item>
+        <item>请输入</item>
+        <item>如：办公楼（行政楼）、教学楼、宿舍、图书馆、礼堂、体育馆、食堂</item>
+        <item>如：办公楼（行政楼）、宿舍、礼堂、食堂</item>
+        <item>请输入</item>
+        <item>如：办公楼（行政楼）、宿舍、厂房、食堂</item>
+        <item>如：办公楼（行政楼）、车站（码头）、游客中心、宾馆、会议室、运动馆、食堂</item>
+    </string-array>
+    <string-array name="arrLylx">
+        <item>板楼</item>
+        <item>塔楼</item>
+    </string-array>
+    <string-array name="arr_snsl_measure">
+        <item>&lt;1000平米</item>
+        <item>1000~5000平米</item>
+        <item>5000~10000平米</item>
+        <item>&gt;10000平米</item>
+    </string-array>
+    <string-array name="arrRwConten">
+        <item>站点完整性</item>
+        <item>防雷接地</item>
+        <item>机房安全</item>
+        <item>设备安全</item>
+    </string-array>
+    <string-array name="arrPictype">
+        <item>设备拓扑图</item>
+        <item>设备取电图</item>
+        <item>系统图</item>
+        <item>平面图</item>
+    </string-array>
+
+    <!-- 一键诊断 -->
+    <string-array name="yjzd_wlzs">
+        <item>LTE</item>
+        <item>GSM</item>
+        <item>TD</item>
+    </string-array>
+    <string-array name="yjzd_dscl">
+        <item>地市+CI</item>
+        <item>地市+地址</item>
+        <item>经度+纬度</item>
+    </string-array>
+    <string-array name="sfdy_mainVender">
+        <item>华为</item>
+        <item>中兴</item>
+        <item>大唐</item>
+        <item>诺基亚</item>
+        <item>贝尔</item>
+        <item>普天</item>
+        <item>爱立信</item>
+    </string-array>
+    <string-array name="sfdy_vender">
+        <item>特力通</item>
+        <item>赛弗</item>
+        <item>上海新民</item>
+        <item>京信</item>
+        <item>三维</item>
+        <item>先创</item>
+        <item>鑫众</item>
+        <item>华为</item>
+        <item>信通捷</item>
+        <item>邮科</item>
+        <item>虹信</item>
+        <item>铁通</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="hzdy_pass">
+        <item>通过</item>
+        <item>不通过</item>
+    </string-array>
+    <string-array name="gettc_net_basedata">
+        <item>2G</item>
+        <item>4G</item>
+    </string-array>
+    <string-array name="gettc_internet_basedata">
+        <item>信号满格，但无法上网</item>
+        <item>上网速度慢/网页无法打开</item>
+        <item>上网出现断线</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="gettc_call_basedata">
+        <item>信号满格，但无法拨打/接听电话</item>
+        <item>信号满格，通话掉话/串话</item>
+        <item>信号满格，通话断续、有杂音</item>
+        <item>信号满格，楼房高层无主控覆盖</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="gettc_cover_basedata">
+        <item>信号没有满格，手机信号弱/不稳定</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="gis_test">
+        <item>无</item>
+        <item>HO Events</item>
+    </string-array>
+    <string-array name="log_save_time">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="ergodic_log_save_time">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+    </string-array>
+    <string-array name="call_net_type">
+        <item>LTE</item>
+        <item>CS fallback</item>
+        <item>2G</item>
+    </string-array>
+    <string-array name="custom_layer_address_type">
+        <item>手动选择地点</item>
+        <item>离我最近</item>
+    </string-array>
+    <string-array name="custom_layer_long_click_type">
+        <item>上传</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="speed_test_size">
+        <item>5M</item>
+        <item>50M</item>
+        <item>500M</item>
+    </string-array>
+    <!-- 传播模型-设备类型 -->
+    <string-array name="equipment_type">
+        <item>八通道RRU</item>
+        <item>双通道RRU</item>
+        <item>一体化RRU</item>
+        <item>微站/Relay</item>
+        <item>MDAS远端室外</item>
+        <item>MDAS远端室内、企业级NANO、Pico</item>
+        <item>家庭级Femto</item>
+        <item>Pico</item>
+        <item>微放器</item>
+        <item>普通室分系统末端</item>
+    </string-array>
+    
+    <string-array name="equipment_data">
+        <item>80,15.5,18,32</item>
+        <item>40,10,15,24</item>
+        <item>10,10,19,18</item>
+        <item>10,10,9,19</item>
+        <item>1,10,-1,9</item>
+        <item>0.5,2.5,-4,-1</item>
+        <item>0.25,2.5,-7,-4</item>
+        <item>0.2,2.5,-8,-5</item>
+        <item>0.05,2.5,-14,-11</item>
+        <item>0.0316,3,-16,-13</item>
+    </string-array>
+    
+    <string-array name="band_frequency_con">
+        <item>D1 (Band38),2575,37800,38000,2575,37800,38000</item>
+        <item>D2 (Band38),2594.8,37998,38198,2594.8,37998,38198</item>
+        <item>D3 (Band41),2614.6,40836,41036,2614.6,40836,41036</item>
+        <item>D4,2515,39840,40040,2515,39840,40040</item>
+        <item>D5,2535,40038,40238,2535,40038,40238</item>
+        <item>D6,2555,40240,40440,2555,40240,40440</item>
+        <item>D7,2635,41034,41234,2635,41034,41234</item>
+        <item>D8,2655,41236,41436,2655,41236,41436</item>
+        <item>E1 (Band40),2320,38850,39050,2320,38850,39050</item>
+        <item>E2 (Band40),2339.8,39048,39248,2339.8,39048,39248</item>
+        <item>E3 (Band40),2359.2,39242,39342,2359.2,39242,39342</item>
+        <item>F1 (Band39),1885,38300,38500,1885,38300,38500</item>
+        <item>F2 (Band39),1904.4,38494,38594,1904.4,38494,38594</item>
+        <item>F3 (Band39),1894.6,38396,38596,1895,38396,38596</item>
+        <item>移动 FDD900 (Band8),945.8,3658,3708,900.8,21658,21708</item>
+        <item>移动 FDD1800 (Band3),1810,1250,1350,1715,19250,19350</item>
+        <item>移动 FDD1800R (Band3),1820,1350,1450,1725,19350,19450</item>
+        <item>联通 FDD1800 (Band3),1840,1550,1750,1745,19550,19750</item>
+        <item>联通 FDD2100 (Band1),2142.5,325,475,1952.5,18325,18475</item>
+        <item>电信 FDD800 (Band5),870,2410,2510,825,20410,20510</item>
+        <item>电信 FDD1800 (Band3),1860,1750,1900,1760,19700,19850</item>
+        <item>电信 FDD2100 (Band1),2110,0,200,1920,18000,18200</item>
+        
+        <item>Band1,2110,0,599,1920,18000,18599</item>
+        <item>Band2,1930,600,1199,1850,18600,19199</item>
+        <item>Band3,1805,1200,1949,1710,19200,19949</item>
+        <item>Band4,2110,1950,2399,1710,19950,20399</item>
+        <item>Band5,869,2400,2649,824,20400,20649</item>
+        <item>Band6,875,2650,2749,830,20650,20749</item>
+        <item>Band7,2620,2750,3449,2500,20750,21449</item>
+        <item>Band8,925,3450,3799,880,21450,21799</item>
+        <item>Band9,1844.9,3800,4149,1749.9,21800,22149</item>
+        <item>Band10,2110,4150,4749,1710,22150,22749</item>
+        <item>Band11,1475.9,4750,4949,1427.9,22750,22949</item>
+        <item>Band12,729,5010,5179,699,23010,23179</item>
+        <item>Band13,746,5180,5279,777,23180,23279</item>
+        <item>Band14,758,5280,5379,788,23280,23379</item>
+        <item>Band17,734,5730,5849,704,23730,23849</item>
+        <item>Band18,860,5850,5999,815,23850,23999</item>
+        <item>Band19,875,6000,6149,830,24000,24149</item>
+        <item>Band20,791,6150,6449,832,24150,24449</item>
+        <item>Band21,1495.9,6450,6599,1447.9,24450,24599</item>
+        <item>Band22,3510,6600,7399,3410,24600,25399</item>
+        <item>Band23,2180,7500,7699,2000,25500,25699</item>
+        <item>Band24,1525,7700,8039,1626.5,25700,26039</item>
+        <item>Band25,1930,8040,8689,1850,26040,26689</item>
+        <item>Band26,859,8690,9039,814,26690,27039</item>
+        <item>Band27,852,9040,9209,807,27040,27209</item>
+        <item>Band28,758,9210,9659,703,27210,27659</item>
+        <item>Band29,717,9660,9769,NA,NA,NA</item>
+        <item>Band33,1900,36000,36199,1900,36000,36199</item>
+        <item>Band34 (A频),2010,36200,36349,2010,36200,36349</item>
+        <item>Band35,1850,36350,36949,1850,36350,36949</item>
+        <item>Band36,1930,36950,37549,1930,36950,37549</item>
+        <item>Band37,1910,37550,37749,1910,37550,37749</item>
+        <item>Band38 (D频),2570,37750,38249,2570,37750,38249</item>
+        <item>Band39 (F频),1880,38250,38649,1880,38250,38649</item>
+        <item>Band40 (E频),2300,38650,39649,2300,38650,39649</item>
+        <item>Band41 (D频),2496,39650,41589,2496,39650,41589</item>
+        <item>Band42,3400,41590,43589,3400,41590,43589</item>
+        <item>Band43,3600,43590,45589,3600,43590,45589</item>
+        <item>Band44,703,45590,46589,703,45590,46589</item>
+    </string-array>
+     
+    <string-array name="band_frequency_con_gsm">
+        <item>GSM,890~915,935~960,0~125</item>
+        <item>E-GSM,880.2~889.8,925.2~934.8,975~1023</item>
+        <item>DCS1800,1710.2~1784.8,1805.2~1879.8,512~885</item>
+    </string-array>
+    <string-array name="array_unit_height_measure">
+        <item>m</item>
+        <item>cm</item>
+    </string-array>
+
+    <string-array name="arr_wyzdh_actualProblemTypes">
+        <item>覆盖</item>
+        <item>干扰</item>
+        <item>邻区</item>
+        <item>参数</item>
+        <item>容量</item>
+        <item>故障</item>
+        <item>其它</item>
+    </string-array>
+    
+    <string-array name="arr_wyzdh_ycljydf">
+    	<item>1分</item>
+    	<item>2分</item>
+    	<item>3分</item>
+    	<item>4分</item>
+    	<item>5分</item>
+    </string-array>
+    
+    <!-- 工参巡检类型 -->
+    <string-array name="arrGcxjType">
+        <item>日常巡检</item>
+        <item>属地化巡检</item>
+        <item>天线巡警</item>
+        <item>其他</item>
+    </string-array>
+    
+    <!-- GIS图层菜单排序方式(名称)-基础图层 -->
+    <string-array name="arrGisMenuNameJc">
+        <item>GSM小区</item>
+        <item>LTE小区</item>
+        <item>5G小区</item>
+        <item>LTE RRU</item>
+        <item>LTE规划</item>
+        <item>NB图层</item>
+        <item>共站信息</item>
+        <item>竞对基站</item>
+        <item>高铁</item>
+        <item>应急宝</item>
+        <item>邻区关系</item>
+        <item>室分图纸</item>
+    </string-array>
+    <!-- GIS图层菜单排序方式(类型)基础图层 -->
+    <integer-array name="arrGisMenuTypeJc">
+        <item>0</item>
+        <item>2</item>
+        <item>26</item>
+        <item>18</item>
+        <item>3</item>
+        <item>27</item>
+        <item>25</item>
+        <item>4</item>
+        <item>13</item>
+        <item>23</item>
+        <item>17</item>
+        <item>20</item>
+    </integer-array>
+    <!-- GIS图层菜单排序方式(名称)-专题图层 -->
+    <string-array name="arrGisMenuNameZt">
+        <item>指纹库(OTT采样)</item>
+        <item>高铁</item>
+        <item>空间退服告警</item>
+        <item>基站导航</item>
+    </string-array>
+    <!-- GIS图层菜单排序方式(类型)专题图层 -->
+    <integer-array name="arrGisMenuTypeZt">
+        <item>22</item>
+        <item>30</item>
+        <item>28</item>
+        <item>24</item>
+    </integer-array>
+    <!-- MRO图层条件选择时间粒度 -->
+    <string-array name="arrMroSetTimeType">
+        <item>日</item>
+        <item>周</item>
+        <item>月</item>
+    </string-array>
+    <!-- 考勤系统-人员打卡迟到 -->
+    <string-array name="arrAttendanceStatusPersonPunchLate">
+        <item>迟到</item>
+        <item>请假</item>
+        <item>出差</item>
+    </string-array>
+    <!-- 考勤系统-人员打卡提前登记 -->
+    <string-array name="arrAttendanceStatusAdvanceExplain">
+        <item>请假</item>
+        <item>出差</item>
+    </string-array>
+    
+    <!-- 百度地图比例尺对应的距离21-3缩放级别  -->
+    <integer-array name="arrBaiduMapLevel">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>50000</item>
+        <item>100000</item>
+        <item>200000</item>
+        <item>500000</item>
+        <item>1000000</item>
+        <item>2000000</item>
+    </integer-array>
+    
+    <string-array name="arrWeek">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="arrMonth">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="arrAMPM">
+        <item>上午</item>
+        <item>下午</item>
+    </string-array>
+    <string-array name="arrAMPMAllDay">
+        <item>上午</item>
+        <item>下午</item>
+        <item>全天</item>
+    </string-array>
+    <string-array name="arrSpeedTestTickLabel">
+        <item>512K</item>
+        <item>5M</item>
+        <item>10M</item>
+        <item>20M</item>
+        <item>50M</item>
+        <item>100M</item>
+        <item>200M</item>
+        <item>500M</item>
+        <item>1G</item>
+        <item>2G</item>
+    </string-array>
+
+</resources>

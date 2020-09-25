@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0.0dp"
+                android:layout_weight="1.0" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:weightSum="0.0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/mianhomeSuper_tab_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_color"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/mianhomeSuper_rb_cs"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="4dp"
+                        android:drawableTop="@drawable/drawable_mainhome_ck_cs"
+                        android:gravity="center_horizontal"
+                        android:padding="7dp"
+                        android:text="测速"
+                        android:textColor="@color/color_blacksmall_bluesmall"
+                        android:textSize="@dimen/tv_micro_size" />
+
+                    <RadioButton
+                        android:id="@+id/mianhomeSuper_rb_ls"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="4dp"
+                        android:drawableTop="@drawable/drawable_mainhome_ck_ls"
+                        android:gravity="center_horizontal"
+                        android:padding="7dp"
+                        android:text="历史"
+                        android:textColor="@color/color_blacksmall_bluesmall"
+                        android:textSize="@dimen/tv_micro_size" />
+
+                    <RadioButton
+                        android:id="@+id/mianhomeSuper_rb_gj"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="4dp"
+                        android:drawableTop="@drawable/drawable_mainhome_ck_gj"
+                        android:gravity="center_horizontal"
+                        android:padding="7dp"
+                        android:text="工具"
+                        android:textColor="@color/color_blacksmall_bluesmall"
+                        android:textSize="@dimen/tv_micro_size" />
+
+                    <RadioButton
+                        android:id="@+id/mianhomeSuper_rb_wd"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="4dp"
+                        android:drawableTop="@drawable/drawable_mainhome_ck_wd"
+                        android:gravity="center_horizontal"
+                        android:padding="7dp"
+                        android:text="未登录"
+                        android:textColor="@color/color_blacksmall_bluesmall"
+                        android:textSize="@dimen/tv_micro_size" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView style="@style/tv_weight" />
+
+                    <TextView style="@style/tv_weight" />
+
+                    <FrameLayout
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp" >
+
+                        <ImageView
+                            android:id="@+id/mianhomeSuper_ivToast_personal"
+                            style="@style/tv_warp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:contentDescription="@string/add"
+                            android:src="@drawable/round_small_red"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

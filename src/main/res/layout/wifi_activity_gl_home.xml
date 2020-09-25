@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <cn.nokia.speedtest5g.view.actionbar.MyActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+    <!-- 扫描模块 -->
+    <RelativeLayout android:id="@+id/wifiGl_view_wifi" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/wifiGl_view_ing" android:layout_marginTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+	        <TextView android:id="@+id/wifiGl_tv_wifiName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:textSize="24sp" android:textStyle="bold" android:layout_gravity="center_horizontal"/>
+	        <TextView android:id="@+id/wifiGl_tv_address" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/gray_c0c0c3" android:textSize="12sp" android:layout_gravity="center_horizontal"/>
+	  		<TextView android:id="@+id/wifiGl_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/gray_c0c0c3" android:textSize="12sp" android:layout_gravity="center_horizontal"/>
+	  		<RelativeLayout android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+	  		    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_wifi_gl_bg" android:layout_centerInParent="true"/>
+	  		    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_wifi_gl_centre_1" android:layout_centerInParent="true"/>
+	  			<ImageView android:id="@+id/wifiGl_iv_ing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_wifi_gl_centre_2" android:layout_centerInParent="true"/>
+	  			<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+	  			    <TextView android:id="@+id/wifiGl_tv_ing" android:text="00" style="@style/tv_warp" android:textColor="@color/white" android:textSize="50sp" android:textStyle="bold" android:layout_marginTop="20dp"/>
+		  			<TextView android:text="%" style="@style/tv_warp" android:textColor="@color/white" android:textSize="14sp" android:layout_alignBottom="@id/wifiGl_tv_ing" android:layout_toRightOf="@id/wifiGl_tv_ing" android:paddingBottom="11dp"/>
+		  			<TextView android:text="干扰分析中…" style="@style/tv_warp" android:textColor="@color/white" android:textSize="12sp" android:layout_centerHorizontal="true" android:layout_below="@id/wifiGl_tv_ing" android:layout_marginTop="5dp"/>
+	  			</RelativeLayout>
+	  		</RelativeLayout>
+	  		<TableLayout android:layout_margin="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/shape_rectangle_black_bg">
+	  			<TextView android:padding="10dp" android:text="干扰分析项目" style="@style/tv_warp" android:textColor="@color/gray_c0c0c3" android:textSize="12sp"/>   
+	  			<View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/black_half"/>
+	  			<TableRow android:gravity="center_vertical" android:paddingRight="10dp">
+	  			    <TextView android:padding="10dp" android:text="WIFI同频干扰项目" style="@style/tv_weight" android:textColor="@color/white" android:textSize="14sp"/>   
+	  			    <ImageView android:id="@+id/wifiGl_iv_read_tp" android:src="@drawable/icon_wifi_read_ing" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	  			</TableRow>
+	  			<TableRow android:gravity="center_vertical" android:paddingRight="10dp">
+	  			    <TextView android:padding="10dp" android:text="WIFI邻频干扰项目" style="@style/tv_weight" android:textColor="@color/white" android:textSize="14sp"/>   
+	  			    <ImageView android:id="@+id/wifiGl_iv_read_lp" android:visibility="invisible" android:src="@drawable/icon_wifi_read_ing" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	  			</TableRow>
+	  		</TableLayout>
+	    </LinearLayout>
+	    
+        <Button android:id="@+id/wifiGl_btn_help" android:onClick="onClickListener" android:background="@android:color/transparent" android:layout_centerHorizontal="true" android:drawableLeft="@drawable/icon_hint_alarm" android:drawablePadding="5dp"
+            style="@style/tv_warp" android:text="如何使用干扰分析仪" android:textColor="@color/gray_c0c0c3" android:textSize="12sp" android:layout_alignParentBottom="true" android:padding="10dp"/>
+    </RelativeLayout>
+    
+    <!-- 无wifi模块 -->
+    <LinearLayout
+        android:id="@+id/wifiGl_layout_notWifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" android:visibility="gone"
+        android:orientation="vertical">
+        <TextView android:id="@+id/wifiGl_tv_wifiMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请先打开您的Wi-Fi"
+            android:textColor="@color/gray_c0c0c3"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/wifiGl_btn_openWifi" android:onClick="onClickListener"
+            style="@style/tv_warp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/drawable_login_btn_bg"
+            android:paddingBottom="8dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="8dp"
+            android:text="打开Wi-Fi"
+            android:textColor="@color/white_edeeee"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

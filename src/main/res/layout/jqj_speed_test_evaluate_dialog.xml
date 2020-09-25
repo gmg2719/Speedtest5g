@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/aw_white_panel_2"
+    android:orientation="vertical"
+    android:padding="12dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已超过全国"
+            android:textColor="@color/black_small"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/speedtest_evaluate_tv_value1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1%"
+            android:textColor="@color/black_half"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="的用户"
+            android:textColor="@color/black_small"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_speed_test_eva_download_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="22dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="22dp" >
+
+                <TextView
+                    android:id="@+id/speedtest_evaluate_tv_avg_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/download_text_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下载(Mbps)"
+                    android:textColor="@color/black_small"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_speed_test_eva_upload_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="22dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="22dp" >
+
+                <TextView
+                    android:id="@+id/speedtest_evaluate_tv_avg_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/upload_text_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传(Mbps)"
+                    android:textColor="@color/black_small"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/speedtest_evaluate_tv_isp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black_half"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RatingBar
+            android:id="@+id/speedtest_evaluate_rb_evaluate"
+            style="@style/SpeedTestRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:rating="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/speedtest_evaluate_tv_mark"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="100分"
+            android:textColor="#18F1E6"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/speedtest_evaluate_btn_no"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_radius_20dp_gray_outer"
+            android:text="残忍拒绝"
+            android:textColor="#2f73f5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/speedtest_evaluate_btn_yes"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drawable_login_btn_bg_normal2"
+            android:text="提交"
+            android:textColor="@color/white_edeeee"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

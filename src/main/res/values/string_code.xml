@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 登录 -->
+    <string name="code_login">1000</string>
+    <!-- 注销 -->
+    <string name="code_exit">1100</string>
+    
+    <string name="code_exit_no">-1100</string>
+    <!-- 规划设计 -->
+    <string name="code_ghsj">1200</string>
+    <!-- 室分数据采集 -->
+    <string name="code_ghsj_cj">1201</string>
+    <!-- 分部系统改造说明 -->
+    <string name="code_ghsj_sm">1202</string>
+    <!-- 现场勘查人员信息 -->
+    <string name="code_ghsj_xx">1203</string>
+    <!-- 室分拍照 -->
+    <string name="code_ghsj_camera">1204</string>
+    <!-- 现场勘查人员签名 -->
+    <string name="code_ghsj_sign">1205</string>
+    <!-- 室分工程 -->
+    <string name="code_sfgc">1300</string>
+    <!-- 室分工程详情 -->
+    <string name="code_sggc_xq">1301</string>
+    <!-- 宏站入网 -->
+    <string name="code_hzrw">1400</string>
+    <!-- 检查项目 -->
+    <string name="code_hzrw_xm">1401</string>
+    <!-- 站点完整性检查项目 -->
+    <string name="code_hzrw_wzx">1402</string>
+    <!-- 室分入网 -->
+    <string name="code_sfrw">1500</string>
+    <!-- 检查项目 -->
+    <string name="code_sfrw_xm">1501</string>
+    <!-- 站点完整性检查项目 -->
+    <string name="code_sfrw_wzx">1502</string>
+    <!-- 基站信号 -->
+    <string name="code_jzxh">1600</string>
+    <!-- 道路测试 -->
+    <string name="code_dlcs">1700</string>
+    <!-- 工参维护 -->
+    <string name="code_gcwh">1800</string>
+    <!-- 工参巡检 -->
+    <string name="code_gcxj">1801</string>
+    <!-- 工参调整 -->
+    <string name="code_gctz">1802</string>
+    <!-- 天馈运算-->
+    <string name="code_tkys">1803</string>
+    <!-- GIS展示 -->
+    <string name="code_gis">1900</string>
+    <!-- 工参导入 -->
+    <string name="code_gcdr">1901</string>
+    <!-- 指标展示 -->
+    <string name="code_zbzs">1902</string>
+    <!-- 性能测试SmartTest -->
+    <string name="code_smart">2000</string>
+    <!-- 性能测试SpeedVideo -->
+    <string name="code_speedvideo">2001</string>
+    <!-- 投诉系统 -->
+    <string name="code_tsxt">2100</string>
+    <!-- 上传功能 -->
+    <string name="code_scgn">2200</string>
+    <!-- 道路测试log -->
+    <string name="code_logsc">2201</string>
+    <!-- 其他 -->
+    <string name="code_qtsc">2202</string>
+    <!-- 基站工参下载 -->
+    <string name="code_jzxz">2300</string>
+    <!-- 其他设置 -->
+    <string name="code_qtsz">2400</string>
+    <!-- 常用模块 -->
+    <string name="code_cymk">2500</string>
+    <!-- 定点测试 -->
+    <string name="code_ddcs">2600</string>
+    <!-- 定点测试详情 -->
+    <string name="code_ddcs_xq">2601</string>
+    <!-- GSM室分 -->
+    <string name="code_gsmsf">2700</string>
+    <!-- 室分图纸 -->
+    <string name="code_sftz">2800</string>
+    <!-- 室分图纸详情 -->
+    <string name="code_sftz_xq">2801</string>
+    <!-- 一键诊断 -->
+    <string name="code_yjzd">2900</string>
+    <!-- 一键诊断详情 -->
+    <string name="code_yjzd_xq">2901</string>
+    <!-- 室分单验 -->
+    <string name="code_sfdy">3000</string>
+    <!-- 室分单验详情 -->
+    <string name="code_sfdy_xq">3001</string>
+    <!-- 宏站单验 -->
+    <string name="code_hzdy">3100</string>
+    <!-- 宏站单验详情 -->
+    <string name="code_hzdy_xq">3101</string>
+    <!-- 网络挑刺-工单查询 -->
+    <string name="code_wltc_cx">3201</string>
+    <!-- 网络挑刺-工单详情 -->
+    <string name="code_wltc_cx_xq">3202</string>
+    <!-- 方案初勘 -->
+    <string name="code_fack">3300</string>
+    <!-- 和协作 -->
+    <string name="code_sso">3400</string>
+    <!-- 网络挑刺 -->
+    <string name="code_network_tc">3500</string>
+    <!-- 天线巡警 -->
+    <string name="code_txxj">3600</string>
+    <!-- 自动偏置(纠偏) -->
+    <string name="code_zdpz">3700</string>
+    <!-- 工具-站高(高度测量) -->
+    <string name="code_zg">3801</string>
+    <!-- 工具-下倾角 -->
+    <string name="code_xqj">3802</string>
+    <!-- 工具-方位角 -->
+    <string name="code_fwj">3803</string>
+    <!-- 工具-速率 -->
+    <string name="code_sl">3804</string>
+    <!-- 工具-遍历测试 -->
+    <string name="code_blcs">3805</string>
+    <!-- PCI工具 -->
+    <string name="code_pci">3806</string>
+    <!-- 工具-LTE传播模型 -->
+    <string name="code_ltecbmx">3807</string>
+    <!-- 工具-频点换算 -->
+    <string name="code_pdhs">3808</string>
+    <!-- 工具-楼间对打 -->
+    <string name="code_ljdd">3809</string>
+    <!-- 工具-自动纠偏 -->
+    <string name="code_zdjp">3810</string>
+    <!-- 网优计费系统 -->
+    <string name="code_wyjfxt">3811</string>
+    <!-- 参数修改-->
+    <string name="code_csxg">3812</string>
+    <!-- 现场拍照-->
+    <string name="code_xcpz">3813</string>
+    <!-- 经纬度转换-->
+    <string name="code_jwdzh">3814</string>
+    <!-- 考勤系统-车辆仪表管理 -->
+    <string name="code_attendance_car_instrument">3815</string>
+    <!-- 小区指标 -->
+    <string name="code_xqzb">3816</string>
+    <!-- 系统信息 -->
+    <string name="code_system_info">3817</string>
+    <!-- 网优计费系统-投诉系统 -->
+    <string name="code_wyjfxt_tsxt">3818</string>
+    <!-- 工具-NB测试 -->
+    <string name="code_nb_test">3819</string>
+    <!-- 远程电调 -->
+    <string name="code_ycdt">3820</string>
+    <!-- 公告 -->
+    <string name="code_notify">3821</string>
+    <!-- 满格宝 -->
+    <string name="code_mgb">3822</string>
+    <!-- 人员考勤 -->
+    <string name="code_attendance_person">3823</string>
+	<!-- 共站 -->
+    <string name="code_total_station">3824</string>
+    <!-- 价值小区 -->
+    <string name="code_jzxq">3825</string>
+    <!-- 天面整合-->
+    <string name="code_tmzh">3826</string>
+    <!-- 网优自动化(末消标准化)首页 -->
+    <string name="code_wyzdh">3900</string>
+    <!-- 网优自动化(末消标准化)详情页 -->
+    <string name="code_wyzdh_details">3901</string>
+    <!-- 工具-语音测试 -->
+    <string name="code_yycs">3902</string>
+    <!-- 属地化巡检模块点击code -->
+    <string name="code_sdhxj">4000</string>
+    <!-- 应急站点 -->
+    <string name="code_yjzd_gis">4100</string>
+	<!-- 简单硬扩 -->
+    <string name="code_jjyk">4200</string>
+    <!-- 自动开站 -->
+    <string name="code_zdkz">4300</string>
+    <!-- 自动开站5G -->
+    <string name="code_zdkz_nr">4400</string>
+    <!-- 首页更多（我的应用） -->
+    <string name="code_home_more">4500</string>
+    <!-- 速率测试-速率PK -->
+    <string name="code_speed_pk">4700</string>
+    <!-- 投诉测试-信号竞对测试 -->
+    <string name="code_tscs_signal_pk">4800</string>
+    <!-- 5G小区激活 -->
+    <string name="code_nr_cell">4900</string>
+    <!-- 宏站入网(5G) -->
+    <string name="code_nr_hzrw">5000</string>
+    <!-- 室分入网(5G) -->
+    <string name="code_nr_sfrw">5100</string>
+    <!-- 技术验证 -->
+    <string name="code_nr_jsyz">5200</string>
+    <!-- 技术验证(福建) -->
+    <string name="code_nr_jsyzFj">5300</string>
+    <!-- ping测试1 -->
+    <string name="code_ping_test">5400</string>
+    <!-- ping测试2 -->
+    <string name="code_ping_test_main">5500</string>
+    <!-- wifi信号检测 -->
+    <string name="code_wifi_sd">5600</string>
+    <!-- wifi蹭网 -->
+    <string name="code_wifi_sn">5700</string>
+    <!-- 网络诊断 -->
+    <string name="code_network_diagnose">5800</string>
+    <!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    	    ~~~~~~~~~~~~~~~~~菜单权限（菜单编码）相关-start~~~~~~~~~~~~~~~ 
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    -->
+    <!-- 游戏测速权限代码 -->
+	<string name="permissionsYxcs">1001</string>
+	<!-- 视频测速权限代码 -->
+	<string name="permissionsSpcs">1002</string>
+	<!-- 资讯测速权限代码 -->
+	<string name="permissionsZxcs">1003</string>
+	<!-- 电商测速权限代码 -->
+	<string name="permissionsDscs">1004</string>
+	<!-- Ping测试权限代码 -->
+	<string name="permissionsPingTest">1005</string>
+	<!-- 即时通信权限代码 -->
+	<string name="permissionsJstx">1006</string>
+	<!-- wifi信号检测权限代码 -->
+	<string name="permissionsWfxhjc">1007</string>
+	<!-- wifi信道检测权限代码 -->
+	<string name="permissionsWfxdjc">1008</string>
+	<!-- wifi干扰检测权限代码 -->
+	<string name="permissionsWfgrjc">1009</string>
+	<!-- 蹭网检测权限代码 -->
+	<string name="permissionsWfcwjc">1010</string>
+	<!-- 网络诊断权限代码 -->
+	<string name="permissionsWfwlzd">1011</string>
+	<!-- 网速排行权限代码 -->
+	<string name="permissionsWfwsph">1012</string>
+	<!-- 周边网速权限代码 -->
+	<string name="permissionsWfzbws">1013</string>
+    <!-- 宏站入网权限代码 -->
+	<string name="permissionsHzrw">1201</string>
+	<!-- 室分入网权限代码 -->
+	<string name="permissionsSfrw">1202</string>
+	<!-- 室分单验权限代码 -->
+	<string name="permissionsSfdy">1203</string>
+	<!-- 宏站单验权限代码 -->
+	<string name="permissionsHzdy">1204</string>
+	<!-- 道路测试 权限代码-->
+	<string name="permissionsDlcs">1303</string>
+	<!-- 定点测试权限代码 -->
+	<string name="permissionsDdcs">1305</string>
+	<!-- 一键诊断权限代码 -->
+	<string name="permissionsYjzd">1307</string>
+	<!-- 天馈自纠错权限代码 -->
+	<string name="permissionsTxxj">1308</string>
+	<!-- 属地化巡检权限代码-原始需求本地不设置入口 -->
+	<string name="permissionsSdhxj">1309</string>
+	<!-- GIS呈现 -->
+	<string name="permissionsGis">20</string>
+	<!-- 投诉系统的权限代码 -->
+	<string name="permissionsComplaint">40</string>
+	<!-- SmartTest权限代码 -->
+	<string name="permissionsSmartTest">50</string>
+	<!-- 方案初勘权限代码 -->
+	<string name="permissionsFack">60</string>
+	<!-- 网优和协作权限代码 -->
+	<string name="permissionsSso">61</string>
+	<!-- 网优和协作-管理者视图权限代码 -->
+	<string name="permissionsSsoChart">610</string>
+	<!-- 工具-站高权限代码 -->
+	<string name="permissionsZg">1401</string>
+	<!-- 网优自动化(末消标准化) -->
+	<string name="permissionsWyzdh">62</string>
+	<!-- 参数修改 -->
+	<string name="permissionsCsxg">63</string>
+	<!-- 现场拍照 -->
+	<string name="permissionsXcpz">64</string>
+	<!-- 经纬度转换 -->
+	<string name="permissionsJwdzh">65</string>
+	<!-- 考勤系统-车辆仪表管理 -->
+	<string name="permissionsAttendanceCarInstrument">66</string>
+	<!-- nb测试 -->
+	<string name="permissionsNbTest">67</string>
+	<!-- 天馈运算 -->
+	<string name="permissionsTkys">68</string>
+	<!-- 远程电调 -->
+	<string name="permissionsYcdt">69</string>
+	<!-- 公告 -->
+	<string name="permissionsNotify">70</string>
+	<!-- 满格宝 -->
+	<string name="permissionsMgb">71</string>
+	<!-- 简单硬扩 -->
+	<string name="permissionsJdyk">72</string>
+	<!-- 考勤系统-人员考勤 -->
+	<string name="permissionsAttendancePerson">73</string>
+	<!-- 价值地图 -->
+	<string name="permissionsJzxq">74</string>
+	<!-- 天面整合 -->
+	<string name="permissionsTmzh">75</string>
+	<!-- 小区指标 -->
+	<string name="permissionsXqzb">5000</string>
+	<!-- 基站信号 -->
+	<string name="permissionsJzxh">1301</string>
+	<!-- 速率测试 -->
+	<string name="permissionsSlcs">5200</string>
+	<!-- 遍历测试 -->
+	<string name="permissionsBlcs">5300</string>
+	<!-- 语音测试 -->
+	<string name="permissionsYycs">5400</string>
+	<!-- 自动纠偏 -->
+	<string name="permissionsZdjp">5500</string>
+	<!-- 网络挑刺 -->
+	<string name="permissionsWltc">5600</string>
+	<!-- 工作量采集 -->
+	<string name="permissionsGzlcj">5700</string>
+	<!-- 系统信息 -->
+	<string name="permissionsXtxx">5800</string>
+	<!-- 下倾角测量 -->
+	<string name="permissionsXqjcl">5900</string>
+	<!-- 方位角测量 -->
+	<string name="permissionsFwjcl">6000</string>
+	<!-- 频段换算 -->
+	<string name="permissionsPdhs">6100</string>
+	<!-- 传播模型 -->
+	<string name="permissionsCbmx">6200</string>
+	<!-- 楼间对打 -->
+	<string name="permissionsLjdd">6300</string>
+	<!-- SpeedVideo -->
+	<string name="permissionsSpeedVideo">6400</string>
+	<!-- 天馈自巡检 -->
+	<string name="permissionsTkzxjGc">6500</string>
+	<!-- 天馈自优化 -->
+	<string name="permissionsTkzyhGc">6600</string>
+	<!-- 自动开站4G -->
+	<string name="permissionsZdkz">6700</string>
+	<!-- 自动开站5G -->
+	<string name="permissionsZdkzNr">6800</string>
+	<!-- PCI工具-与道路测试共有权限（1303）v3.1.4开始改为6900 -->
+    <string name="permissionsPCI">6900</string>
+    <!-- 首页更多（我的应用） -->
+    <string name="permissionsHomeMore">7000</string>
+    <!-- 5G小区激活 -->
+    <string name="permissionsNrCell">7200</string>
+	<!-- 宏站入网(5G) -->
+    <string name="permissionsNrHzrw">7300</string>
+    <!-- 室分入网(5G) -->
+    <string name="permissionsNrSfrw">7400</string>
+    <!-- 技术验证 -->
+    <string name="permissionsNrJsyz">7500</string>
+    <!-- 技术验证（福建） -->
+    <string name="permissionsNrJsyzFj">7600</string>
+    <!-- 位置信息） -->
+    <string name="permissionsWzxx">7700</string>
+	<!-- >>>>>>>>>>>>>>>>>GIS地图菜单权限<<<<<<<<<<<<<<<<<< -->
+	<!-- GSM小区 -->
+	<string name="permissionsGis_Gsm">20000</string>
+	<!-- LTE小区 -->
+	<string name="permissionsGis_Lte">20100</string>
+	<!-- 5G小区 -->
+	<string name="permissionsGis_5G">20200</string>
+	<!-- LTE-RRU -->
+	<string name="permissionsGis_LteRru">20300</string>
+	<!-- LTE规划 -->
+	<string name="permissionsGis_LteGh">20400</string>
+	<!-- 共站信息 -->
+	<string name="permissionsGis_Gzxx">200500</string>
+	<!-- 竞对基站 -->
+	<string name="permissionsGis_jdjz">200600</string>
+	<!-- 高铁 -->
+	<string name="permissionsGis_gt">200700</string>
+	<!-- 应急宝 -->
+	<string name="permissionsGis_yjb">200800</string>
+	<!-- 邻区关系 -->
+	<string name="permissionsGis_lqgx">200900</string>
+	<!-- 室分图纸 -->
+	<string name="permissionsGis_sftz">201000</string>
+	<!-- 指纹库(OTT采样) -->
+	<string name="permissionsGis_ott">201100</string>
+	<!-- 退服告警 -->
+	<string name="permissionsGis_tfgj">201200</string>
+	<!-- 基站导航 -->
+	<string name="permissionsGis_jzdh">201300</string>
+	<!-- NB图层 -->
+	<string name="permissionsGis_nb">201400</string>
+	<!-- 空间退服告警 -->
+	<string name="permissionsGis_kjtfgj">201500</string>
+	<!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    	    ~~~~~~~~~~~~~~~~~菜单权限（菜单编码）相关-end~~~~~~~~~~~~~~~ 
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    -->
+
+	<!-- 钥匙 -->
+	<string name="secret">V+t2Wqchn6yLu4fuGEj8d7Hr/uAHqUaVuzC3KHml0cdE70UAe2yEzn248nkfhZs8ysj3wiBmPcxqa2Jg4f9PjmNCz2aZbrB40kDbbGiffLnaL4quSACb9aEnShJPyMSRrisqFm1Vd3NM6lzH7iYb6Uwk/B7GAcYBRt9HTeyeYsuR+SEDIDPJb5J3GExpwIozGmZ9DM4tx3QvQUl/9cmAKcSJ1F3qWiFHhp0UC1t2YTmJ8elSmE2H9K9XYU4h5P2EvfG0p0yENGW0Wr5svo9WW01Qj6FBuTMwVOWoSm7kZ2jvuJd0cjumRnp5wH/ZTltTp9CvCXeDn6M70QDVfvcQ+w==</string>
+    <string name="secretPrivate">MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDjGA5ds4gjCMQZ4gANqWFJKTTnF/QS66EgSDDL+Qk0PDwmtAekMsDPlso6znuBD3coeVSutQgVPScT475FkX+6LjJq1LOVTA/wYAxdC858/rv7Oh4WxgzLXd3emPyUiutJdYisfi8KnnOr9UAXTAPG+SHW41wvcXB7pb+SZ9GEdag/xs2kueoY0E9P3cr8tQ6y5w2DOC/l0QU/gEsvka4VhrHB5tr/SE2yd7pxXjZNR/8Wkq0gSLt/zACpp9Nf7loeB9zhXmWeI22EEvWpq+hEQolqTSuzDwGE2GoB3/fgg2wPSUEQV6Z5hQDBHluouTZ7uNS33gvVRkW3VKIZOu8VAgMBAAECggEBALkag6M20lGUNJvQTjDUjlre/qMbMDQ34hb5IOUxsaHlMzZs6gmZ4PWUOHSkl6DEJWFVPIRHRTZiqTaaHR6BkXYFb80KYPLhk+BfudQh6oaR8FG/toTjm8wsT8vAMak2bsBq0COhmuBx9WEFv979c9q8eSu6GQsG0SPIH5XLj8kBwJrH/SfynpHtPt4uSyk6dfKzwxr0HdJ6GZoUtYAjMiBYX503tVn5g9cXhV09jlgS49Cl5omW7tuuUSATFvQG4NU/+f7MLReepZLXJeELp4Dp7NWOfxeUjI2I3hjLIkrB+ecftORxrBpd0qF0RZKXLIpCDaFaHNDGpgIuN4N7XyECgYEA/veE8xBANJgMmfgaXI6L+QlwuZ5wD37X80E//j4aBybZJlTPqsg2m0GcRvfFCpwDwUXDoM08+8JGe5wRd2cnV3ycU1VZwRSR8tFP3SiQpwU5PRF7qEuT4ycirfRsM8q/Syrv1yiPkVRo3M5mpCqqD0AMe4TOsyuZApDz6dLo1AkCgYEA5AOfs6g+p+A37DU1yxFb/0f4ENsDk38BtxjBgzst40Adq5qGXLt57jUhCHp4jSyoW6Upb1ODZqrqwNXNzSCHxFW1F9nEgz3O2ncfi51Pt+airVTNBkvHQhF8f0EVV8Klq5SrZnuj+/6pYRFcLwSUkMbVhQck/0XDwOy5r4LRva0CgYBOFLMMVL+025OQW2CHU8gd3fw9e/3JYQj1H9hfHdmOsyDxEiv+mw3OAgu/2ATpuNmViK3eQrwYRWicVjErJdXwfuLIymyQKqJ/gAY7Lj8ORxU+VGpQIcUKXWPLbfzs53wpot6MP4mn8fejFzprr/0ganboJMXALOvQ018/Di3rMQKBgQDi1bAVHPVoMSmxNaZUZOqu5jwlGJ1QKPPd4STylvcpsulRhKLSsje1AOnh82TmnVzH/2FfPSfmBXcRbCIXRZuLePB1z9Et91lIAWZCkLdz7mA8K7bj4pNSaO7/8hF3g08piPeTNsGGumxrAshAhj/+X7CfbOIjipYZ4edAcdaS6QKBgATkwcYSuI0DMa/4xaWT5awdnIHryfdoAhJA0VS+I8M1bO3ykcitW1YR6luaxRJh6hZs7QL/X6maEXpsFgt27pqwpMx5hfgzhwC7fV+56UTSkA8p8CYTorV87Ae6jDxJ8xiog/2uoSUErknaEOHGoEoUWxLqan746NXWrL3oUyGh</string>
+    <string name="secretKeyHs">E6iMxErpC9pz9KcOwgHIbWh1QJcgFkCF</string>
+</resources>

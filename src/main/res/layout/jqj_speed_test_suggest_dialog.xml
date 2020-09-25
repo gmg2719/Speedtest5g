@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/aw_white_panel_2" >
+
+    <TextView
+        android:id="@+id/speed_test_suggest_dialog_tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/black_half"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/speed_test_suggest_dialog_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/black_small"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/speed_test_suggest_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/drawable_login_btn_bg_normal2"
+        android:paddingBottom="8dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="8dp"
+        android:text="知道啦"
+        android:textColor="@color/white_edeeee"
+        android:textSize="18sp" />
+
+</LinearLayout>

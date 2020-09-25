@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wheel_layout_times"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/drawable_supter_title_bg">
+        <TextView android:id="@+id/wheel_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/white" android:padding="10dp" android:textSize="@dimen/tv_small_size"/>
+    	<ImageButton android:id="@+id/wheel_time_btn_clean" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ok" android:layout_centerInParent="true" android:src="@drawable/icon_tv_clear" android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="6dp" android:paddingBottom="6dp"/>
+        <Button android:id="@+id/wheel_time_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:text="@string/ok" android:padding="10dp" android:textSize="@dimen/tv_small_size" android:textColor="@color/color_rb_blue_while" android:background="@null"/>
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/white"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E3E3E3"
+        android:orientation="horizontal">
+        <cn.nokia.speedtest5g.view.time.WheelView
+            android:paddingTop="5dp" android:paddingBottom="5dp"
+	        android:id="@+id/wheel_year"
+	        android:layout_width="0.0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2" />
+	    <cn.nokia.speedtest5g.view.time.WheelView
+	        android:paddingTop="5dp" android:paddingBottom="5dp"
+	        android:id="@+id/wheel_month"
+	        android:layout_width="0.0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2" />
+		<cn.nokia.speedtest5g.view.time.WheelView
+		    android:paddingTop="5dp" android:paddingBottom="5dp"
+	        android:id="@+id/wheel_day"
+	        android:layout_width="0.0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2" />    
+	</LinearLayout>
+</LinearLayout>

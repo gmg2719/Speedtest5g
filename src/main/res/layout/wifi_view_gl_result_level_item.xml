@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp"
+    android:gravity="center_vertical">
+    
+	<TextView android:text="信道：" style="@style/tv_warp" android:textColor="@color/gray_c0c0c3" android:textSize="@dimen/sp_10"/>
+	<TextView android:id="@+id/wifiGlResultLevelItem_tv_xd" style="@style/tv_warp" android:textColor="@color/white" android:textSize="@dimen/sp_10" android:layout_marginRight="10dp"/>
+   	<RatingBar
+	    android:id="@+id/wifiGlResultLevelItem_ratingBar"
+	   	style="?android:attr/ratingBarStyleSmall" 
+	    android:layout_width="wrap_content" android:maxHeight="13dp" android:minHeight="13dp"
+	    android:layout_height="wrap_content"
+	    android:isIndicator="true" android:progressDrawable="@drawable/wifi_rating"
+	    android:numStars="10" 
+	    android:rating="0"
+	    android:stepSize="1"/>
+</TableRow>

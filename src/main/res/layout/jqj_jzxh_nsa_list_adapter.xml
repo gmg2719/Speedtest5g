@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <com.android.volley.util.MarqueesTextView
+        android:id="@+id/jzxh_nsa_list_tv_time"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxh_nsa_list_tv_ci"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxh_nsa_list_tv_pci"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxh_nsa_list_tv_rsrp"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxh_nsa_list_tv_sinr"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxh_nsa_list_tv_band"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxh_nsa_list_tv_pci_nr"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxh_nsa_list_tv_rsrp_nr"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxh_nsa_list_tv_sinr_nr"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:id="@+id/jzxh_nsa_list_tv_band_nr"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="@string/hint_no"
+        android:textColor="@color/black_micro"
+        android:textSize="@dimen/tv_micro_size" />
+
+</LinearLayout>
